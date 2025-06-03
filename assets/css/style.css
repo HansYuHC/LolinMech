@@ -1,0 +1,18 @@
+/* 基础重置 */
+* { box-sizing: border-box; }
+body { font-family: 'Arial', sans-serif; margin: 0; }
+
+/* 导航样式 */
+nav {
+    background: #003366;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+nav a { color: white; text-decoration: none; }
+
+/* 语言切换器特殊样式 */
+nav a[href*="/de/"],
+nav a[href*="/en/"] {
+    margin-left: auto; /* 靠右对齐 */
+}
