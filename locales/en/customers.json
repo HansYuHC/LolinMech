@@ -6,14 +6,16 @@
         {
             "id": "berco",
             "name": "Berco",
-            "description": "Supplying precision castings for engine components since 2018",
-            "gallery": ["berco.png"]
+            "description": "Berco is an Italian company specializing in manufacturing undercarriage components and rubber tracks for construction, agricultural, and industrial machinery.",
+            "logo": "berco.png",
+            "gallery": ["berco_products_1.png"]
         },
         {
-            "id": "client2",
-            "name": "Schaeffler",
-            "description": "Forging solutions for bearing assemblies",
-            "gallery": ["project3.jpg"]
+            "id": "kito",
+            "name": "Kito",
+            "description": "Kito is a Japanese company that manufactures and sells various types of machinery, primarily for materials handling and lifting equipment.",
+            "logo": "kito.png",
+            "gallery": ["kito_products_1.png"]
         }
 
     ],
