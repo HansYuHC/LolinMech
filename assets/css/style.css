@@ -29,3 +29,55 @@ button {
     padding: 0.3rem 0.6rem;
     cursor: pointer;
 }
+
+/* 客户页面专用样式 */
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.client-logo {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.client-logo:hover {
+    transform: scale(1.05);
+}
+
+.client-logo img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.client-logo:hover img {
+    filter: grayscale(0%);
+}
+
+.client-details {
+    display: none;
+    position: absolute;
+    background: #f5f5f5;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    max-width: 250px;
+    z-index: 999;
+    transition: opacity 0.2s ease;
+}
+
+
+.detail-card img {
+    max-width: 100%;
+    margin-top: 10px;
+    border: 1px solid #eee;
+}
