@@ -33,18 +33,24 @@ button {
 /* 客户页面专用样式 */
 .client-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 30px;
     margin: 40px auto;
     max-width: 900px;
+    justify-items: center;
+    align-items: center;
 }
 
 .client-logo {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd; /* 可选：加个边框方便对齐观察 */
+    background-color: #fff; /* 可选 */
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .client-logo:hover {
@@ -53,9 +59,9 @@ button {
 
 .client-logo img {
     width: 100%;
-    height: auto;
-    filter: grayscale(100%);
-    transition: filter 0.3s;
+    height: 100%;
+    object-fit: contain; /* 保持原始比例，缩放填满 */
+    display: block;
 }
 
 .client-logo:hover img {
