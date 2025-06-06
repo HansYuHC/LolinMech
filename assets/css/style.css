@@ -17,7 +17,6 @@ header h1 {
     font-weight: bold;
 }
 
-
 nav {
     background: #003366;
     padding: 1rem;
@@ -42,27 +41,41 @@ button {
     cursor: pointer;
 }
 
+/* 内容主区域样式（统一留白） */
+main#content {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+/* 可选：专门针对 welcomeText 样式优化 */
+.welcome-text p {
+    margin-bottom: 1rem;
+}
+
 /* 客户页面专用样式 */
 .client-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
+    gap: 24px;
     margin: 40px auto;
-    max-width: 900px;
+    max-width: 1000px;
     justify-items: center;
     align-items: center;
 }
 
 .client-logo {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ddd; /* 可选：加个边框方便对齐观察 */
-    background-color: #fff; /* 可选 */
-    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 6px;
     box-sizing: border-box;
+    transition: transform 0.2s ease;
 }
 
 .client-logo:hover {
@@ -72,14 +85,13 @@ button {
 .client-logo img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* 保持原始比例，缩放填满 */
+    object-fit: contain;
     display: block;
 }
 
 .client-logo:hover img {
     filter: grayscale(0%);
 }
-
 
 .client-details {
     position: absolute;
@@ -107,9 +119,20 @@ button {
     border-radius: 4px;
 }
 
-
 .detail-card img {
     max-width: 100%;
     margin-top: 10px;
     border: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .client-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .client-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
