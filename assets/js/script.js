@@ -13,13 +13,22 @@ function loadPage(page) {
         .then(data => {
             document.title = data.pageTitle;
 
+            // 设置标题内容到 header
+            const headingElement = document.getElementById('page-heading');
+            headingElement.textContent = data.welcomeHeading || data.heading || '';
+
             if (page === 'customers') {
                 document.getElementById('content').innerHTML = loadCustomersPage(data);
                 window.customersData = data.clients;
             } else {
+                // 将 welcomeText 中的 \n\n 转换为 <p> 段落
+                const paragraphs = data.welcomeText
+                    .split("\n\n")
+                    .map(p => `<p>${p.trim()}</p>`)
+                    .join("");
+
                 document.getElementById('content').innerHTML = `
-                    <h1>${data.welcomeHeading}</h1>
-                    <p>${data.welcomeText}</p>
+                    <div class="welcome-text">${paragraphs}</div>
                     <div class="stats">
                         <p>${data.stats?.employees || ""}</p>
                         <p>${data.stats?.locations || ""}</p>
@@ -60,9 +69,12 @@ function showClientDetails(clientId, event) {
 
     const detailsDiv = document.getElementById('clientDetails');
 
-    const imagesHTML = client.gallery.map(img =>
-        `<img src="assets/images/customers/${img}" alt="${client.name} product">`
-    ).join('');
+    // 展示 gallery 图，不包含 logo
+    const imagesHTML = (client.gallery || [])
+        .filter(img => img !== client.logo)
+        .map(img =>
+            `<img src="assets/images/customers/${img}" alt="${client.name} product">`
+        ).join('');
 
     detailsDiv.innerHTML = `
         <h3>${client.name}</h3>

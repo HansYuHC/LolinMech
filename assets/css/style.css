@@ -6,6 +6,18 @@ body {
     padding: 0;
 }
 
+header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
 nav {
     background: #003366;
     padding: 1rem;
