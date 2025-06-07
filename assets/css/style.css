@@ -6,15 +6,69 @@ body {
     padding: 0;
 }
 
-header {
+html {
+    overflow-y: scroll;
+}
+
+#top-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 10px;
+    background-color: #f8f8f8; /* 可选：给欢迎区块一点背景色 */
+    flex-wrap: wrap;
+}
+
+.top-logo {
+    width: 120px;
+    height: auto;
+}
+
+.welcome-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
+}
+
+
+header {
+    width: 100%;
+    max-width: 1200px;    /* 控制最大宽度，避免超宽时内容漂移 */
+    margin: 0 auto;       /* 水平居中 */
+    padding: 20px 24px;   /* 固定内边距，适配小屏也不会太紧凑 */
+    box-sizing: border-box;
+    position: relative;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 控制 h1 居中对齐 */
+    gap: 20px; /* 左右间距 */
+    background-color: white; /* 可选：背景颜色 */
+    flex-wrap: wrap; /* 如果屏幕太窄可以换行 */
+}
+
+#page-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 header h1 {
     font-size: 1.8rem;
     font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
 }
 
 nav {
@@ -135,4 +189,17 @@ main#content {
     .client-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.customers h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.customers .subheading {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
 }

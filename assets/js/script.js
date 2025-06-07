@@ -28,12 +28,15 @@ function loadPage(page) {
                     .join("");
 
                 document.getElementById('content').innerHTML = `
-                    <div class="welcome-text">${paragraphs}</div>
+                    <div class="welcome-wrapper">
+                        <div class="welcome-text">${paragraphs}</div>
+                    </div>
                     <div class="stats">
                         <p>${data.stats?.employees || ""}</p>
                         <p>${data.stats?.locations || ""}</p>
                     </div>
                 `;
+
             }
 
             document.querySelectorAll('[data-lang-key]').forEach(el => {
