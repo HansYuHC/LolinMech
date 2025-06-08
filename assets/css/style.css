@@ -104,8 +104,14 @@ main#content {
 }
 
 /* 可选：专门针对 welcomeText 样式优化 */
+.welcome-text {
+    margin-bottom: 10 px;
+    line-height: 1.6;
+}
+
 .welcome-text p {
-    margin-bottom: 1rem;
+    margin: 0 0 8px 0; /* 控制段落间距 */
+    line-height: 1.6;
 }
 
 /* 客户页面专用样式 */
@@ -202,4 +208,17 @@ main#content {
     font-style: italic;
     color: #666;
     margin-bottom: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 30px 0 20px;
+}
+
+.company-image {
+    display: block;
+    margin: 20px auto; /* auto 左右居中 + 上下外边距 */
+    max-width: 100%;
+    height: auto;
 }

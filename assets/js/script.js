@@ -20,7 +20,11 @@ function loadPage(page) {
             if (page === 'customers') {
                 document.getElementById('content').innerHTML = loadCustomersPage(data);
                 window.customersData = data.clients;
-            } else {
+            } else if (page === 'home') {
+                // 调用你自己写好的 HTML 结构
+                document.getElementById('content').innerHTML = loadHomePage(data);
+            }
+            else {
                 // 将 welcomeText 中的 \n\n 转换为 <p> 段落
                 const paragraphs = data.welcomeText
                     .split("\n\n")
@@ -105,3 +109,28 @@ function hideClientDetails() {
 document.addEventListener('DOMContentLoaded', () => {
     loadPage('home');
 });
+
+function loadHomePage(data) {
+    // 将 welcomeText 拆成多个段落
+    const paragraphs = data.welcomeText
+        .split('\n\n')
+        .map(p => `<p>${p.trim()}</p>`)
+        .join('');
+
+    return `
+        <section class="home-content">
+            <h2 class="section-title">Company Information</h2>
+            <div class="welcome-section">
+                <div class="welcome-text">
+                    ${paragraphs}
+                </div>
+            </div>
+            <div class="company-stats">
+                <p>${data.stats.employees}</p>
+                <p>${data.stats.locations}</p>
+                <img src="assets/images/Lolin-company.png" alt="Company Image" class="company-image">
+            </div>
+        </section>
+    `;
+}
+
