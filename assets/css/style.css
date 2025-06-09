@@ -222,3 +222,16 @@ main#content {
     max-width: 100%;
     height: auto;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8; /* 可选：设置底部背景 */
+    color: #333;               /* 可选：字体颜色 */
+}
+
+footer .contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}

@@ -116,10 +116,9 @@ function loadHomePage(data) {
         .split('\n\n')
         .map(p => `<p>${p.trim()}</p>`)
         .join('');
-
     return `
         <section class="home-content">
-            <h2 class="section-title">Company Information</h2>
+            <h2 class="section-title">${data.sectionTitle}</h2>
             <div class="welcome-section">
                 <div class="welcome-text">
                     ${paragraphs}
