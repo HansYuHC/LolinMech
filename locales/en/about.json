@@ -1,0 +1,42 @@
+{
+  "pageTitle": "About the Company",
+  "heading": "About The Company",
+  "welcomeHeading": "Welcome to Qingdao Lolin Mech Inc.",
+  "sections": [
+    {
+      "paragraphs": [
+        "Founded in 1990, Lolin Mechanical Company has grown to become a global OEM supplier for forging and casting.",
+        "On average every year, over 400 containers of various forgings/castings will be shipped to Germany, America and Japan.",
+        "We have specialized in forgings and castings for more than 30 years. We offer a range of technical services including product analysis, and inspection. Based on a flexible approach, and the extensive data we have accumulated from our expansive knowledge, we strive to solve problems and offer new proposals that accurately and rapidly incorporate your needs."
+      ],
+      "images": [
+        {
+          "src": "assets/images/about_1.png",
+          "caption": "Some of the standards that we meet"
+        },
+        {
+          "src": "assets/images/about_2.png",
+          "caption": "Products that we offer"
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        "We pride ourselves in product knowledge, diverse product lines, and total commitment to customer service and satisfaction."
+      ],
+      "image": "assets/images/about-2.png"
+    },
+    {
+      "heading": "Business Fields",
+      "paragraphs": [
+        "The range of arenas in which our products are active has expanded steadily since our inception."
+      ],
+      "image": "assets/images/about-3.png"
+    },
+    {
+      "paragraphs": [
+        "Our high-quality products service the industries of construction machinery, agricultural machinery, railway system, heavy duty trucking system, etc. In search of new fields, Lolin Mech will pursue new possibilities."
+      ]
+    }
+  ]
+}

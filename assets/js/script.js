@@ -3,11 +3,17 @@ let currentPage = 'home';
 
 function changeLanguage(lang) {
     currentLanguage = lang;
-    loadPage(currentPage);
+    loadPage(currentPage);  // 保持当前页面，只换语言
 }
 
 function loadPage(page) {
     currentPage = page.toLowerCase();
+
+    // 修改 hash（不会重复写入同样 hash）
+    if (window.location.hash !== `#${currentPage}`) {
+        window.location.hash = `#${currentPage}`;
+    }
+
     fetch(`locales/${currentLanguage}/${currentPage}.json`)
         .then(response => response.json())
         .then(data => {
@@ -21,11 +27,10 @@ function loadPage(page) {
                 document.getElementById('content').innerHTML = loadCustomersPage(data);
                 window.customersData = data.clients;
             } else if (page === 'home') {
-                // 调用你自己写好的 HTML 结构
                 document.getElementById('content').innerHTML = loadHomePage(data);
-            }
-            else {
-                // 将 welcomeText 中的 \n\n 转换为 <p> 段落
+            } else if (page === 'about') {
+                document.getElementById('content').innerHTML = loadAboutPage(data);
+            } else {
                 const paragraphs = data.welcomeText
                     .split("\n\n")
                     .map(p => `<p>${p.trim()}</p>`)
@@ -40,9 +45,9 @@ function loadPage(page) {
                         <p>${data.stats?.locations || ""}</p>
                     </div>
                 `;
-
             }
 
+            // 替换所有带 data-lang-key 的文本
             document.querySelectorAll('[data-lang-key]').forEach(el => {
                 const key = el.getAttribute('data-lang-key');
                 if (data[key]) el.textContent = data[key];
@@ -76,7 +81,6 @@ function showClientDetails(clientId, event) {
 
     const detailsDiv = document.getElementById('clientDetails');
 
-    // 展示 gallery 图，不包含 logo
     const imagesHTML = (client.gallery || [])
         .filter(img => img !== client.logo)
         .map(img =>
@@ -89,7 +93,6 @@ function showClientDetails(clientId, event) {
         <div class="gallery">${imagesHTML}</div>
     `;
 
-    // 定位弹窗在 logo 正下方
     const target = event.currentTarget;
     const rect = target.getBoundingClientRect();
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -105,13 +108,7 @@ function hideClientDetails() {
     detailsDiv.style.display = 'none';
 }
 
-// 初始化加载首页
-document.addEventListener('DOMContentLoaded', () => {
-    loadPage('home');
-});
-
 function loadHomePage(data) {
-    // 将 welcomeText 拆成多个段落
     const paragraphs = data.welcomeText
         .split('\n\n')
         .map(p => `<p>${p.trim()}</p>`)
@@ -133,3 +130,51 @@ function loadHomePage(data) {
     `;
 }
 
+function loadAboutPage(data) {
+    let html = `
+        <section class="about-content">
+            <h2 class="section-title">${data.heading}</h2>
+    `;
+
+    data.sections.forEach(section => {
+        if (section.heading) {
+            html += `<h2 class="section-title">${section.heading}</h2>`;
+        }
+
+        html += `<div class="about-section">`;
+
+        section.paragraphs.forEach(p => {
+            html += `<p>${p}</p>`;
+        });
+
+        if (section.images) {
+            html += `<div class="image-row">`;
+            section.images.forEach(img => {
+                html += `
+                    <div class="image-block">
+                        <img src="${img.src}" alt="${img.caption}">
+                        <p class="caption">${img.caption}</p>
+                    </div>
+                `;
+            });
+            html += `</div>`;
+        }
+
+        html += `</div>`;
+    });
+
+    html += `</section>`;
+    return html;
+}
+
+// ✅ 页面加载时，根据 URL hash 判断加载哪个页面
+document.addEventListener('DOMContentLoaded', () => {
+    const hashPage = window.location.hash ? window.location.hash.substring(1) : 'home';
+    loadPage(hashPage);
+});
+
+// ✅ 当 hash 变化时（如浏览器前进/后退），自动加载对应页面
+window.addEventListener('hashchange', () => {
+    const newPage = window.location.hash.substring(1);
+    loadPage(newPage);
+});
