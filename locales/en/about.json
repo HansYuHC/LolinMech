@@ -24,14 +24,27 @@
       "paragraphs": [
         "We pride ourselves in product knowledge, diverse product lines, and total commitment to customer service and satisfaction."
       ],
-      "image": "assets/images/about-2.png"
+      "images": [
+        {
+          "src": "assets/images/about_3.png",
+          "caption": "We deliver all over the world"
+        }
+      ]
     },
     {
       "heading": "Business Fields",
       "paragraphs": [
         "The range of arenas in which our products are active has expanded steadily since our inception."
       ],
-      "image": "assets/images/about-3.png"
+      "images": [
+        { "src": "assets/images/about_4_1.png", "caption": "Construction Machinery" },
+        { "src": "assets/images/about_4_2.png", "caption": "Agricultural Machinery" },
+        { "src": "assets/images/about_4_3.png", "caption": "Railway System" },
+        { "src": "assets/images/about_4_4.png", "caption": "Truck" },
+        { "src": "assets/images/about_4_5.png", "caption": "Automobile" },
+        { "src": "assets/images/about_4_6.png", "caption": "Wind Power Industry" }
+
+  ]
     },
     {
       "paragraphs": [

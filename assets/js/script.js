@@ -3,23 +3,27 @@ let currentPage = 'home';
 
 function changeLanguage(lang) {
     currentLanguage = lang;
-    loadPage(currentPage);  // 保持当前页面，只换语言
+    // 如果 currentPage 是空，就用默认页面 'home'
+    const safePage = currentPage && currentPage.trim() !== '' ? currentPage : 'home';
+    loadPage(safePage);
 }
 
-function loadPage(page) {
+function loadPage(page, forceReload = false) {
     currentPage = page.toLowerCase();
+    console.log(`🔄 Loading page: ${currentPage}, language: ${currentLanguage}`);
 
-    // 修改 hash（不会重复写入同样 hash）
     if (window.location.hash !== `#${currentPage}`) {
         window.location.hash = `#${currentPage}`;
+    } else if (forceReload) {
+        // 手动触发一次 hashchange 逻辑
+        history.replaceState(null, '', `#${currentPage}`);
     }
 
-    fetch(`locales/${currentLanguage}/${currentPage}.json`)
+    fetch(`locales/${currentLanguage}/${currentPage}.json?t=${Date.now()}`)
         .then(response => response.json())
         .then(data => {
             document.title = data.pageTitle;
 
-            // 设置标题内容到 header
             const headingElement = document.getElementById('page-heading');
             headingElement.textContent = data.welcomeHeading || data.heading || '';
 
@@ -47,13 +51,13 @@ function loadPage(page) {
                 `;
             }
 
-            // 替换所有带 data-lang-key 的文本
             document.querySelectorAll('[data-lang-key]').forEach(el => {
                 const key = el.getAttribute('data-lang-key');
                 if (data[key]) el.textContent = data[key];
             });
         });
 }
+
 
 function loadCustomersPage(data) {
     return `
@@ -148,7 +152,9 @@ function loadAboutPage(data) {
         });
 
         if (section.images) {
-            html += `<div class="image-row">`;
+            const isGridLayout = section.images.length >= 4;  // 判断是否使用矩阵样式
+    html += `<div class="${isGridLayout ? 'image-grid-3x2' : 'image-row'}">`;
+
             section.images.forEach(img => {
                 html += `
                     <div class="image-block">

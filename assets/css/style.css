@@ -266,6 +266,13 @@ footer .contact-info {
     margin-top: 20px;
 }
 
+.image-grid-3x2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 1rem;
+}
+
 .image-block {
     width: 100%;
     max-width: 400px; /* 控制每张图最大宽度 */
@@ -275,7 +282,7 @@ footer .contact-info {
 }
 
 .image-block img {
-    width: auto;
+    width: 80%;
     height: auto; /* 固定高度 */
     object-fit: cover;
     border-radius: 10px;
