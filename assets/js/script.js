@@ -34,7 +34,14 @@ function loadPage(page, forceReload = false) {
                 document.getElementById('content').innerHTML = loadHomePage(data);
             } else if (page === 'about') {
                 document.getElementById('content').innerHTML = loadAboutPage(data);
-            } else {
+            } else if (page === 'products') {
+                document.getElementById('content').innerHTML = loadProductsPage(data);
+            } else if (page === 'casting') {
+                document.getElementById('content').innerHTML = loadCastingPage(data);
+            } else if (page === 'forging') {
+                document.getElementById('content').innerHTML = loadForgingPage(data);
+            }
+            else {
                 const paragraphs = data.welcomeText
                     .split("\n\n")
                     .map(p => `<p>${p.trim()}</p>`)
@@ -56,6 +63,9 @@ function loadPage(page, forceReload = false) {
                 if (data[key]) el.textContent = data[key];
             });
         });
+
+    highlightActiveMenu(currentPage);
+
 }
 
 
@@ -173,6 +183,48 @@ function loadAboutPage(data) {
     return html;
 }
 
+function loadProductsPage(data) {
+    const descriptionHTML = Array.isArray(data.description)
+        ? data.description.map(p => `<p>${p}</p>`).join('')
+        : `<p>${data.description || ''}</p>`;
+
+    return `
+        <section class="products-overview">
+            <h2>${data.heading}</h2>
+            <div class="description">
+                ${descriptionHTML}
+            </div>
+        </section>
+    `;
+}
+
+
+function loadCastingPage(data) {
+    const paragraphs = data.description
+        .split('\n\n')
+        .map(p => `<p>${p.trim()}</p>`)
+        .join('');
+
+    const materialsHTML = data.materials
+        .map(m => `<li>${m}</li>`)
+        .join('');
+
+    const imagesHTML = data.images
+        .map(img => `<img src="${img.src}" alt="${img.caption}" class="product-image">`)
+        .join('');
+
+    return `
+        <section class="casting-content">
+            <h2 class="section-title">${data.heading}</h2>
+            <div class="description">${paragraphs}</div>
+            <h3>${data.materialTitle}</h3>
+            <ul class="material-list">${materialsHTML}</ul>
+            <div class="image-gallery">${imagesHTML}</div>
+        </section>
+    `;
+}
+
+
 // ✅ 页面加载时，根据 URL hash 判断加载哪个页面
 document.addEventListener('DOMContentLoaded', () => {
     const hashPage = window.location.hash ? window.location.hash.substring(1) : 'home';
@@ -184,3 +236,12 @@ window.addEventListener('hashchange', () => {
     const newPage = window.location.hash.substring(1);
     loadPage(newPage);
 });
+
+function highlightActiveMenu(page) {
+  // 先移除所有 active
+  document.querySelectorAll('nav a').forEach(el => el.classList.remove('active'));
+
+  // 再为当前页面添加 active
+  const current = document.querySelector(`nav a[onclick*="${page}"]`);
+  if (current) current.classList.add('active');
+}

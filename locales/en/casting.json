@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Casting Products",
+  "heading": "Casting Capabilities",
+  "welcomeHeading": "Welcome to Qingdao Lolin Mech Inc.",
+  "casting": "Casting",
+  "forging": "Forging",
+  "products": "Products",
+  "description": "We provide a wide range of casting materials and sizes.\n\nOur factories offer advanced sand casting and investment casting technologies.",
+  "materialTitle": "Available Materials",
+  "materials": [
+    "Gray Iron (EN-GJL): GJL-150, GJL-200, GJL-250, GJL-300, GJL-350",
+    "Ductile Iron (EN-GJS): GJS-400-18-LT, GJS-500-7, GJS-600-3, GJS-700-2, GJS-800-2",
+    "Austempered Ductile Iron (ADI): ADI 800-10, ADI 1050-6, ADI 1200-3, ADI 1400-1"
+  ],
+  "images": [
+    { "src": "assets/images/casting1.png", "caption": "Sand Moulding Line" },
+    { "src": "assets/images/casting2.png", "caption": "Casting Products" }
+  ]
+}

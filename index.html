@@ -20,7 +20,15 @@
     <nav>
         <a href="#" onclick="loadPage('home')" data-lang-key="home">Home</a>
         <a href="#" onclick="loadPage('about')" data-lang-key="about">About</a>
-        <a href="#" onclick="loadPage('products')" data-lang-key="products">Products</a>
+
+        <div class="dropdown">
+            <a href="#" class="dropbtn" onclick="loadPage('products')" data-lang-key="products">Products</a>
+            <div class="dropdown-content">
+              <a href="#" onclick="loadPage('casting')" data-lang-key="casting">Casting</a>
+              <a href="#" onclick="loadPage('forging')" data-lang-key="forging">Forging</a>
+            </div>
+        </div>
+
         <a href="#" onclick="loadPage('manufacturing')" data-lang-key="manufacturing">Manufacturing</a>
         <a href="#" onclick="loadPage('customers')" data-lang-key="customers">Customers</a>
         <a href="#" onclick="loadPage('certifications')" data-lang-key="certifications">Certifications</a>
