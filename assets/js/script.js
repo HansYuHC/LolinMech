@@ -184,9 +184,23 @@ function loadAboutPage(data) {
 }
 
 function loadProductsPage(data) {
+    // 渲染产品介绍
     const descriptionHTML = Array.isArray(data.description)
         ? data.description.map(p => `<p>${p}</p>`).join('')
         : `<p>${data.description || ''}</p>`;
+
+    // 渲染子页面跳转按钮
+    const linksHTML = data.links && Array.isArray(data.links)
+        ? `
+            <div class="product-links">
+                ${data.links.map(link => `
+                    <button class="product-link-button" onclick="loadPage('${link.target}')">
+                        ${link.text}
+                    </button>
+                `).join('')}
+            </div>
+        `
+        : '';
 
     return `
         <section class="products-overview">
@@ -194,9 +208,11 @@ function loadProductsPage(data) {
             <div class="description">
                 ${descriptionHTML}
             </div>
+            ${linksHTML}
         </section>
     `;
 }
+
 
 
 function loadCastingPage(data) {
