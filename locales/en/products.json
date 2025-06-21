@@ -3,10 +3,8 @@
   "welcomeHeading": "Welcome to Qingdao Lolin Mech Inc.",
   "heading": "Products Overview",
   "description": [
-    "✅ This is the products overview page.",
-    "✅ Please choose casting or forging below.",
-    "Qingdao Lolin Mech Inc. provides a wide range of forged and cast components for the automotive, rail, and construction industries.",
-    "Our production facilities meet international standards, and we deliver to global markets including Europe, North America, and Asia."
+    "✅ Lolin Mech product families play important roles in a range of different spheres. We are committed to providing innovative solutions along with uncompromising product quality. We provide a wide range of forged and cast components for the automotive, railway and construction industries. Our production facilities meet international standards and our products are sold to global markets including Europe, North America and Asia.",
+    "✅ For further information, please choose casting or forging below:"
   ],
   "links": [
     { "text": "Casting", "target": "casting" },

@@ -379,3 +379,103 @@ nav .dropbtn.active {
 .dropdown-content a:hover {
   background-color: #f0f0f0;
 }
+
+.section-heading {
+  text-align: center;
+  font-size: 28px;         /* 可根据需要调整字体大小 */
+  font-weight: bold;
+  color: black;          /* 如果导航栏是深色背景，这个颜色适配白字 */
+  margin: 20px 0;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 28px;
+    color: #005288;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.component-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.component-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.component-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.component-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #005288;
+}
+
+.component-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.component-card li {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+/* 产品图片矩阵样式 */
+.product-gallery {
+    padding: 20px;
+}
+
+.gallery-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.product-cta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cta-text {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
