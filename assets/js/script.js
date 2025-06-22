@@ -37,9 +37,9 @@ function loadPage(page, forceReload = false) {
             } else if (page === 'products') {
                 document.getElementById('content').innerHTML = loadProductsPage(data);
             } else if (page === 'casting') {
-                document.getElementById('content').innerHTML = loadCastingPage(data);
+                document.getElementById('content').innerHTML = loadStructuredPage(data);
             } else if (page === 'forging') {
-                document.getElementById('content').innerHTML = loadForgingPage(data);
+                document.getElementById('content').innerHTML = loadStructuredPage(data);
             }
             else {
                 const paragraphs = data.welcomeText
@@ -313,30 +313,39 @@ function loadProductsPage(data) {
 
 
 
-function loadCastingPage(data) {
-    const paragraphs = data.description
-        .split('\n\n')
-        .map(p => `<p>${p.trim()}</p>`)
-        .join('');
+function loadStructuredPage(data) {
+    return data.sections.map(section => {
+        const headingHTML = section.heading ? `<h2 class="section-heading">${section.heading}</h2>` : '';
+        const paragraphsHTML = section.paragraphs?.map(p => `<p>${p}</p>`).join('') || '';
+        const textBlock = paragraphsHTML ? `<div class="text-block">${paragraphsHTML}</div>` : '';
 
-    const materialsHTML = data.materials
-        .map(m => `<li>${m}</li>`)
-        .join('');
+        let imagesHTML = '';
+        if (section.images?.length) {
+            const isGrid = section.images.length >= 4;
+            const imageClass = isGrid ? 'image-grid-3x2' : 'image-row';
+            imagesHTML = `
+                <div class="${imageClass}">
+                    ${section.images.map(img => `
+                        <div class="image-block">
+                            <img src="${img.src}" alt="${img.caption}">
+                            <p class="caption">${img.caption}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
 
-    const imagesHTML = data.images
-        .map(img => `<img src="${img.src}" alt="${img.caption}" class="product-image">`)
-        .join('');
-
-    return `
-        <section class="casting-content">
-            <h2 class="section-title">${data.heading}</h2>
-            <div class="description">${paragraphs}</div>
-            <h3>${data.materialTitle}</h3>
-            <ul class="material-list">${materialsHTML}</ul>
-            <div class="image-gallery">${imagesHTML}</div>
-        </section>
-    `;
+        return `
+            <section class="casting-section">
+                ${headingHTML}
+                ${textBlock}
+                ${imagesHTML}
+            </section>
+        `;
+    }).join('');
 }
+
+
 
 
 // ✅ 页面加载时，根据 URL hash 判断加载哪个页面

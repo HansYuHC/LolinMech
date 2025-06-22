@@ -2,18 +2,68 @@
   "pageTitle": "Casting Products",
   "heading": "Casting",
   "welcomeHeading": "Welcome to Qingdao Lolin Mech Inc.",
-  "casting": "Casting",
-  "forging": "Forging",
-  "products": "Products",
-  "description": "We provide a wide range of casting materials and sizes.\n\nOur factories offer advanced sand casting and investment casting technologies.",
-  "materialTitle": "Available Materials",
-  "materials": [
-    "Gray Iron (EN-GJL): GJL-150, GJL-200, GJL-250, GJL-300, GJL-350",
-    "Ductile Iron (EN-GJS): GJS-400-18-LT, GJS-500-7, GJS-600-3, GJS-700-2, GJS-800-2",
-    "Austempered Ductile Iron (ADI): ADI 800-10, ADI 1050-6, ADI 1200-3, ADI 1400-1"
-  ],
-  "images": [
-    { "src": "assets/images/casting1.png", "caption": "Sand Moulding Line" },
-    { "src": "assets/images/casting2.png", "caption": "Casting Products" }
+  "sections": [
+    {
+      "heading": "General Information",
+      "paragraphs": [
+        "We provide a wide range of casting materials and sizes.",
+        "Our factories offer advanced sand casting and investment casting technologies with maximum casting capacity of 70,000 tons annually. There are all together 600 staffs of the company.",
+        "We are able to supply different kinds of materials, the typical materials of which are: ",
+        "EN-GJL-150, GJL-200, GJL-250, GJL-300, GJL-350, EN-GJS-400-18-LT, GJS-500-7, GJS-600-3, GJS-700-2, GJS-800-2",
+        "Austempered ductile Iron: ADI 800-10 (EN-GJS-800-8), ADI 1050-6 (EN-GJS-1000-5), ADI 1200-3 (EN-GJS-1200-2), ADI 1400-1 (EN-GJS-1400-1)","The industries we are supplying: Construction machinery, Automotive industry, Railway vehicle manufacturing, Machine building",
+        "Suitable Weight: from 0.1 kg to 400 kgs",
+        "Flask Size: 450x400 mm,15 flasks/hr. / 850x700 mm, 15 flasks/hr. / 1200x1000x1000 mm, 50 flasks/hr."
+      ],
+      "images": [
+        {
+          "src": "assets/images/casting1.png",
+          "caption": "Casting Overview"
+        }
+      ]
+    },
+    {
+      "heading": "Foundry Equipment",
+      "paragraphs": [
+        "Our foundry is equipped with state-of-the-art moulding lines, core shooters, and melting furnaces for efficient and precise casting production."
+      ],
+      "images": [
+        { "src": "assets/images/foundry1.png", "caption": "Moulding Line" },
+        { "src": "assets/images/foundry2.png", "caption": "Core Shooter" },
+        { "src": "assets/images/foundry3.png", "caption": "Melting Furnace" }
+      ]
+    },
+    {
+      "heading": "Testing Equipment",
+      "paragraphs": [
+        "We ensure the highest quality through chemical analysis, mechanical property testing, and dimensional inspections."
+      ],
+      "images": [
+        { "src": "assets/images/testing1.png", "caption": "Spectrometer" },
+        { "src": "assets/images/testing2.png", "caption": "Hardness Tester" },
+        { "src": "assets/images/testing3.png", "caption": "3D Scanner" }
+      ]
+    },
+    {
+      "heading": "Machining Equipment",
+      "paragraphs": [
+        "Our machining capabilities include CNC turning, milling, and multi-axis machining centers to meet precision requirements."
+      ],
+      "images": [
+        { "src": "assets/images/machining1.png", "caption": "CNC Turning Center" },
+        { "src": "assets/images/machining2.png", "caption": "Machining Center" },
+        { "src": "assets/images/machining3.png", "caption": "Multi-axis Machine" }
+      ]
+    },
+    {
+      "heading": "Typical Products",
+      "paragraphs": [
+        "We produce a variety of typical products for automotive, rail, and industrial use."
+      ],
+      "images": [
+        { "src": "assets/images/product1.png", "caption": "Brake Caliper" },
+        { "src": "assets/images/product2.png", "caption": "Axle Housing" },
+        { "src": "assets/images/product3.png", "caption": "Engine Bracket" }
+      ]
+    }
   ]
 }
