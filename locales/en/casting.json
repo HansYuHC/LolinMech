@@ -4,15 +4,15 @@
   "welcomeHeading": "Welcome to Qingdao Lolin Mech Inc.",
   "sections": [
     {
-      "heading": "General Information",
+      "heading": "Casting - General Information",
       "paragraphs": [
         "We provide a wide range of casting materials and sizes.",
-        "Our factories offer advanced sand casting and investment casting technologies with maximum casting capacity of 70,000 tons annually. There are all together 600 staffs of the company.",
-        "We are able to supply different kinds of materials, the typical materials of which are: ",
+        "Our factories offer advanced sand casting and investment casting technologies with maximum casting capacity of 70,000 tons annually. There are all together 600 staffs of the company. Foundry is operated and managed under requirement of <strong>IATF16949</strong>.",
+        "We are able to supply different kinds of materials, the <strong>typical materials</strong> of which are: ",
         "EN-GJL-150, GJL-200, GJL-250, GJL-300, GJL-350, EN-GJS-400-18-LT, GJS-500-7, GJS-600-3, GJS-700-2, GJS-800-2",
-        "Austempered ductile Iron: ADI 800-10 (EN-GJS-800-8), ADI 1050-6 (EN-GJS-1000-5), ADI 1200-3 (EN-GJS-1200-2), ADI 1400-1 (EN-GJS-1400-1)","The industries we are supplying: Construction machinery, Automotive industry, Railway vehicle manufacturing, Machine building",
-        "Suitable Weight: from 0.1 kg to 400 kgs",
-        "Flask Size: 450x400 mm,15 flasks/hr. / 850x700 mm, 15 flasks/hr. / 1200x1000x1000 mm, 50 flasks/hr."
+        "<strong>Austempered ductile Iron</strong>: ADI 800-10 (EN-GJS-800-8), ADI 1050-6 (EN-GJS-1000-5), ADI 1200-3 (EN-GJS-1200-2), ADI 1400-1 (EN-GJS-1400-1)","<strong>The industries we are supplying</strong>: Construction machinery, Automotive industry, Railway vehicle manufacturing, Machine building",
+        "<strong>Suitable Weight</strong>: from 0.1 kg to 400 kgs",
+        "<strong>Flask Size</strong>: 450x400 mm,15 flasks/hr. / 850x700 mm, 15 flasks/hr. / 1200x1000x1000 mm, 50 flasks/hr."
       ],
       "images": [
         {
@@ -24,12 +24,25 @@
     {
       "heading": "Foundry Equipment",
       "paragraphs": [
-        "Our foundry is equipped with state-of-the-art moulding lines, core shooters, and melting furnaces for efficient and precise casting production."
+        "Our foundry is equipped with state-of-the-art moulding lines, core shooters, and melting furnaces for efficient and precise casting production.",
+        "✅ Melting furnace: medium-frequency induction furnace --> 3 tons/hr. x4 units, 2 tons/hr. x 4 units, 1.5 tons/hr. x 2 units, 1 ton/hr x 2 units",
+        "✅ Molding lines:--> three set TOKYU (Japan made) automatic molding line, with flask size 700x600mm, 100 flasks/hr.,--> suitable weight for casting: 0.5-50kg/pc ; with total casting capacity 30,000 tons/year",
+        "✅ 14 units jolt squeeze molding machines, with flask size 450x400 mm,15 flasks/hr.,--> suitable weight for casting: 0.5—20kg/pc ; with total casting capacity 6,000 tons/year",
+        "✅ 2 units high pressure molding machines, with flask size 850x700 mm, 20 flasks/hr.,--> suitable weight for casting: 15-200 kg/pc ;with total casting capacity 4,000 tons/year",
+        "✅ One set shell mouldline , with flask size 1200 x 1000 x 1000 mm, 30 flasks/hr.--> suitable weight for casting: 100 -300 kg/pc ; with total casting capacity of 30,000 tons/year",
+        "✅ Core-making shop:--> 16 units cold/warm box machines with maximum core weight 100 kg for each pc."
       ],
       "images": [
-        { "src": "assets/images/foundry1.png", "caption": "Moulding Line" },
-        { "src": "assets/images/foundry2.png", "caption": "Core Shooter" },
-        { "src": "assets/images/foundry3.png", "caption": "Melting Furnace" }
+        { "src": "assets/images/foundry1.png", "caption": "<strong>Melting Furnace</strong>: medium-frequency induction furnace. 1 unit with 5 tons/hr., 6 units with 3 tons/hr., 2 units with 1.5 tons/hr. and 2 units with 1 ton/hr." },
+        { "src": "assets/images/foundry2.png", "caption": "<strong>Moulding Lines</strong>: one set TOKYU (Japan made) automatic moulding line, with flask size 750x650mm, 100 flasks/hr."},
+        { "src": "assets/images/foundry3.png", "caption": "<strong>Moulding Lines</strong>: two sets TOKYU (Japan made) automatic moulding line, with flask size 650x500mm,100 flasks/hr."},
+        { "src": "assets/images/foundry3-1.png", "caption": "<strong>Moulding Lines</strong>: One set shell molding line, with flask size 1200x1000mm,30 flasks/hr."},
+        { "src": "assets/images/foundry3-2.png", "caption": "<strong>Moulding Lines</strong>: One set TYPE 148 HIGH PRESSURE MOULDING LINE, flask size 850x750mm,20 flasks/hr."},
+        { "src": "assets/images/foundry4.png", "caption": "automatic feeder"},
+        { "src": "assets/images/foundry5.png", "caption": "automatic casting"},
+        { "src": "assets/images/foundry6.png", "caption": "wireless data transmission"},
+        { "src": "assets/images/foundry7.png", "caption": "core-making workshop"},
+        { "src": "assets/images/foundry8.png", "caption": "CAE casting simulation software"}
       ]
     },
     {
