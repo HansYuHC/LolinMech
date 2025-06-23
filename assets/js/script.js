@@ -316,6 +316,7 @@ function loadProductsPage(data) {
 function loadStructuredPage(data) {
     return data.sections.map(section => {
         const headingHTML = section.heading ? `<h2 class="section-heading">${section.heading}</h2>` : '';
+
         const paragraphsHTML = section.paragraphs?.map(p => `<p>${p}</p>`).join('') || '';
         const textBlock = paragraphsHTML ? `<div class="text-block">${paragraphsHTML}</div>` : '';
 
@@ -335,15 +336,37 @@ function loadStructuredPage(data) {
             `;
         }
 
+        // 处理 additionalText 和 additionalImages
+        const additionalTextHTML = section.additionalText
+            ? `<div class="additional-text"><p>${section.additionalText}</p></div>`
+            : '';
+
+        let additionalImagesHTML = '';
+        if (section.additionalImages?.length) {
+            additionalImagesHTML = `
+                <div class="additional-image-row">
+                    ${section.additionalImages.map(img => `
+                        <div class="image-block">
+                            <img src="${img.src}" alt="${img.caption}">
+                            <p class="caption">${img.caption}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
         return `
             <section class="casting-section">
                 ${headingHTML}
                 ${textBlock}
                 ${imagesHTML}
+                ${additionalTextHTML}
+                ${additionalImagesHTML}
             </section>
         `;
     }).join('');
 }
+
 
 
 

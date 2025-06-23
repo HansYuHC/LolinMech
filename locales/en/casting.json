@@ -48,12 +48,21 @@
     {
       "heading": "Testing Equipment",
       "paragraphs": [
-        "We ensure the highest quality through chemical analysis, mechanical property testing, and dimensional inspections."
+        "We ensure the highest quality through chemical analysis, mechanical property testing, and dimensional inspections.",
+        "Here you can see our <strong>testing equipments in the casting workshop</strong>:"
       ],
       "images": [
-        { "src": "assets/images/testing1.png", "caption": "Spectrometer" },
-        { "src": "assets/images/testing2.png", "caption": "Hardness Tester" },
-        { "src": "assets/images/testing3.png", "caption": "3D Scanner" }
+        { "src": "assets/images/testing1.png", "caption": "1 unit C-Si quick analyser" },
+        { "src": "assets/images/testing2.png", "caption": "CMM in workshop" },
+        { "src": "assets/images/testing3.png", "caption": "1 unit Spectrum" },
+        { "src": "assets/images/testing4.png", "caption": "1 unit Metalloscope" }
+      ],
+      "additionalText": "Below are our <strong>testing equipment in the lab of the foundry</strong>:",
+      "additionalImages": [
+        { "src": "assets/images/testing5.png", "caption": "1 unit spectrum" },
+        { "src": "assets/images/testing6.png", "caption": "1 unit three Coordinate Measuring Machine" },
+        { "src": "assets/images/testing7.png", "caption": "1 unit pulling test machine" },
+        { "src": "assets/images/testing8.png", "caption": "1 unit of universal length measuring instrument" }
       ]
     },
     {

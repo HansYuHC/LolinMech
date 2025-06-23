@@ -503,3 +503,30 @@ nav .dropbtn.active {
   font-size: 1.8rem;
   color: #003366;
 }
+
+.additional-image-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.additional-image-row .image-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.additional-image-row img {
+  width: 100%;
+  height: 180px; /* 固定高度，防止图片高度不一致造成行错位 */
+  object-fit: cover; /* 裁切以保持比例，不拉伸变形 */
+  border-radius: 8px;
+}
+
+.additional-image-row .caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
