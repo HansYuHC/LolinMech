@@ -71,9 +71,16 @@
         "Our machining capabilities include CNC turning, milling, and multi-axis machining centers to meet precision requirements."
       ],
       "images": [
-        { "src": "assets/images/machining1.png", "caption": "CNC Turning Center" },
-        { "src": "assets/images/machining2.png", "caption": "Machining Center" },
-        { "src": "assets/images/machining3.png", "caption": "Multi-axis Machine" }
+        { "src": "assets/images/machining1.png", "caption": "10 units 3 axles CNC machine center, Vertical type" },
+        { "src": "assets/images/machining2.png", "caption": "2 units CNC center, Horizontal type" },
+        { "src": "assets/images/machining3.png", "caption": "2 units CNC vertical turning machines (DIA.1200)" },
+        { "src": "assets/images/machining4.png", "caption": "100% key dimension checking station" },
+        { "src": "assets/images/machining5.png", "caption": "2 units 3-axles CNC machines for tooling making and maintaining" },
+        { "src": "assets/images/machining6.png", "caption": "50 units common CNC turning machines" },
+        { "src": "assets/images/machining7.png", "caption": "12 units CNC machine center, 4 axles, Vertical type" },
+        { "src": "assets/images/machining8.png", "caption": "4 Units CNC center, Horizontal type" },
+        { "src": "assets/images/machining9.png", "caption": "CNC machine center" },
+        { "src": "assets/images/machining10.png", "caption": "induction hardening" }
       ]
     },
     {
