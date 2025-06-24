@@ -273,13 +273,22 @@ function loadProductsPage(data) {
         </section>
     `;
 
+    const captions = [
+      "Crankshaft", "Bearing Housing", "Bearing Hub", "Flange", "Engine Mount",
+      "OEM Sand Cast Gray Iron Parts", "Water Pump", "Fan Housing", "Coolant Water Pump", "Connecting Rod",
+      "Forged Crankshaft", "Tow Hook", "Chain", "Track Link", "Swivel Eye Hook",
+      "Detachable Tow Bar", "Pillow Block", "Bushing Assembly", "Hydraulic Cylinder Rod End", "Casting Bracket",
+      "Casting Component", "Component Of Cast Iron", "Flange", "Pump Casting", "Cast Iron Link"
+    ];
+
     const productGalleryHTML = `
     <div class="product-gallery">
         <h3 class="gallery-title">Product Lineup — Typical products producing now</h3>
         <div class="gallery-grid">
-            ${Array.from({ length: 25 }, (_, i) => `
+            ${captions.map((caption, i) => `
                 <div class="gallery-item">
-                    <img src="assets/images/products/product_${i + 1}.png" alt="Product ${i + 1}">
+                    <img src="assets/images/products/product_${i + 1}.png" alt="${caption}">
+                    <p class="caption">${caption}</p>
                 </div>
             `).join('')}
         </div>
