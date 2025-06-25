@@ -31,33 +31,44 @@ html {
     text-align: center;
 }
 
-
+/*-------------------------------*/
 header {
-    width: 100%;
-    max-width: 1200px;    /* 控制最大宽度，避免超宽时内容漂移 */
-    margin: 0 auto;       /* 水平居中 */
-    padding: 20px 24px;   /* 固定内边距，适配小屏也不会太紧凑 */
-    box-sizing: border-box;
-    position: relative;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* 控制 h1 居中对齐 */
-    gap: 20px; /* 左右间距 */
-    background-color: white; /* 可选：背景颜色 */
-    flex-wrap: wrap; /* 如果屏幕太窄可以换行 */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.top-logo {
+  height: 75px;
+  width: 160px;
+}
+
+.top-logo.left {
+  margin-right: 20px;  /* 向中间靠一点 */
+}
+
+.top-logo.right {
+  margin-left: 20px;   /* 向中间靠一点 */
+}
+
+header .container {
+  flex: 1;
+  text-align: center;
 }
 
 #page-heading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-size: 2rem;
-    font-weight: bold;
-    white-space: nowrap;
+  font-size: 1.6rem;
+  color: #003366;
 }
+/*-------------------------------*/
 
 header h1 {
     font-size: 1.8rem;
@@ -71,17 +82,37 @@ header h1 {
     box-sizing: border-box;
 }
 
+/*-------------------------------*/
 nav {
-    background: #003366;
-    padding: 1rem;
-    display: flex;
-    gap: 2rem;
+  position: fixed;
+  top: 80px; /* 紧贴 header 之下 */
+  width: 100%;
+  background-color: #003366;
+  z-index: 999;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+nav a,
+nav .dropbtn {
+  padding: 8px 14px;
+  line-height: 1.4;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
 }
+/* 防止正文内容被遮挡 */
+main#content {
+  margin-top: 140px; /* header + nav 的总高度 */
+  padding: 20px;
+}
+/*-------------------------------*/
 
 .language-switcher {
     margin-left: auto;
@@ -331,13 +362,17 @@ footer .contact-info {
 
 /* Dropdown main button */
 .dropbtn {
-  padding: 10px;
+  padding: 8px 14px;
   text-decoration: none;
   color: white;
   background: none;
   border: none;
   cursor: pointer;
   font-size: 16px;
+  line-height: 1.4;
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
 }
 
 /* 添加小三角 */
@@ -360,6 +395,7 @@ nav .dropbtn.active {
   min-width: 150px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1000;
+  top: 100%
 }
 
 /* Each dropdown link */
