@@ -101,7 +101,19 @@
         { "src": "assets/images/typicalCast10.png", "caption": "GJS 400-15, 3.5KG" },
         { "src": "assets/images/typicalCast11.png", "caption": "GJS 800-2, 6KG" },
         { "src": "assets/images/typicalCast12.png", "caption": "GJL 200, 11KG" },
-        { "src": "assets/images/typicalCast13.png", "caption": "GJS 400-15, 8KG"}
+        { "src": "assets/images/typicalCast13.png", "caption": "GJS 400-15, 8KG"},
+        { "src": "assets/images/typicalCast14.png", "caption": "GJS 450-12, 4.6KG"},
+        { "src": "assets/images/typicalCast15.png", "caption": "GJS 400-15, 6.7KG"},
+        { "src": "assets/images/typicalCast16.png", "caption": "GJS 500-7, 26KG"},
+        { "src": "assets/images/typicalCast17.png", "caption": "GJS 450-12, 25KG"},
+        { "src": "assets/images/typicalCast18.png", "caption": "GJL 200, 11KG"},
+        { "src": "assets/images/typicalCast19.png", "caption": "GJS 450-12, 3.5KG"},
+        { "src": "assets/images/typicalCast20.png", "caption": "AL ALLOY GRAVITY DIE CASTING, 11KG"},
+        { "src": "assets/images/typicalCast21.png", "caption": "AL ALLOY GRAVITY DIE CASTING, 8.2 KG"},
+        { "src": "assets/images/typicalCast22.png", "caption": "AL ALLOY GRAVITY DIE CASTING, 5.6KG"},
+        { "src": "assets/images/typicalCast23.png", "caption": "AL ALLOY,GRAVITY DIE CASTING, 6.2KG"},
+        { "src": "assets/images/typicalCast24.png", "caption": "GJS 700-2, 24 KG"},
+        { "src": "assets/images/typicalCast25.png", "caption": "GJS 400-15, 3 KG"}
       ]
     }
   ]
