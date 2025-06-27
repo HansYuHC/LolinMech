@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Forging Products",
+  "heading": "Forging",
+  "welcomeHeading": "Welcome to Qingdao Lolin Mech Inc.",
+  "sections": [
+    {
+      "heading": "Forging - General Information",
+      "paragraphs": [
+        "We specialize in closed-die and open-die forging for high-performance components and our forging shops are equipped with state-of-the-art hammers, presses, and induction furnaces.",
+        "Production capacity reaches up to <strong>3,000 tons per month</strong>.",
+        "Industries we are supplying: Construction machinery, Automotive parts, Railway vehicle manufacturing, Machine building.",
+        "Unit weight: <strong>0.1-80 Kg per piece</strong>.",
+        "Material specification producing right now: Mild carbon steel, Middle carbon steel, High carbon steel, Alloy steel, Stainless steel",
+        "Heat Treatment: Annealing, Normalizing, Quenching, Tempering, Carburizing, Induction hardening",
+        "Certification: <strong>IATF16949 certificate</strong>",
+        "Main Forging Equipments: 2 units <strong>4000T</strong> hot die forging lines; 2 units <strong>2500T</strong> hot die forging lines; 2 units <strong>1600T</strong> friction press lines; 2 units <strong>1000T</strong> friction press lines; 1 unit <strong>630T</strong> friction press line; 3 units <strong>400T</strong> friction press lines; 3 units <strong>300T</strong> friction press lines; 2 units <strong>160T</strong> friction press lines",
+        "Test & Lab Devices: 12 units of corresponding instrument including chemical analysis instrument, hardness tester, strength tester, metallographic microscope, magnetic power inspection machine, and etc."
+      ],
+      "images": [
+        {"src": "assets/images/forging_general.png","caption": "Forging Overview" }
+      ]
+    },
+    {
+      "heading": "Forging Equipment",
+      "paragraphs": ["Here's a glimpse into our forging facilities:"],
+      "images": [
+        { "src": "assets/images/forging1.png", "caption": "Hydraulic forging press" },
+        { "src": "assets/images/forging2.png", "caption": "Induction heating furnace" },
+        { "src": "assets/images/forging3.png", "caption": "Forging hammer in operation" },
+        { "src": "assets/images/forging4.png", "caption": "Cooling & finishing zone" }
+      ]
+    },
+    {
+      "heading": "Machining & Inspection",
+      "paragraphs": ["Precision machining and rigorous inspection guarantee quality."],
+      "images": [
+        { "src": "assets/images/forging_machining1.png", "caption": "CNC machining center" },
+        { "src": "assets/images/forging_machining2.png", "caption": "Ultrasonic inspection" }
+      ]
+    },
+    {
+      "heading": "Typical Products",
+      "paragraphs": ["We forge a variety of parts for trucks, railcars, and farm equipment."],
+      "images": [
+        { "src": "assets/images/forging_product1.png", "caption": "Axle component" },
+        { "src": "assets/images/forging_product2.png", "caption": "Agricultural flange" },
+        { "src": "assets/images/forging_product3.png", "caption": "Wheel hub" },
+        { "src": "assets/images/forging_product4.png", "caption": "Gear blank" }
+      ]
+    }
+  ]
+}
