@@ -24,14 +24,24 @@
       "heading": "Forging Equipment",
       "paragraphs": ["Here's a glimpse into our forging facilities:"],
       "images": [
-        { "src": "assets/images/forging1.png", "caption": "Hydraulic forging press" },
-        { "src": "assets/images/forging2.png", "caption": "Induction heating furnace" },
-        { "src": "assets/images/forging3.png", "caption": "Forging hammer in operation" },
-        { "src": "assets/images/forging4.png", "caption": "Cooling & finishing zone" }
+        { "src": "assets/images/forging1.png", "caption": "4000T Hot Die Forging Press Line" },
+        { "src": "assets/images/forging2.png", "caption": "2500T Hot Die Forging Press Line" },
+        { "src": "assets/images/forging3.png", "caption": "1600T Hot Die Forging Press Line" },
+        { "src": "assets/images/forging4.png", "caption": "1000T Double Plate Friction Press Line" },
+        { "src": "assets/images/forging5.png", "caption": "400T Double Plate Friction Press Line" },
+        { "src": "assets/images/forging6.png", "caption": "600T Precision Forging Press Line" }
       ]
     },
     {
-      "heading": "Machining & Inspection",
+      "heading": "Heat Treatment",
+      "paragraphs": ["Precision machining and rigorous inspection guarantee quality."],
+      "images": [
+        { "src": "assets/images/forging_machining1.png", "caption": "CNC machining center" },
+        { "src": "assets/images/forging_machining2.png", "caption": "Ultrasonic inspection" }
+      ]
+    },
+    {
+      "heading": "Machining Equipment",
       "paragraphs": ["Precision machining and rigorous inspection guarantee quality."],
       "images": [
         { "src": "assets/images/forging_machining1.png", "caption": "CNC machining center" },

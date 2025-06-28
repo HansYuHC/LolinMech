@@ -8,6 +8,15 @@ function changeLanguage(lang) {
     loadPage(safePage);
 }
 
+function highlightActiveMenu(page) {
+  // 先移除所有 active
+  document.querySelectorAll('nav a').forEach(el => el.classList.remove('active'));
+
+  // 再为当前页面添加 active
+  const current = document.querySelector(`nav a[onclick*="${page}"]`);
+  if (current) current.classList.add('active');
+}
+
 function loadPage(page, forceReload = false) {
     currentPage = page.toLowerCase();
     console.log(`🔄 Loading page: ${currentPage}, language: ${currentLanguage}`);
@@ -67,7 +76,6 @@ function loadPage(page, forceReload = false) {
     highlightActiveMenu(currentPage);
 
 }
-
 
 function loadCustomersPage(data) {
     return `
@@ -319,50 +327,42 @@ function loadProductsPage(data) {
     `;
 }
 
-
-
-
 function loadStructuredPage(data) {
     return data.sections.map(section => {
         const headingHTML = section.heading ? `<h2 class="section-heading">${section.heading}</h2>` : '';
-
         const paragraphsHTML = section.paragraphs?.map(p => `<p>${p}</p>`).join('') || '';
         const textBlock = paragraphsHTML ? `<div class="text-block">${paragraphsHTML}</div>` : '';
 
-        let imagesHTML = '';
-        if (section.images?.length) {
-            const isGrid = section.images.length >= 4;
-            const imageClass = isGrid ? 'image-grid-3x2' : 'image-row';
-            imagesHTML = `
-                <div class="${imageClass}">
-                    ${section.images.map(img => `
-                        <div class="image-block">
-                            <img src="${img.src}" alt="${img.caption}">
-                            <p class="caption">${img.caption}</p>
-                        </div>
-                    `).join('')}
+        const buildImageHTML = (images) =>
+            images.map(img => `
+                <div class="image-block">
+                    <img src="${img.src}" alt="${img.caption}" class="clickable-image" data-full="${img.src}">
+                    <p class="caption">${img.caption}</p>
                 </div>
-            `;
-        }
+            `).join('');
 
-        // 处理 additionalText 和 additionalImages
+        const imageClass = section.images?.length >= 4 ? 'image-grid-3x2' : 'image-row';
+        const imagesHTML = section.images?.length
+            ? `<div class="${imageClass}">${buildImageHTML(section.images)}</div>`
+            : '';
+
         const additionalTextHTML = section.additionalText
             ? `<div class="additional-text"><p>${section.additionalText}</p></div>`
             : '';
 
-        let additionalImagesHTML = '';
-        if (section.additionalImages?.length) {
-            additionalImagesHTML = `
-                <div class="additional-image-row">
-                    ${section.additionalImages.map(img => `
-                        <div class="image-block">
-                            <img src="${img.src}" alt="${img.caption}">
-                            <p class="caption">${img.caption}</p>
-                        </div>
-                    `).join('')}
+        const additionalImagesHTML = section.additionalImages?.length
+    ? `
+        <div class="image-grid-3x2">
+            ${section.additionalImages.map(img => `
+                <div class="image-block">
+                    <img src="${img.src}" alt="${img.caption}" class="clickable-image" data-full="${img.src}">
+                    <p class="caption">${img.caption}</p>
                 </div>
-            `;
-        }
+            `).join('')}
+        </div>
+    `
+    : '';
+
 
         return `
             <section class="casting-section">
@@ -378,8 +378,6 @@ function loadStructuredPage(data) {
 
 
 
-
-
 // ✅ 页面加载时，根据 URL hash 判断加载哪个页面
 document.addEventListener('DOMContentLoaded', () => {
     const hashPage = window.location.hash ? window.location.hash.substring(1) : 'home';
@@ -392,11 +390,17 @@ window.addEventListener('hashchange', () => {
     loadPage(newPage);
 });
 
-function highlightActiveMenu(page) {
-  // 先移除所有 active
-  document.querySelectorAll('nav a').forEach(el => el.classList.remove('active'));
+document.addEventListener('click', function (e) {
+    if (e.target.matches('.clickable-image')) {
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-img');
+        modal.style.display = 'block';
+        modalImg.src = e.target.dataset.full;
+    }
 
-  // 再为当前页面添加 active
-  const current = document.querySelector(`nav a[onclick*="${page}"]`);
-  if (current) current.classList.add('active');
-}
+    if (e.target.matches('.close-btn') || e.target.id === 'image-modal') {
+        document.getElementById('image-modal').style.display = 'none';
+    }
+});
+
+
