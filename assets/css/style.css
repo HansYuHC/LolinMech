@@ -612,31 +612,52 @@ nav .dropbtn.active {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1000;
-  padding-top: 5%;
+  z-index: 9999;
+  padding-top: 60px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.85);
+  text-align: center;
 }
 
 .modal-content {
-  margin: auto;
-  display: block;
   max-width: 90%;
-  max-height: 90%;
+  max-height: 80vh;
+  margin: auto;
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.modal-caption {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.close-btn, .modal-prev, .modal-next {
+  position: absolute;
+  top: 20px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
 }
 
 .close-btn {
-  position: absolute;
-  top: 2%;
-  right: 3%;
-  color: #fff;
-  font-size: 32px;
-  font-weight: bold;
-  cursor: pointer;
+  right: 30px;
+}
+
+.modal-prev {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.modal-next {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }

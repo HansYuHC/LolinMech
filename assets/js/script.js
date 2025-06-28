@@ -1,5 +1,7 @@
 let currentLanguage = 'en';
 let currentPage = 'home';
+let currentGallery = [];
+let currentIndex = 0;
 
 function changeLanguage(lang) {
     currentLanguage = lang;
@@ -391,16 +393,44 @@ window.addEventListener('hashchange', () => {
 });
 
 document.addEventListener('click', function (e) {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalCaption = document.getElementById('modal-caption');
+
     if (e.target.matches('.clickable-image')) {
-        const modal = document.getElementById('image-modal');
-        const modalImg = document.getElementById('modal-img');
+        // 找到所有同组图片
+        const gallery = Array.from(e.target.closest('.image-grid-3x2, .image-row').querySelectorAll('.clickable-image'));
+        currentGallery = gallery;
+        currentIndex = gallery.indexOf(e.target);
+
+        showImageAt(currentIndex);
         modal.style.display = 'block';
-        modalImg.src = e.target.dataset.full;
     }
 
     if (e.target.matches('.close-btn') || e.target.id === 'image-modal') {
-        document.getElementById('image-modal').style.display = 'none';
+        modal.style.display = 'none';
+    }
+
+    if (e.target.matches('.modal-prev')) {
+        if (currentIndex > 0) {
+            currentIndex--;
+            showImageAt(currentIndex);
+        }
+    }
+
+    if (e.target.matches('.modal-next')) {
+        if (currentIndex < currentGallery.length - 1) {
+            currentIndex++;
+            showImageAt(currentIndex);
+        }
     }
 });
 
+function showImageAt(index) {
+    const modalImg = document.getElementById('modal-img');
+    const modalCaption = document.getElementById('modal-caption');
+    const img = currentGallery[index];
+    modalImg.src = img.dataset.full || img.src;
+    modalCaption.textContent = img.alt || '';
+}
 
