@@ -34,15 +34,28 @@
     },
     {
       "heading": "Heat Treatment",
-      "paragraphs": ["Precision machining and rigorous inspection guarantee quality."],
+      "paragraphs": ["Quenching furnaces to meet the needs of customers and provide qualified quenching or carburizing products."],
       "images": [
-        { "src": "assets/images/forging_machining1.png", "caption": "CNC machining center" },
-        { "src": "assets/images/forging_machining2.png", "caption": "Ultrasonic inspection" }
+        { "src": "assets/images/forging_heat1.png", "caption": "Isothermal normalization furnace" },
+        { "src": "assets/images/forging_heat2.png", "caption": "Continuous Quench & Tempering Heat-treating line A" },
+        { "src": "assets/images/forging_heat3.png", "caption": "Continuous Quench & Tempering Heat-treating line B" },
+        { "src": "assets/images/forging_heat4.png", "caption": "Salt Bath Furnace" },
+        { "src": "assets/images/forging_heat5.png", "caption": "Case hardening Furnace" }
       ]
     },
     {
-      "heading": "Machining Equipment",
+      "heading": "Machining and Tooling Equipment",
       "paragraphs": ["Precision machining and rigorous inspection guarantee quality."],
+      "images": [
+        { "src": "assets/images/forging_machining1.png", "caption": "NC Engraving machine" },
+        { "src": "assets/images/forging_machining2.png", "caption": "Electric processing equipment" },
+        { "src": "assets/images/forging_machining3.png", "caption": "CNC Machines" },
+        { "src": "assets/images/forging_machining4.png", "caption": "CNC  Machining Centre for Auto Parts" }
+      ]
+    },
+    {
+      "heading": "Testing Equipment",
+      "paragraphs": ["According to customer quality requirements, a variety of testing solutions are available."],
       "images": [
         { "src": "assets/images/forging_machining1.png", "caption": "CNC machining center" },
         { "src": "assets/images/forging_machining2.png", "caption": "Ultrasonic inspection" }
@@ -50,12 +63,36 @@
     },
     {
       "heading": "Typical Products",
-      "paragraphs": ["We forge a variety of parts for trucks, railcars, and farm equipment."],
+      "paragraphs": ["We forge a variety of parts for trucks, railcars, farm equipments and so on."],
       "images": [
-        { "src": "assets/images/forging_product1.png", "caption": "Axle component" },
-        { "src": "assets/images/forging_product2.png", "caption": "Agricultural flange" },
-        { "src": "assets/images/forging_product3.png", "caption": "Wheel hub" },
-        { "src": "assets/images/forging_product4.png", "caption": "Gear blank" }
+        { "src": "assets/images/forging_product1.png", "caption": "20Mn 6, WT: 6.9 KG" },
+        { "src": "assets/images/forging_product2.png", "caption": "C45, WT: 4.3 KG" },
+        { "src": "assets/images/forging_product3.png", "caption": "St 52-3, 0.8KG" },
+        { "src": "assets/images/forging_product4.png", "caption": "30Mn5" },
+        { "src": "assets/images/forging_product5.png", "caption": "C45, 6 KG" },
+        { "src": "assets/images/forging_product6.png", "caption": "C45, 9 KG" },
+        { "src": "assets/images/forging_product7.png", "caption": "35CrMo, 4.5 KG" },
+        { "src": "assets/images/forging_product8.png", "caption": "42 CrMo, 9 KG" },
+        { "src": "assets/images/forging_product9.png", "caption": "42CrMo, 12 KG" },
+        { "src": "assets/images/forging_product10.png", "caption": "42CrMo, 8 KG" },
+        { "src": "assets/images/forging_product11.png", "caption": "42CrMo, 6.8 kg" },
+        { "src": "assets/images/forging_product12.png", "caption": "42CrMo, 6KG" },
+        { "src": "assets/images/forging_product13.png", "caption": "42CrMo, 14 KG" },
+        { "src": "assets/images/forging_product14.png", "caption": "C35, 7.7 KG" },
+        { "src": "assets/images/forging_product15.png", "caption": "C45, 6.5 KG" },
+        { "src": "assets/images/forging_product16.png", "caption": "41Cr4, 0.6 KG" },
+        { "src": "assets/images/forging_product17.png", "caption": "41Cr4, 3.5 KG" },
+        { "src": "assets/images/forging_product18.png", "caption": "C45, 4.5 KG" },
+        { "src": "assets/images/forging_product19.png", "caption": "20CrMnTi, 1.4 KG" },
+        { "src": "assets/images/forging_product20.png", "caption": "30Mn5, 5.7 KG" },
+        { "src": "assets/images/forging_product21.png", "caption": "42CrMo4, 7.3 KG" },
+        { "src": "assets/images/forging_product22.png", "caption": "34CrMo4, 3.6 KG" },
+        { "src": "assets/images/forging_product23.png", "caption": "41Cr4, 3.6 KG" },
+        { "src": "assets/images/forging_product24.png", "caption": "C45, 4.4 KG" },
+        { "src": "assets/images/forging_product25.png", "caption": "34CrMo4, 8.2 KG" },
+        { "src": "assets/images/forging_product26.png", "caption": "St52-3, 3.2 KG" },
+        { "src": "assets/images/forging_product27.png", "caption": "20Mn6, 0.9 KG" },
+        { "src": "assets/images/forging_product28.png", "caption": "C45, 5.9 KG" }
       ]
     }
   ]
