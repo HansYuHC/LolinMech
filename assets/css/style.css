@@ -460,19 +460,14 @@ nav .dropbtn.active {
 
 .section-heading {
   text-align: center;
-  font-size: 28px;         /* 可根据需要调整字体大小 */
+  font-size: 1.8rem;         /* 可根据需要调整字体大小 */
   font-weight: bold;
   color: black;          /* 如果导航栏是深色背景，这个颜色适配白字 */
   margin: 20px 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.section-heading {
-    text-align: center;
-    font-size: 28px;
-    color: #005288;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
 .component-list {
     display: grid;
@@ -573,13 +568,6 @@ nav .dropbtn.active {
   width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-.section-heading {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 1.8rem;
-  color: #003366;
 }
 
 .additional-image-row {
@@ -684,4 +672,8 @@ nav .dropbtn.active {
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.clickable-image {
+  cursor: pointer;
 }

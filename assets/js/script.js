@@ -82,7 +82,8 @@ function loadPage(page, forceReload = false) {
 function loadCustomersPage(data) {
     return `
         <section class="customers">
-            <h2>${data.heading}</h2>
+            <h2 class="section-heading">${data.heading}</h2>
+
             <div class="subheading">${data.subheading}</div>
             <div class="client-grid" id="clientGrid">
                 ${data.clients.map(client => `
@@ -288,7 +289,7 @@ function loadProductsPage(data) {
       "OEM Sand Cast Gray Iron Parts", "Water Pump", "Fan Housing", "Coolant Water Pump", "Connecting Rod",
       "Forged Crankshaft", "Tow Hook", "Chain", "Track Link", "Swivel Eye Hook",
       "Detachable Tow Bar", "Pillow Block", "Bushing Assembly", "Hydraulic Cylinder Rod End", "Casting Bracket",
-      "Casting Component", "Component Of Cast Iron", "Flange", "Pump Casting", "Cast Iron Link"
+      "Casting Component", "Component Of lifting hoist", "Flange", "Pump Casting", "Cast Iron Link"
     ];
 
     const productGalleryHTML = `
@@ -297,7 +298,11 @@ function loadProductsPage(data) {
         <div class="gallery-grid">
             ${captions.map((caption, i) => `
                 <div class="gallery-item">
-                    <img src="assets/images/products/product_${i + 1}.png" alt="${caption}">
+                    <img src="assets/images/products/product_${i + 1}.png"
+                        alt="${caption}"
+                        class="clickable-image"
+                        data-full="assets/images/products/product_${i + 1}.png"
+                        data-index="${i}">
                     <p class="caption">${caption}</p>
                 </div>
             `).join('')}
@@ -420,7 +425,7 @@ document.addEventListener('click', function (e) {
 
     if (e.target.matches('.clickable-image')) {
         // 找到所有同组图片
-        const gallery = Array.from(e.target.closest('.image-grid-3x2, .image-row').querySelectorAll('.clickable-image'));
+        const gallery = Array.from(e.target.closest('.image-grid-3x2, .image-row, .gallery-grid').querySelectorAll('.clickable-image'));
         currentGallery = gallery;
         currentIndex = gallery.indexOf(e.target);
 
