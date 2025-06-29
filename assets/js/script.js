@@ -353,18 +353,38 @@ function loadStructuredPage(data) {
             : '';
 
         const additionalImagesHTML = section.additionalImages?.length
-    ? `
-        <div class="image-grid-3x2">
-            ${section.additionalImages.map(img => `
-                <div class="image-block">
-                    <img src="${img.src}" alt="${img.caption}" class="clickable-image" data-full="${img.src}">
-                    <p class="caption">${img.caption}</p>
+            ? `
+                <div class="image-grid-3x2">
+                    ${buildImageHTML(section.additionalImages)}
                 </div>
-            `).join('')}
-        </div>
-    `
-    : '';
+            `
+            : '';
 
+        // ✅ 特殊处理图文并列排布的 section
+        const sideBySideHeadings = [
+            "Casting - General Information",
+            "Forging - General Information"
+        ];
+
+        if (sideBySideHeadings.includes(section.heading)) {
+            const imageBlock = section.images?.[0]
+                ? `
+                <div class="image-block">
+                    <img src="${section.images[0].src}" alt="${section.images[0].caption}" class="clickable-image" data-full="${section.images[0].src}">
+                    <p class="caption">${section.images[0].caption}</p>
+                </div>
+                ` : '';
+
+            return `
+                <section class="casting-section">
+                    ${headingHTML}
+                    <div class="general-info-flex">
+                        ${textBlock}
+                        ${imageBlock}
+                    </div>
+                </section>
+            `;
+        }
 
         return `
             <section class="casting-section">
@@ -377,6 +397,7 @@ function loadStructuredPage(data) {
         `;
     }).join('');
 }
+
 
 
 

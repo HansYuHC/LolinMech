@@ -661,3 +661,27 @@ nav .dropbtn.active {
   right: 20px;
   transform: translateY(-50%);
 }
+
+.general-info-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.general-info-flex .text-block {
+  flex: 1 1 55%;
+  min-width: 300px;
+}
+
+.general-info-flex .image-block {
+  flex: 1 1 40%;
+  max-width: 450px;
+}
+
+.general-info-flex img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
