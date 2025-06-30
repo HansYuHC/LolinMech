@@ -6,5 +6,14 @@
     "stats": {
         "employees": "<b><i><u>Our advantages:</u></i></b> 30+ years experience in forgings and castings ● Cooperation with famous OEMs and suppliers ● Annual turnover of more than 20 million US Dollars",
         "locations": "<b><i><u>Our locations:</u></i></b> Qingdao, China (Headquarter) ● New York, USA ● Zevenaar, the Netherlands"
-    }
+    },
+      "home": "Home",
+      "about": "About",
+      "products": "Products",
+      "casting": "Casting",
+      "forging": "Forging",
+      "customers": "Customers",
+      "certifications": "Certifications",
+      "download": "Download",
+      "contacts": "Contacts"
 }

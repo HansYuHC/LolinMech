@@ -1,14 +1,21 @@
-let currentLanguage = 'en';
-let currentPage = 'home';
+let currentPage = window.location.hash.replace(/^#/, '') || 'home';
+let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
 let currentGallery = [];
 let currentIndex = 0;
 
 function changeLanguage(lang) {
     currentLanguage = lang;
-    // 如果 currentPage 是空，就用默认页面 'home'
-    const safePage = currentPage && currentPage.trim() !== '' ? currentPage : 'home';
-    loadPage(safePage);
+    localStorage.setItem('preferredLanguage', lang);
+
+    // 使用当前 global 变量 currentPage 作为真正可靠的 fallback
+    const hashPage = window.location.hash.replace(/^#/, '').trim();
+    const safePage = hashPage || currentPage || 'home';
+
+    console.log('💬 Changing language to:', lang, '| currentPage:', currentPage, '| hashPage:', hashPage, '| safePage:', safePage);
+
+    loadPage(safePage, true);  // 强制刷新
 }
+
 
 function highlightActiveMenu(page) {
   // 先移除所有 active
@@ -408,14 +415,20 @@ function loadStructuredPage(data) {
 
 // ✅ 页面加载时，根据 URL hash 判断加载哪个页面
 document.addEventListener('DOMContentLoaded', () => {
-    const hashPage = window.location.hash ? window.location.hash.substring(1) : 'home';
-    loadPage(hashPage);
-});
+        currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+        const hashPage = window.location.hash.replace(/^#/, '').trim() || 'home';
+        currentPage = hashPage;  // 👈 更新全局变量！
+        console.log('📌 DOMContentLoaded | currentPage =', currentPage, '| currentLanguage =', currentLanguage);
+        loadPage(currentPage);
+    });
 
 // ✅ 当 hash 变化时（如浏览器前进/后退），自动加载对应页面
 window.addEventListener('hashchange', () => {
-    const newPage = window.location.hash.substring(1);
-    loadPage(newPage);
+    const newPage = window.location.hash.replace(/^#/, '').trim();
+    if (newPage) {
+        currentPage = newPage;
+        loadPage(newPage);
+    }
 });
 
 document.addEventListener('click', function (e) {
