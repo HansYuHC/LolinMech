@@ -1,0 +1,60 @@
+{
+  "pageTitle": "Unsere Produkte",
+  "welcomeHeading": "Willkommen bei Qingdao Lolin Mech Inc.",
+  "heading": "Produktübersicht",
+  "description": [
+    "✅ Die Produktfamilien von Lolin Mech spielen eine wichtige Rolle in verschiedenen Bereichen. Wir engagieren uns dafür, innovative Lösungen zusammen mit kompromissloser Produktqualität zu bieten. Wir liefern ein breites Spektrum an Schmiede- und Gusskomponenten für die Automobil-, Eisenbahn- und Baubranche. Unsere Produktionsstätten erfüllen internationale Standards und unsere Produkte werden auf den globalen Märkten in Europa, Nordamerika und Asien verkauft.",
+    "✅ Für weitere Informationen wählen Sie bitte unten Guss oder Schmiede aus:"
+  ],
+  "links": [
+    { "text": "Guss", "target": "casting" },
+    { "text": "Schmiede", "target": "forging" }
+  ],
+  "components": [
+    {
+      "title": "Motorkomponenten",
+      "items": ["Kurbelwelle", "Schwungrad", "Motorhalterung", "Turbolagergehäuse", "usw."]
+    },
+    {
+      "title": "Bremssystemkomponenten",
+      "items": ["Bremsenträger", "Bremsscheibe", "Bremssattel", "Bremsanker", "usw."]
+    },
+    {
+      "title": "Antriebsstrangkomponenten",
+      "items": ["Flansch", "Differenzialträger & Gehäuse", "Gleitgabel", "Achslagergehäuse", "usw."]
+    },
+    {
+      "title": "Fahrwerkskomponenten",
+      "items": ["Achsschenkel", "Lenker", "Kupplung", "Federteller", "Drehstab", "usw."]
+    },
+    {
+      "title": "Getriebe- & Kupplungskomponenten",
+      "items": ["PTO-Gehäuse", "Range Box Gehäuse", "usw."]
+    },
+    {
+      "title": "Pflug-, Bodenbearbeitungs- und Aussaatkomponenten",
+      "items": ["Reißzahnspitze", "Abstandshalter", "Drehpunkt", "Schare", "Boot", "Öffnerarm", "usw."]
+    },
+    {
+      "title": "Sonstige Komponenten",
+      "items": ["Gewicht", "Bremspedal", "Hydraulikzylinder", "Bremstrommel & Radnabe", "Haken", "Kettenführung", "usw."]
+    }
+  ],
+  "galleryTitle": "Produktübersicht — Typische aktuell hergestellte Produkte",
+  "captions": [
+    "Kurbelwelle", "Lagergehäuse", "Lagerflansch", "Flansch", "Motorhalterung",
+    "OEM Sandguss Grauguss-Teile", "Wasserpumpe", "Lüftergehäuse", "Kühlmittelpumpe", "Pleuelstange",
+    "Geschmiedete Kurbelwelle", "Abschlepphaken", "Kette", "Kettenglied", "Schwenkauge Haken",
+    "Abnehmbarer Anhängerkupplungsträger", "Lagerbock", "Buchsenbaugruppe", "Hydraulikzylinder Stangenende", "Gusshalterung",
+    "Gusskomponente", "Komponente für Hebebühne", "Flansch", "Pumpenguss", "Graugussverbindung"
+  ],
+  "home": "Startseite",
+  "about": "Über uns",
+  "products": "Produkte",
+  "casting": "Guss",
+  "forging": "Schmiede",
+  "customers": "Kunden",
+  "certifications": "Zertifizierungen",
+  "download": "Download",
+  "contacts": "Kontakt"
+}

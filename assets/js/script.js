@@ -206,117 +206,40 @@ function loadProductsPage(data) {
         ? data.description.map(p => `<p>${p}</p>`).join('')
         : `<p>${data.description || ''}</p>`;
 
-
+    // 组件列表动态渲染
     const componentsHTML = `
         <section class="component-list">
-            <div class="component-card">
-                <h3>Engine Components</h3>
-                <ul>
-                    <li>Crankshaft</li>
-                    <li>Flywheel</li>
-                    <li>Engine Bracket</li>
-                    <li>Turbo Bearing Housing</li>
-                    <li>etc.</li>
-                </ul>
-            </div>
-
-            <div class="component-card">
-                <h3>Braking Components</h3>
-                <ul>
-                    <li>Brake Carrier</li>
-                    <li>Brake Rotor</li>
-                    <li>Brake Caliper</li>
-                    <li>Brake Anchor</li>
-                    <li>etc.</li>
-                </ul>
-            </div>
-
-            <div class="component-card">
-                <h3>Driveline Components</h3>
-                <ul>
-                    <li>Flange</li>
-                    <li>Differential Carrier & Case</li>
-                    <li>Slip Yoke</li>
-                    <li>Axle Housing</li>
-                    <li>etc.</li>
-                </ul>
-            </div>
-
-            <div class="component-card">
-                <h3>Suspension Components</h3>
-                <ul>
-                    <li>Knuckle</li>
-                    <li>Control Arm</li>
-                    <li>Hitch</li>
-                    <li>Spring Hanger</li>
-                    <li>Torque Rod</li>
-                    <li>etc.</li>
-                </ul>
-            </div>
-
-            <div class="component-card">
-                <h3>Transmission & Clutch Components</h3>
-                <ul>
-                    <li>PTO Housing</li>
-                    <li>Range Box Housing</li>
-                    <li>etc.</li>
-                </ul>
-            </div>
-
-            <div class="component-card">
-                <h3>Plow, Tillage, Seeding Components</h3>
-                <ul>
-                    <li>Ripper Point</li>
-                    <li>Spacer</li>
-                    <li>Pivot</li>
-                    <li>Shank</li>
-                    <li>Boot</li>
-                    <li>Opener Arm</li>
-                    <li>etc.</li>
-                </ul>
-            </div>
-
-            <div class="component-card">
-                <h3>Other Components</h3>
-                <ul>
-                    <li>Weight</li>
-                    <li>Brake Pedal</li>
-                    <li>Hydraulic Cylinder</li>
-                    <li>Brake Drum & Wheel Hub</li>
-                    <li>Hook</li>
-                    <li>Chain Support</li>
-                    <li>etc.</li>
-                </ul>
-            </div>
+            ${data.components.map(component => `
+                <div class="component-card">
+                    <h3>${component.title}</h3>
+                    <ul>
+                        ${component.items.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+            `).join('')}
         </section>
     `;
 
-    const captions = [
-      "Crankshaft", "Bearing Housing", "Bearing Hub", "Flange", "Engine Mount",
-      "OEM Sand Cast Gray Iron Parts", "Water Pump", "Fan Housing", "Coolant Water Pump", "Connecting Rod",
-      "Forged Crankshaft", "Tow Hook", "Chain", "Track Link", "Swivel Eye Hook",
-      "Detachable Tow Bar", "Pillow Block", "Bushing Assembly", "Hydraulic Cylinder Rod End", "Casting Bracket",
-      "Casting Component", "Component Of lifting hoist", "Flange", "Pump Casting", "Cast Iron Link"
-    ];
-
+    // 产品图库标题
     const productGalleryHTML = `
-    <div class="product-gallery">
-        <h3 class="gallery-title">Product Lineup — Typical products producing now</h3>
-        <div class="gallery-grid">
-            ${captions.map((caption, i) => `
-                <div class="gallery-item">
-                    <img src="assets/images/products/product_${i + 1}.png"
-                        alt="${caption}"
-                        class="clickable-image"
-                        data-full="assets/images/products/product_${i + 1}.png"
-                        data-index="${i}">
-                    <p class="caption">${caption}</p>
-                </div>
-            `).join('')}
+        <div class="product-gallery">
+            <h3 class="gallery-title">${data.galleryTitle}</h3>
+            <div class="gallery-grid">
+                ${data.captions.map((caption, i) => `
+                    <div class="gallery-item">
+                        <img src="assets/images/products/product_${i + 1}.png"
+                            alt="${caption}"
+                            class="clickable-image"
+                            data-full="assets/images/products/product_${i + 1}.png"
+                            data-index="${i}">
+                        <p class="caption">${caption}</p>
+                    </div>
+                `).join('')}
+            </div>
         </div>
-    </div>
-`;
+    `;
 
+    // 链接按钮动态渲染
     const linksHTML = Array.isArray(data.links)
         ? data.links.map(link => `
             <button class="product-link-button" onclick="loadPage('${link.target}')">
@@ -325,21 +248,17 @@ function loadProductsPage(data) {
         `).join('')
         : '';
 
-
     return `
         <section class="products-overview">
             <h2 class="section-heading">${data.heading}</h2>
-            <div class="description">
-                ${descriptionHTML}
-            </div>
-            <div class="product-links">
-                ${linksHTML}
-            </div>
+            <div class="description">${descriptionHTML}</div>
+            <div class="product-links">${linksHTML}</div>
             ${componentsHTML}
             ${productGalleryHTML}
         </section>
     `;
 }
+
 
 function loadStructuredPage(data) {
     return data.sections.map(section => {

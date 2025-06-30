@@ -9,5 +9,52 @@
   "links": [
     { "text": "Casting", "target": "casting" },
     { "text": "Forging", "target": "forging" }
-  ]
+  ],
+  "components": [
+    {
+      "title": "Engine Components",
+      "items": ["Crankshaft", "Flywheel", "Engine Bracket", "Turbo Bearing Housing", "etc."]
+    },
+    {
+      "title": "Braking Components",
+      "items": ["Brake Carrier", "Brake Rotor", "Brake Caliper", "Brake Anchor", "etc."]
+    },
+    {
+      "title": "Driveline Components",
+      "items": ["Flange", "Differential Carrier & Case", "Slip Yoke", "Axle Housing", "etc."]
+    },
+    {
+      "title": "Suspension Components",
+      "items": ["Knuckle", "Control Arm", "Hitch", "Spring Hanger", "Torque Rod", "etc."]
+    },
+    {
+      "title": "Transmission & Clutch Components",
+      "items": ["PTO Housing", "Range Box Housing", "etc."]
+    },
+    {
+      "title": "Plow, Tillage, Seeding Components",
+      "items": ["Ripper Point", "Spacer", "Pivot", "Shank", "Boot", "Opener Arm", "etc."]
+    },
+    {
+      "title": "Other Components",
+      "items": ["Weight", "Brake Pedal", "Hydraulic Cylinder", "Brake Drum & Wheel Hub", "Hook", "Chain Support", "etc."]
+    }
+  ],
+  "galleryTitle": "Product Lineup — Typical products producing now",
+  "captions": [
+    "Crankshaft", "Bearing Housing", "Bearing Hub", "Flange", "Engine Mount",
+    "OEM Sand Cast Gray Iron Parts", "Water Pump", "Fan Housing", "Coolant Water Pump", "Connecting Rod",
+    "Forged Crankshaft", "Tow Hook", "Chain", "Track Link", "Swivel Eye Hook",
+    "Detachable Tow Bar", "Pillow Block", "Bushing Assembly", "Hydraulic Cylinder Rod End", "Casting Bracket",
+    "Casting Component", "Component Of lifting hoist", "Flange", "Pump Casting", "Cast Iron Link"
+  ],
+  "home": "Home",
+  "about": "About",
+  "products": "Products",
+  "casting": "Casting",
+  "forging": "Forging",
+  "customers": "Customers",
+  "certifications": "Certifications",
+  "download": "Download",
+  "contacts": "Contacts"
 }
