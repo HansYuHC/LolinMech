@@ -1,0 +1,63 @@
+{
+  "pageTitle": "Über das Unternehmen",
+  "heading": "Über das Unternehmen",
+  "welcomeHeading": "Willkommen bei Qingdao Lolin Mech Inc.",
+  "sections": [
+    {
+      "paragraphs": [
+        "Gegründet im Jahr 1990, hat sich Lolin Mechanical zu einem globalen OEM-Lieferanten für Schmiede- und Gussprodukte entwickelt.",
+        "Jedes Jahr werden durchschnittlich über 400 Container mit verschiedenen Schmiede- und Gussprodukten nach Deutschland, Amerika und Japan verschickt.",
+        "Seit über 30 Jahren sind wir auf Schmiedeteile und Gussteile spezialisiert. Wir bieten eine Vielzahl technischer Dienstleistungen an, darunter Produktanalysen und Prüfungen. Basierend auf einem flexiblen Ansatz und den umfangreichen Daten, die wir durch unser umfassendes Wissen gesammelt haben, streben wir danach, Probleme zu lösen und neue Vorschläge zu unterbreiten, die Ihre Anforderungen genau und schnell integrieren."
+      ],
+      "images": [
+        {
+          "src": "assets/images/about_1.png",
+          "caption": "Einige der Standards, die wir erfüllen"
+        },
+        {
+          "src": "assets/images/about_2.png",
+          "caption": "Produkte, die wir anbieten"
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        "Wir sind stolz auf unser Produktwissen, unser breites Produktspektrum und unser vollständiges Engagement für Kundendienst und Kundenzufriedenheit."
+      ],
+      "images": [
+        {
+          "src": "assets/images/about_3.png",
+          "caption": "Wir liefern weltweit"
+        }
+      ]
+    },
+    {
+      "heading": "Geschäftsbereiche",
+      "paragraphs": [
+        "Seit unserer Gründung hat sich das Einsatzgebiet unserer Produkte kontinuierlich erweitert."
+      ],
+      "images": [
+        { "src": "assets/images/about_4_1.png", "caption": "Baumaschinen" },
+        { "src": "assets/images/about_4_2.png", "caption": "Landmaschinen" },
+        { "src": "assets/images/about_4_3.png", "caption": "Schienensystem" },
+        { "src": "assets/images/about_4_4.png", "caption": "Lkw" },
+        { "src": "assets/images/about_4_5.png", "caption": "Automobil" },
+        { "src": "assets/images/about_4_6.png", "caption": "Windkraftindustrie" }
+      ]
+    },
+    {
+      "paragraphs": [
+        "Unsere hochwertigen Produkte finden Anwendung in den Bereichen Baumaschinen, Landmaschinen, Schienensysteme, Schwerlastfahrzeuge usw. Auf der Suche nach neuen Einsatzgebieten wird Lolin Mech neue Möglichkeiten verfolgen."
+      ]
+    }
+  ],
+  "home": "Startseite",
+      "about": "Über Uns",
+      "products": "Produkte",
+      "casting": "Guss",
+      "forging": "Schmieden",
+      "customers": "Kunden",
+      "certifications": "Zertifizierungen",
+      "download": "Download",
+      "contacts": "Kontakt"
+}

@@ -51,5 +51,14 @@
         "Our high-quality products service the industries of construction machinery, agricultural machinery, railway system, heavy duty trucking system, etc. In search of new fields, Lolin Mech will pursue new possibilities."
       ]
     }
-  ]
+  ],
+      "home": "Home",
+      "about": "About",
+      "products": "Products",
+      "casting": "Casting",
+      "forging": "Forging",
+      "customers": "Customers",
+      "certifications": "Certifications",
+      "download": "Download",
+      "contacts": "Contacts"
 }
