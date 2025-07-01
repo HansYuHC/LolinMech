@@ -116,5 +116,14 @@
         { "src": "assets/images/typicalCast25.png", "caption": "GJS 400-15, 3 KG"}
       ]
     }
-  ]
+  ],
+  "home": "Home",
+      "about": "About",
+      "products": "Products",
+      "casting": "Casting",
+      "forging": "Forging",
+      "customers": "Customers",
+      "certifications": "Certifications",
+      "download": "Download",
+      "contacts": "Contacts"
 }

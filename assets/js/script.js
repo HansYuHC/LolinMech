@@ -262,9 +262,8 @@ function loadProductsPage(data) {
     `;
 }
 
-
 function loadStructuredPage(data) {
-    return data.sections.map(section => {
+    return data.sections.map((section, index) => {
         const headingHTML = section.heading ? `<h2 class="section-heading">${section.heading}</h2>` : '';
         const paragraphsHTML = section.paragraphs?.map(p => `<p>${p}</p>`).join('') || '';
         const textBlock = paragraphsHTML ? `<div class="text-block">${paragraphsHTML}</div>` : '';
@@ -287,28 +286,18 @@ function loadStructuredPage(data) {
             : '';
 
         const additionalImagesHTML = section.additionalImages?.length
-            ? `
-                <div class="image-grid-3x2">
-                    ${buildImageHTML(section.additionalImages)}
-                </div>
-            `
+            ? `<div class="image-grid-3x2">${buildImageHTML(section.additionalImages)}</div>`
             : '';
 
-        // ✅ 特殊处理图文并列排布的 section
-        const sideBySideHeadings = [
-            "Casting - General Information",
-            "Forging - General Information"
-        ];
-
-        if (sideBySideHeadings.includes(section.heading)) {
-            const imageBlock = section.images?.[0]
-                ? `
+        // ✅ 自动判断第一个 section 且含一张图片时使用并排布局
+        if (index === 0 && section.images?.length === 1) {
+            const img = section.images[0];
+            const imageBlock = `
                 <div class="image-block">
-                    <img src="${section.images[0].src}" alt="${section.images[0].caption}" class="clickable-image" data-full="${section.images[0].src}">
-                    <p class="caption">${section.images[0].caption}</p>
+                    <img src="${img.src}" alt="${img.caption}" class="clickable-image" data-full="${img.src}">
+                    <p class="caption">${img.caption}</p>
                 </div>
-                ` : '';
-
+            `;
             return `
                 <section class="casting-section">
                     ${headingHTML}
@@ -320,6 +309,7 @@ function loadStructuredPage(data) {
             `;
         }
 
+        // 默认结构：标题 + 段落 + 多图 + 附加段落 + 附加图
         return `
             <section class="casting-section">
                 ${headingHTML}
@@ -331,7 +321,6 @@ function loadStructuredPage(data) {
         `;
     }).join('');
 }
-
 
 
 

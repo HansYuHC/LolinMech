@@ -1,0 +1,145 @@
+{
+  "pageTitle": "Gussprodukte",
+  "heading": "Gießen",
+  "welcomeHeading": "Willkommen bei Qingdao Lolin Mech Inc.",
+  "sections": [
+    {
+      "heading": "Gießen – Allgemeine Informationen",
+      "paragraphs": [
+        "Wir bieten ein breites Spektrum an Gussmaterialien und -größen.",
+        "Unsere Werke verfügen über fortschrittliche Sand- und Feingusstechnologien mit einer maximalen Gusskapazität von 70.000 Tonnen pro Jahr. Insgesamt beschäftigt das Unternehmen 600 Mitarbeiter. Die Gießerei wird nach den Anforderungen der <strong>IATF16949</strong> betrieben und verwaltet.",
+        "Wir können verschiedene Arten von Materialien liefern. Die <strong>typischen Materialien</strong> sind:",
+        "EN-GJL-150, GJL-200, GJL-250, GJL-300, GJL-350, EN-GJS-400-18-LT, GJS-500-7, GJS-600-3, GJS-700-2, GJS-800-2",
+        "<strong>Vergüteter Sphäroguss (ADI)</strong>: ADI 800-10 (EN-GJS-800-8), ADI 1050-6 (EN-GJS-1000-5), ADI 1200-3 (EN-GJS-1200-2), ADI 1400-1 (EN-GJS-1400-1)",
+        "<strong>Unsere belieferten Branchen</strong>: Baumaschinen, Automobilindustrie, Schienenfahrzeugbau, Maschinenbau",
+        "<strong>Geeignetes Gewicht</strong>: von 0,1 kg bis 400 kg",
+        "<strong>Formkastengröße</strong>: 450x400 mm, 15 Kästen/Stunde / 850x700 mm, 15 Kästen/Stunde / 1200x1000x1000 mm, 50 Kästen/Stunde"
+      ],
+      "images": [
+        {
+          "src": "assets/images/casting1.png",
+          "caption": "Gussübersicht"
+        }
+      ]
+    },
+    {
+      "heading": "Gießereiausrüstung",
+      "paragraphs": [
+        "Unsere Gießerei ist mit hochmodernen Formanlagen, Kernschießmaschinen und Schmelzöfen für eine effiziente und präzise Produktion ausgestattet.",
+        "✅ Schmelzofen: Mittelfrequenz-Induktionsofen --> 4x 3 t/h, 4x 2 t/h, 2x 1,5 t/h, 2x 1 t/h",
+        "✅ Formanlagen: Drei TOKYU (Japan) automatische Formanlagen, Formkastengröße 700x600 mm, 100 Kästen/h --> geeignetes Gewicht: 0,5–50 kg/Stück ; Jahreskapazität: 30.000 t",
+        "✅ 14 Stoßpressformmaschinen, Formkastengröße 450x400 mm, 15 Kästen/h --> geeignetes Gewicht: 0,5–20 kg/Stück ; Jahreskapazität: 6.000 t",
+        "✅ 2 Hochdruck-Formmaschinen, Formkastengröße 850x700 mm, 20 Kästen/h --> geeignetes Gewicht: 15–200 kg/Stück ; Jahreskapazität: 4.000 t",
+        "✅ 1 Schalenformanlage, Formkastengröße 1200x1000x1000 mm, 30 Kästen/h --> geeignetes Gewicht: 100–300 kg/Stück ; Jahreskapazität: 30.000 t",
+        "✅ Kernmacherei: 16 Kalt-/Warmkastenmaschinen, max. Kerngewicht 100 kg pro Stück"
+      ],
+      "images": [
+        {
+          "src": "assets/images/foundry1.png",
+          "caption": "<strong>Schmelzofen</strong>: Mittelfrequenz-Induktionsofen. 1x 5 t/h, 6x 3 t/h, 2x 1,5 t/h, 2x 1 t/h"
+        },
+        {
+          "src": "assets/images/foundry2.png",
+          "caption": "<strong>Formanlagen</strong>: TOKYU (Japan), automatische Anlage, Formgröße 750x650 mm, 100 Kästen/h"
+        },
+        {
+          "src": "assets/images/foundry3.png",
+          "caption": "<strong>Formanlagen</strong>: Zwei TOKYU-Anlagen, Formgröße 650x500 mm, 100 Kästen/h"
+        },
+        {
+          "src": "assets/images/foundry3-1.png",
+          "caption": "<strong>Schalenformanlage</strong>: Formgröße 1200x1000 mm, 30 Kästen/h"
+        },
+        {
+          "src": "assets/images/foundry3-2.png",
+          "caption": "<strong>Hochdruckformanlage</strong>: Typ 148, Formgröße 850x750 mm, 20 Kästen/h"
+        },
+        { "src": "assets/images/foundry4.png", "caption": "Automatischer Einfüller" },
+        { "src": "assets/images/foundry5.png", "caption": "Automatischer Guss" },
+        { "src": "assets/images/foundry6.png", "caption": "Drahtlose Datenübertragung" },
+        { "src": "assets/images/foundry7.png", "caption": "Kernmacherei" },
+        { "src": "assets/images/foundry8.png", "caption": "CAE-Gusssimulationssoftware" }
+      ]
+    },
+    {
+      "heading": "Prüfgeräte",
+      "paragraphs": [
+        "Wir stellen höchste Qualität durch chemische Analyse, mechanische Prüfungen und Maßkontrollen sicher.",
+        "Hier sehen Sie unsere <strong>Prüfgeräte in der Gießerei</strong>:"
+      ],
+      "images": [
+        { "src": "assets/images/testing1.png", "caption": "1x C-Si-Schnellanalysegerät" },
+        { "src": "assets/images/testing2.png", "caption": "3D-Koordinatenmessgerät in der Werkstatt" },
+        { "src": "assets/images/testing3.png", "caption": "1x Spektrometer" },
+        { "src": "assets/images/testing4.png", "caption": "1x Metalloskop" }
+      ],
+      "additionalText": "Unten sind unsere <strong>Prüfgeräte im Labor der Gießerei</strong>:",
+      "additionalImages": [
+        { "src": "assets/images/testing5.png", "caption": "1x Spektrometer" },
+        { "src": "assets/images/testing6.png", "caption": "1x 3D-Koordinatenmessmaschine" },
+        { "src": "assets/images/testing7.png", "caption": "1x Zugprüfmaschine" },
+        { "src": "assets/images/testing8.png", "caption": "1x Längenmessgerät" }
+      ]
+    },
+    {
+      "heading": "Bearbeitungsmaschinen",
+      "paragraphs": [
+        "Unsere Bearbeitungskapazitäten umfassen CNC-Drehen, Fräsen und mehrachsige Bearbeitungszentren zur Einhaltung von Präzisionsanforderungen."
+      ],
+      "images": [
+        { "src": "assets/images/machining1.png", "caption": "10x CNC-Bearbeitungszentren mit 3 Achsen, vertikale Ausführung" },
+        { "src": "assets/images/machining2.png", "caption": "2x CNC-Zentren, horizontale Ausführung" },
+        { "src": "assets/images/machining3.png", "caption": "2x CNC-Drehmaschinen, vertikal (DIA.1200)" },
+        { "src": "assets/images/machining4.png", "caption": "100%-Kontrollstation für Schlüsselmaße" },
+        { "src": "assets/images/machining5.png", "caption": "2x 3-Achsen-CNC-Maschinen für Werkzeugbau und Wartung" },
+        { "src": "assets/images/machining6.png", "caption": "50x Standard-CNC-Drehmaschinen" },
+        { "src": "assets/images/machining7.png", "caption": "12x CNC-Bearbeitungszentren mit 4 Achsen, vertikal" },
+        { "src": "assets/images/machining8.png", "caption": "4x CNC-Zentren, horizontal" },
+        { "src": "assets/images/machining9.png", "caption": "CNC-Bearbeitungszentrum" },
+        { "src": "assets/images/machining10.png", "caption": "Induktionshärten" }
+      ]
+    },
+    {
+      "heading": "Typische Produkte",
+      "paragraphs": [
+        "Wir fertigen verschiedene typische Produkte für Automobil-, Bahn- und Industrieanwendungen. Hier finden Sie Gusseisenprodukte mit entsprechenden Gewichten."
+      ],
+      "images": [
+        { "src": "assets/images/typicalCast1.png", "caption": "GJS 500-7, 46KG" },
+        { "src": "assets/images/typicalCast2.png", "caption": "GJL 200, 5.6KG" },
+        { "src": "assets/images/typicalCast3.png", "caption": "GJL 200, 28KG" },
+        { "src": "assets/images/typicalCast4.png", "caption": "GJS 400-18, 26 KG" },
+        { "src": "assets/images/typicalCast5.png", "caption": "GJL 200, 19 KG" },
+        { "src": "assets/images/typicalCast6.png", "caption": "GJS 400-15, 5KG" },
+        { "src": "assets/images/typicalCast7.png", "caption": "GJL 200, 5.8KG" },
+        { "src": "assets/images/typicalCast8.png", "caption": "GJS 450-12, 48KG" },
+        { "src": "assets/images/typicalCast9.png", "caption": "ADI 900-8, 25KG" },
+        { "src": "assets/images/typicalCast10.png", "caption": "GJS 400-15, 3.5KG" },
+        { "src": "assets/images/typicalCast11.png", "caption": "GJS 800-2, 6KG" },
+        { "src": "assets/images/typicalCast12.png", "caption": "GJL 200, 11KG" },
+        { "src": "assets/images/typicalCast13.png", "caption": "GJS 400-15, 8KG" },
+        { "src": "assets/images/typicalCast14.png", "caption": "GJS 450-12, 4.6KG" },
+        { "src": "assets/images/typicalCast15.png", "caption": "GJS 400-15, 6.7KG" },
+        { "src": "assets/images/typicalCast16.png", "caption": "GJS 500-7, 26KG" },
+        { "src": "assets/images/typicalCast17.png", "caption": "GJS 450-12, 25KG" },
+        { "src": "assets/images/typicalCast18.png", "caption": "GJL 200, 11KG" },
+        { "src": "assets/images/typicalCast19.png", "caption": "GJS 450-12, 3.5KG" },
+        { "src": "assets/images/typicalCast20.png", "caption": "AL-Legierung, Kokillenguss, 11KG" },
+        { "src": "assets/images/typicalCast21.png", "caption": "AL-Legierung, Kokillenguss, 8.2KG" },
+        { "src": "assets/images/typicalCast22.png", "caption": "AL-Legierung, Kokillenguss, 5.6KG" },
+        { "src": "assets/images/typicalCast23.png", "caption": "AL-Legierung, Kokillenguss, 6.2KG" },
+        { "src": "assets/images/typicalCast24.png", "caption": "GJS 700-2, 24KG" },
+        { "src": "assets/images/typicalCast25.png", "caption": "GJS 400-15, 3KG" }
+      ]
+    }
+  ],
+      "home": "Startseite",
+      "about": "Über Uns",
+      "products": "Produkte",
+      "casting": "Guss",
+      "forging": "Schmieden",
+      "customers": "Kunden",
+      "certifications": "Zertifizierungen",
+      "download": "Download",
+      "contacts": "Kontakt"
+}
