@@ -1,0 +1,108 @@
+{
+  "pageTitle": "Schmiedeprodukte",
+  "heading": "Schmieden",
+  "welcomeHeading": "Willkommen bei Qingdao Lolin Mech Inc.",
+  "sections": [
+    {
+      "heading": "Schmieden – Allgemeine Informationen",
+      "paragraphs": [
+        "Wir sind auf Gesenkschmieden (geschlossen und offen) für Hochleistungskomponenten spezialisiert. Unsere Schmiedewerkstätten sind mit modernen Hämmern, Pressen und Induktionsöfen ausgestattet.",
+        "Die Produktionskapazität beträgt bis zu <strong>3.000 Tonnen pro Monat</strong>.",
+        "Branchen, die wir beliefern: Baumaschinen, Automobilteile, Schienenfahrzeugbau, Maschinenbau.",
+        "Stückgewicht: <strong>0,1–80 kg pro Stück</strong>.",
+        "Aktuell produzierte Werkstoffe: unlegierter Stahl, mittel- und hochkohlenstoffhaltiger Stahl, legierter Stahl, rostfreier Stahl",
+        "Wärmebehandlung: Glühen, Normalisieren, Abschrecken, Anlassen, Einsatzhärten, Induktionshärten",
+        "Zertifizierung: <strong>IATF16949 Zertifikat</strong>",
+        "Wichtige Schmiedeanlagen: 2 Anlagen mit <strong>4000T</strong> Gesenkschmiedepressen; 2 Anlagen mit <strong>2500T</strong>; 2 Anlagen mit <strong>1600T</strong> Reibungspressen; 2 Anlagen mit <strong>1000T</strong>; 1 Anlage mit <strong>630T</strong>; 3 Anlagen mit <strong>400T</strong>; 3 Anlagen mit <strong>300T</strong>; 2 Anlagen mit <strong>160T</strong>",
+        "Test- & Laborgeräte: 12 Einheiten, darunter Geräte für chemische Analyse, Härteprüfung, Zugprüfung, Metallografie und Magnetpulverprüfung usw."
+      ],
+      "images": [
+        { "src": "assets/images/forging_general.png", "caption": "Überblick Schmieden" }
+      ]
+    },
+    {
+      "heading": "Schmiedeanlagen",
+      "paragraphs": ["Ein Blick in unsere Schmiedeproduktion:"],
+      "images": [
+        { "src": "assets/images/forging1.png", "caption": "4000T Gesenkschmiedepresse" },
+        { "src": "assets/images/forging2.png", "caption": "2500T Gesenkschmiedepresse" },
+        { "src": "assets/images/forging3.png", "caption": "1600T Gesenkschmiedepresse" },
+        { "src": "assets/images/forging4.png", "caption": "1000T Doppelplatten-Reibungspresse" },
+        { "src": "assets/images/forging5.png", "caption": "400T Doppelplatten-Reibungspresse" },
+        { "src": "assets/images/forging6.png", "caption": "600T Präzisionsschmiedepresse" }
+      ]
+    },
+    {
+      "heading": "Wärmebehandlung",
+      "paragraphs": ["Abschrecköfen zur Herstellung qualifizierter gehärteter oder einsatzgehärteter Produkte."],
+      "images": [
+        { "src": "assets/images/forging_heat1.png", "caption": "Isothermer Normalisierungsofen" },
+        { "src": "assets/images/forging_heat2.png", "caption": "Kontinuierliche Abschreck- & Anlasslinie A" },
+        { "src": "assets/images/forging_heat3.png", "caption": "Kontinuierliche Abschreck- & Anlasslinie B" },
+        { "src": "assets/images/forging_heat4.png", "caption": "Salzbadofen" },
+        { "src": "assets/images/forging_heat5.png", "caption": "Einsatzhärteofen" }
+      ]
+    },
+    {
+      "heading": "Bearbeitung & Werkzeugmaschinen",
+      "paragraphs": ["Präzise Bearbeitung und strenge Kontrolle gewährleisten höchste Qualität."],
+      "images": [
+        { "src": "assets/images/forging_machining1.png", "caption": "NC-Graviermaschine" },
+        { "src": "assets/images/forging_machining2.png", "caption": "Elektrobearbeitungsgeräte" },
+        { "src": "assets/images/forging_machining3.png", "caption": "CNC-Maschinen" },
+        { "src": "assets/images/forging_machining4.png", "caption": "CNC-Bearbeitungszentrum für Autoteile" }
+      ]
+    },
+    {
+      "heading": "Prüfausrüstung",
+      "paragraphs": ["Entsprechend den Kundenanforderungen stehen verschiedene Testlösungen zur Verfügung."],
+      "images": [
+        { "src": "assets/images/forging_machining1.png", "caption": "CNC-Bearbeitungszentrum" },
+        { "src": "assets/images/forging_machining2.png", "caption": "Ultraschallprüfung" }
+      ]
+    },
+    {
+      "heading": "Typische Produkte",
+      "paragraphs": ["Wir schmieden zahlreiche Komponenten für Lkw, Eisenbahnwagen, Landmaschinen usw."],
+      "images": [
+        { "src": "assets/images/forging_product1.png", "caption": "20Mn 6, Gewicht: 6,9 KG" },
+        { "src": "assets/images/forging_product2.png", "caption": "C45, Gewicht: 4,3 KG" },
+        { "src": "assets/images/forging_product3.png", "caption": "St 52-3, Gewicht: 0,8 KG" },
+        { "src": "assets/images/forging_product4.png", "caption": "30Mn5" },
+        { "src": "assets/images/forging_product5.png", "caption": "C45, Gewicht: 6 KG" },
+        { "src": "assets/images/forging_product6.png", "caption": "C45, Gewicht: 9 KG" },
+        { "src": "assets/images/forging_product7.png", "caption": "35CrMo, Gewicht: 4,5 KG" },
+        { "src": "assets/images/forging_product8.png", "caption": "42 CrMo, Gewicht: 9 KG" },
+        { "src": "assets/images/forging_product9.png", "caption": "42CrMo, Gewicht: 12 KG" },
+        { "src": "assets/images/forging_product10.png", "caption": "42CrMo, Gewicht: 8 KG" },
+        { "src": "assets/images/forging_product11.png", "caption": "42CrMo, Gewicht: 6,8 KG" },
+        { "src": "assets/images/forging_product12.png", "caption": "42CrMo, Gewicht: 6 KG" },
+        { "src": "assets/images/forging_product13.png", "caption": "42CrMo, Gewicht: 14 KG" },
+        { "src": "assets/images/forging_product14.png", "caption": "C35, Gewicht: 7,7 KG" },
+        { "src": "assets/images/forging_product15.png", "caption": "C45, Gewicht: 6,5 KG" },
+        { "src": "assets/images/forging_product16.png", "caption": "41Cr4, Gewicht: 0,6 KG" },
+        { "src": "assets/images/forging_product17.png", "caption": "41Cr4, Gewicht: 3,5 KG" },
+        { "src": "assets/images/forging_product18.png", "caption": "C45, Gewicht: 4,5 KG" },
+        { "src": "assets/images/forging_product19.png", "caption": "20CrMnTi, Gewicht: 1,4 KG" },
+        { "src": "assets/images/forging_product20.png", "caption": "30Mn5, Gewicht: 5,7 KG" },
+        { "src": "assets/images/forging_product21.png", "caption": "42CrMo4, Gewicht: 7,3 KG" },
+        { "src": "assets/images/forging_product22.png", "caption": "34CrMo4, Gewicht: 3,6 KG" },
+        { "src": "assets/images/forging_product23.png", "caption": "41Cr4, Gewicht: 3,6 KG" },
+        { "src": "assets/images/forging_product24.png", "caption": "C45, Gewicht: 4,4 KG" },
+        { "src": "assets/images/forging_product25.png", "caption": "34CrMo4, Gewicht: 8,2 KG" },
+        { "src": "assets/images/forging_product26.png", "caption": "St52-3, Gewicht: 3,2 KG" },
+        { "src": "assets/images/forging_product27.png", "caption": "20Mn6, Gewicht: 0,9 KG" },
+        { "src": "assets/images/forging_product28.png", "caption": "C45, Gewicht: 5,9 KG" }
+      ]
+    }
+  ],
+  "home": "Startseite",
+  "about": "Über uns",
+  "products": "Produkte",
+  "casting": "Guss",
+  "forging": "Schmieden",
+  "customers": "Kunden",
+  "certifications": "Zertifizierungen",
+  "download": "Download",
+  "contacts": "Kontakt"
+}

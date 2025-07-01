@@ -95,5 +95,14 @@
         { "src": "assets/images/forging_product28.png", "caption": "C45, 5.9 KG" }
       ]
     }
-  ]
+  ],
+      "home": "Home",
+      "about": "About",
+      "products": "Products",
+      "casting": "Casting",
+      "forging": "Forging",
+      "customers": "Customers",
+      "certifications": "Certifications",
+      "download": "Download",
+      "contacts": "Contacts"
 }
