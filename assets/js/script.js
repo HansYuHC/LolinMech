@@ -3,6 +3,9 @@ let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
 let currentGallery = [];
 let currentIndex = 0;
 
+const BASE_PATH = window.location.pathname.replace(/\/[^\/]*$/, '/');
+
+
 function changeLanguage(lang) {
     currentLanguage = lang;
     localStorage.setItem('preferredLanguage', lang);
@@ -37,7 +40,7 @@ function loadPage(page, forceReload = false) {
         history.replaceState(null, '', `#${currentPage}`);
     }
 
-    fetch(`locales/${currentLanguage}/${currentPage}.json?t=${Date.now()}`)
+    fetch(`${BASE_PATH}locales/${currentLanguage}/${currentPage}.json?t=${Date.now()}`)
         .then(response => response.json())
         .then(data => {
             document.title = data.pageTitle;
