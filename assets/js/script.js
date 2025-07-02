@@ -51,6 +51,7 @@ function loadPage(page, forceReload = false) {
             if (page === 'customers') {
                 document.getElementById('content').innerHTML = loadCustomersPage(data);
                 window.customersData = data.clients;
+                initCustomerPopupEvents();
             } else if (page === 'home') {
                 document.getElementById('content').innerHTML = loadHomePage(data);
             } else if (page === 'about') {
@@ -93,22 +94,61 @@ function loadCustomersPage(data) {
     return `
         <section class="customers">
             <h2 class="section-heading">${data.heading}</h2>
-
             <div class="subheading">${data.subheading}</div>
             <div class="client-grid" id="clientGrid">
                 ${data.clients.map(client => `
                     <div class="client-logo"
-                         data-client="${client.id}"
-                         onmouseenter="showClientDetails('${client.id}', event)"
-                         onmouseleave="hideClientDetails()">
+                         data-name="${client.name}"
+                         data-description="${client.description}"
+                         data-image="assets/images/customers/${client.gallery[0]}"
+                         onclick="showClientPopup(this)">
                         <img src="assets/images/customers/${client.logo}" alt="${client.name}">
                     </div>
                 `).join('')}
             </div>
-            <div id="clientDetails" class="client-details"></div>
+
+            <!-- 弹窗结构 -->
+            <div id="clientPopup" class="popup hidden">
+                <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h3 id="popup-title"></h3>
+                    <img id="popup-image" src="" alt="" />
+                    <p id="popup-description"></p>
+                </div>
+            </div>
         </section>
     `;
 }
+function showClientPopup(element) {
+    const popup = document.getElementById("clientPopup");
+    const title = document.getElementById("popup-title");
+    const description = document.getElementById("popup-description");
+    const image = document.getElementById("popup-image");
+
+    title.textContent = element.dataset.name;
+    description.textContent = element.dataset.description;
+    image.src = element.dataset.image;
+    image.alt = element.dataset.name;
+
+    popup.classList.remove("hidden");
+}
+function initCustomerPopupEvents() {
+    const popup = document.getElementById("clientPopup");
+    const closeBtn = popup.querySelector(".popup-close");
+
+    closeBtn.addEventListener("click", () => {
+        popup.classList.add("hidden");
+    });
+
+    window.addEventListener("click", (e) => {
+        // 如果点击在弹窗外部，就隐藏
+        if (!popup.querySelector(".popup-content").contains(e.target) &&
+            !e.target.closest('.client-logo')) {
+            popup.classList.add("hidden");
+        }
+    });
+}
+
 
 function showClientDetails(clientId, event) {
     const client = window.customersData.find(c => c.id === clientId);
@@ -119,7 +159,7 @@ function showClientDetails(clientId, event) {
     const imagesHTML = (client.gallery || [])
         .filter(img => img !== client.logo)
         .map(img =>
-            `<img src="assets/images/customers/${img}" alt="${client.name} product">`
+            `<img src="assets/images/customers/${img}" alt="${client.name} product" class="client-popup-image">`
         ).join('');
 
     detailsDiv.innerHTML = `
@@ -384,3 +424,30 @@ function showImageAt(index) {
     modalCaption.textContent = img.alt || '';
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const popup = document.getElementById("clientPopup");
+    const title = document.getElementById("popup-title");
+    const description = document.getElementById("popup-description");
+    const image = document.getElementById("popup-image");
+    const closeBtn = document.querySelector(".popup-close");
+
+    document.querySelectorAll(".client-logo").forEach(el => {
+        el.addEventListener("click", () => {
+            title.textContent = el.dataset.name;
+            description.textContent = el.dataset.description;
+            image.src = el.dataset.image;
+
+            popup.classList.remove("hidden");
+        });
+    });
+
+    closeBtn.addEventListener("click", () => {
+        popup.classList.add("hidden");
+    });
+
+    window.addEventListener("click", (e) => {
+        if (!popup.contains(e.target) && !e.target.closest('.client-logo')) {
+            popup.classList.add("hidden");
+        }
+    });
+});

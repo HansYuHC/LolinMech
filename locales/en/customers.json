@@ -7,7 +7,7 @@
         {
             "id": "berco",
             "name": "Berco",
-            "description": "Berco is an Italian company specializing in manufacturing undercarriage components and rubber tracks for construction, agricultural, and industrial machinery.",
+            "description": "Berco is an Italian company specializing in manufacturing undercarriage components and rubber tracks.",
             "logo": "berco.png",
             "gallery": ["berco_products_1.png"]
         },
@@ -28,21 +28,21 @@
         {
             "id": "lemken",
             "name": "Lemken",
-            "description": "Text",
+            "description": "Lemken focuses on developing innovative solutions for productive and efficient agriculture.",
             "logo": "lemken.png",
             "gallery": ["lemken_products_1.png"]
         },
         {
             "id": "nord",
             "name": "Nord",
-            "description": "Text",
+            "description": "Nord Drivesystems is a system provider of innovative drive solutions with competence in more than 100 industries.",
             "logo": "nord.png",
             "gallery": ["nord_products_1.png"]
         },
         {
             "id": "saint-gobain",
             "name": "Saint-Gobain",
-            "description": "Text",
+            "description": "Saint-Gobain is originally a mirror manufacturer, it also produces a variety of construction, high-performance, moderate-performance, lower-performance and other materials",
             "logo": "saint-gobain.png",
             "gallery": ["saint-gobain_products_1.png"]
         },
@@ -116,6 +116,6 @@
     "products": "Products",
     "customers": "Customers",
     "certifications": "Certifications",
-    "contacts": "Contacts",
-    "copyright": "© 1998-2025 Qingdao Lolin Mech Inc. All rights reserved."
+    "download": "Download",
+    "contacts": "Contacts"
 }
