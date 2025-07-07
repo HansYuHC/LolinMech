@@ -49,63 +49,63 @@
         {
             "id": "selzer",
             "name": "Selzer",
-            "description": "Text",
+            "description": "SELZER is a precision engineering company specializing in the development and production of complex metal components and assemblies for the automotive and mechanical industries.",
             "logo": "selzer.png",
             "gallery": ["selzer_products_1.png"]
         },
         {
             "id": "thyssenkrupp",
             "name": "Thyssenkrupp",
-            "description": "Text",
+            "description": "Thyssenkrupp is one of the largest steel producers in the world and its products range from machines and industrial services to high-speed trains, elevators, and shipbuilding.",
             "logo": "thyssenkrupp.png",
             "gallery": ["thyssenkrupp_products_1.png"]
         },
         {
             "id": "weber-hydraulik",
             "name": "Weber-Hydraulik",
-            "description": "Text",
+            "description": "Weber-Hydraulik primarily manufactures hydraulic components and systems for mobile work machines, commercial vehicles and machine tools.",
             "logo": "weber-hydraulik.png",
             "gallery": ["weber-hydraulik_products_1.png"]
         },
         {
             "id": "westfalia",
             "name": "Westfalia Automotive",
-            "description": "Text",
+            "description": "Westfalia Automotive, as the inventor of the ball-head trailer coupling, is now one of the world's leading manufacturers of towing devices for cars and light commercial vehicles.",
             "logo": "westfalia.png",
             "gallery": ["westfalia_products_1.png"]
         },
         {
             "id": "yanmar",
             "name": "Yanmar",
-            "description": "Text",
+            "description": "Yanmar is a japanese diesel engine, heavy machinery and agricultural machinery manufacturer",
             "logo": "yanmar.png",
             "gallery": ["yanmar_products_1.png"]
         },
         {
             "id": "cat",
             "name": "CAT",
-            "description": "Text",
+            "description": "Caterpillar Inc., also known as CAT, is an American construction, mining and other engineering equipment manufacturer.",
             "logo": "cat.png",
             "gallery": ["cat_products_1.png"]
         },
         {
             "id": "komatsu",
             "name": "Komatsu",
-            "description": "Text",
+            "description": "Komatsu is a Japanese multinational corporation that manufactures construction, mining, forestry and military heavy equipment, as well as diesel engines and industrial equipment like press machines, lasers and thermoelectric generators.",
             "logo": "komatsu.png",
             "gallery": ["komatsu_products_1.png"]
         },
         {
             "id": "kubota",
             "name": "Kubota",
-            "description": "Text",
+            "description": "Kubota produces many products including tractors and other agricultural machinery, construction equipment, engines, vending machines, pipe, valves, cast metal, pumps, and equipment for water purification, sewage treatment and air conditioning.",
             "logo": "kubota.png",
             "gallery": ["kubota_products_1.png"]
         },
         {
             "id": "tadano",
             "name": "Tadano",
-            "description": "Text",
+            "description": "Tadano is the main and largest Japan-based manufacturer of cranes and aerial work platforms, considered one of largest crane manufacturers in the world.",
             "logo": "tadano.png",
             "gallery": ["tadano_products_1.png"]
         }
