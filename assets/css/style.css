@@ -645,42 +645,67 @@ nav .dropbtn.active {
 }
 
 .modal-content {
+  position: relative;
   max-width: 90%;
   max-height: 80vh;
-  margin: auto;
+  margin: 5vh auto;
   border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  display: block;
 }
 
 .modal-caption {
   margin-top: 10px;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 16px;
 }
 
-.close-btn, .modal-prev, .modal-next {
+.modal-close {
   position: absolute;
-  top: 20px;
+  top: 8px;
+  right: 8px;
+  font-size: 28px;
   color: white;
-  font-size: 2rem;
-  font-weight: bold;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
   cursor: pointer;
-  user-select: none;
+  z-index: 10;
 }
 
-.close-btn {
-  right: 30px;
+.modal-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  font-size: 32px;
+  padding: 12px 20px;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 6px;
+  opacity: 0.95;
 }
+
+.modal-nav:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+
 
 .modal-prev {
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-}
+  left: 5%;
+  }
 
 .modal-next {
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
+  right: 5%;
 }
 
 .general-info-flex {
@@ -753,17 +778,21 @@ nav .dropbtn.active {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 32px;
-  background: none;
+  background-color: #007BFF;
+  color: white;
   border: none;
+  border-radius: 6px;
+  font-size: 24px;
+  padding: 10px 15px;
   cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.popup-prev { left: -40px; }
-.popup-next { right: -40px; }
-
-.popup-info img {
-  max-width: 100%;
-  height: auto;
-  margin: 10px 0;
+.popup-prev:hover,
+.popup-next:hover {
+  background-color: #0056b3;
 }
+
+.popup-prev { left: -60px; }
+.popup-next { right: -60px; }

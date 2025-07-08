@@ -464,6 +464,9 @@ function showImageAt(index) {
     const img = currentGallery[index];
     modalImg.src = img.dataset.full || img.src;
     modalCaption.textContent = img.alt || '';
+
+    document.querySelector('.modal-prev').disabled = index === 0;
+    document.querySelector('.modal-next').disabled = index === currentGallery.length - 1;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
