@@ -747,3 +747,23 @@ nav .dropbtn.active {
 .client-logo {
     cursor: pointer;
 }
+
+.popup-prev,
+.popup-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-prev { left: -40px; }
+.popup-next { right: -40px; }
+
+.popup-info img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}

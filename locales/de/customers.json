@@ -1,121 +1,120 @@
 {
-    "pageTitle": "Our Clients | LolinMech",
-    "welcomeHeading": "Welcome to Qingdao Lolin Mech Inc.",
-    "heading": "Unsere Kunden",
-    "subheading": "----- QINGDAO LOLIN MECH INC. -----",
-    "clients": [
-        {
-            "id": "berco",
-            "name": "Berco",
-            "description": "Berco is an Italian company specializing in manufacturing undercarriage components and rubber tracks for construction, agricultural, and industrial machinery.",
-            "logo": "berco.png",
-            "gallery": ["berco_products_1.png"]
-        },
-        {
-            "id": "kito",
-            "name": "Kito",
-            "description": "Kito is a Japanese company that manufactures and sells various types of machinery, primarily for materials handling and lifting equipment.",
-            "logo": "kito.png",
-            "gallery": ["kito_products_1.png"]
-        },
-        {
-            "id": "kverneland",
-            "name": "Kverneland",
-            "description": "Kverneland Group is an international company developing, producing and distributing agricultural implements, electronics and digital services to the farming community.",
-            "logo": "kverneland.png",
-            "gallery": ["kverneland_products_1.png"]
-        },
-        {
-            "id": "lemken",
-            "name": "Lemken",
-            "description": "Text",
-            "logo": "lemken.png",
-            "gallery": ["lemken_products_1.png"]
-        },
-        {
-            "id": "nord",
-            "name": "Nord",
-            "description": "Text",
-            "logo": "nord.png",
-            "gallery": ["nord_products_1.png"]
-        },
-        {
-            "id": "saint-gobain",
-            "name": "Saint-Gobain",
-            "description": "Text",
-            "logo": "saint-gobain.png",
-            "gallery": ["saint-gobain_products_1.png"]
-        },
-        {
-            "id": "selzer",
-            "name": "Selzer",
-            "description": "Text",
-            "logo": "selzer.png",
-            "gallery": ["selzer_products_1.png"]
-        },
-        {
-            "id": "thyssenkrupp",
-            "name": "Thyssenkrupp",
-            "description": "Text",
-            "logo": "thyssenkrupp.png",
-            "gallery": ["thyssenkrupp_products_1.png"]
-        },
-        {
-            "id": "weber-hydraulik",
-            "name": "Weber-Hydraulik",
-            "description": "Text",
-            "logo": "weber-hydraulik.png",
-            "gallery": ["weber-hydraulik_products_1.png"]
-        },
-        {
-            "id": "westfalia",
-            "name": "Westfalia Automotive",
-            "description": "Text",
-            "logo": "westfalia.png",
-            "gallery": ["westfalia_products_1.png"]
-        },
-        {
-            "id": "yanmar",
-            "name": "Yanmar",
-            "description": "Text",
-            "logo": "yanmar.png",
-            "gallery": ["yanmar_products_1.png"]
-        },
-        {
-            "id": "cat",
-            "name": "CAT",
-            "description": "Text",
-            "logo": "cat.png",
-            "gallery": ["cat_products_1.png"]
-        },
-        {
-            "id": "komatsu",
-            "name": "Komatsu",
-            "description": "Text",
-            "logo": "komatsu.png",
-            "gallery": ["komatsu_products_1.png"]
-        },
-        {
-            "id": "kubota",
-            "name": "Kubota",
-            "description": "Text",
-            "logo": "kubota.png",
-            "gallery": ["kubota_products_1.png"]
-        },
-        {
-            "id": "tadano",
-            "name": "Tadano",
-            "description": "Text",
-            "logo": "tadano.png",
-            "gallery": ["tadano_products_1.png"]
-        }
-
-    ],
-    "home": "Home",
-    "about": "About",
-    "products": "Products",
-    "customers": "Customers",
-    "certifications": "Certifications",
-    "contacts": "Contacts",
-    "copyright": "© 1998-2025 Qingdao Lolin Mech Inc. All rights reserved."
+  "pageTitle": "Unsere Kunden | LolinMech",
+  "welcomeHeading": "Willkommen bei Qingdao Lolin Mech Inc.",
+  "heading": "Unsere Kunden",
+  "subheading": "----- QINGDAO LOLIN MECH INC. -----",
+  "clients": [
+    {
+      "id": "berco",
+      "name": "Berco",
+      "description": "Berco ist ein italienisches Unternehmen, das sich auf die Herstellung von Fahrwerkskomponenten und Gummiketten spezialisiert hat.",
+      "logo": "berco.png",
+      "gallery": ["berco_products_1.png"]
+    },
+    {
+      "id": "kito",
+      "name": "Kito",
+      "description": "Kito ist ein japanisches Unternehmen, das verschiedene Arten von Maschinen herstellt und vertreibt, hauptsächlich für Materialhandhabung und Hebetechnik.",
+      "logo": "kito.png",
+      "gallery": ["kito_products_1.png"]
+    },
+    {
+      "id": "kverneland",
+      "name": "Kverneland",
+      "description": "Die Kverneland Group ist ein internationales Unternehmen, das landwirtschaftliche Geräte, Elektronik und digitale Dienstleistungen für die Landwirtschaft entwickelt, produziert und vertreibt.",
+      "logo": "kverneland.png",
+      "gallery": ["kverneland_products_1.png"]
+    },
+    {
+      "id": "lemken",
+      "name": "Lemken",
+      "description": "Lemken entwickelt innovative Lösungen für eine produktive und effiziente Landwirtschaft.",
+      "logo": "lemken.png",
+      "gallery": ["lemken_products_1.png"]
+    },
+    {
+      "id": "nord",
+      "name": "Nord",
+      "description": "Nord Drivesystems ist ein Systemanbieter für innovative Antriebslösungen mit Kompetenz in über 100 Branchen.",
+      "logo": "nord.png",
+      "gallery": ["nord_products_1.png"]
+    },
+    {
+      "id": "saint-gobain",
+      "name": "Saint-Gobain",
+      "description": "Saint-Gobain war ursprünglich ein Spiegelhersteller und produziert heute eine Vielzahl von Baustoffen mit hoher, mittlerer und niedriger Leistung sowie andere Materialien.",
+      "logo": "saint-gobain.png",
+      "gallery": ["saint-gobain_products_1.png"]
+    },
+    {
+      "id": "selzer",
+      "name": "Selzer",
+      "description": "SELZER ist ein Unternehmen für Feinmechanik, das sich auf die Entwicklung und Produktion komplexer Metallkomponenten und -baugruppen für die Automobil- und Maschinenbauindustrie spezialisiert hat.",
+      "logo": "selzer.png",
+      "gallery": ["selzer_products_1.png"]
+    },
+    {
+      "id": "thyssenkrupp",
+      "name": "Thyssenkrupp",
+      "description": "Thyssenkrupp ist einer der größten Stahlproduzenten der Welt und bietet Produkte von Maschinen und Industriedienstleistungen bis hin zu Hochgeschwindigkeitszügen, Aufzügen und Schiffbau.",
+      "logo": "thyssenkrupp.png",
+      "gallery": ["thyssenkrupp_products_1.png"]
+    },
+    {
+      "id": "weber-hydraulik",
+      "name": "Weber-Hydraulik",
+      "description": "Weber-Hydraulik stellt hauptsächlich Hydraulikkomponenten und -systeme für mobile Arbeitsmaschinen, Nutzfahrzeuge und Werkzeugmaschinen her.",
+      "logo": "weber-hydraulik.png",
+      "gallery": ["weber-hydraulik_products_1.png"]
+    },
+    {
+      "id": "westfalia",
+      "name": "Westfalia Automotive",
+      "description": "Westfalia Automotive, der Erfinder der Kugelkopf-Anhängerkupplung, ist heute einer der weltweit führenden Hersteller von Zugvorrichtungen für Pkw und leichte Nutzfahrzeuge.",
+      "logo": "westfalia.png",
+      "gallery": ["westfalia_products_1.png"]
+    },
+    {
+      "id": "yanmar",
+      "name": "Yanmar",
+      "description": "Yanmar ist ein japanischer Hersteller von Dieselmotoren, Baumaschinen und Landmaschinen.",
+      "logo": "yanmar.png",
+      "gallery": ["yanmar_products_1.png"]
+    },
+    {
+      "id": "cat",
+      "name": "CAT",
+      "description": "Caterpillar Inc., auch bekannt als CAT, ist ein amerikanischer Hersteller von Bau-, Bergbau- und anderen technischen Geräten.",
+      "logo": "cat.png",
+      "gallery": ["cat_products_1.png"]
+    },
+    {
+      "id": "komatsu",
+      "name": "Komatsu",
+      "description": "Komatsu ist ein japanischer multinationaler Konzern, der Bau-, Bergbau-, Forst- und Militärausrüstung sowie Dieselmotoren und Industrieanlagen wie Pressen, Laser und Thermogeneratoren herstellt.",
+      "logo": "komatsu.png",
+      "gallery": ["komatsu_products_1.png"]
+    },
+    {
+      "id": "kubota",
+      "name": "Kubota",
+      "description": "Kubota produziert viele Produkte, darunter Traktoren und andere Landmaschinen, Baumaschinen, Motoren, Verkaufsautomaten, Rohre, Ventile, Gussmetalle, Pumpen sowie Geräte zur Wasseraufbereitung, Abwasserbehandlung und Klimatisierung.",
+      "logo": "kubota.png",
+      "gallery": ["kubota_products_1.png"]
+    },
+    {
+      "id": "tadano",
+      "name": "Tadano",
+      "description": "Tadano ist der größte japanische Hersteller von Kranen und Arbeitsbühnen und zählt zu den größten Kranherstellern der Welt.",
+      "logo": "tadano.png",
+      "gallery": ["tadano_products_1.png"]
+    }
+  ],
+  "home": "Startseite",
+  "about": "Über Uns",
+  "products": "Produkte",
+  "customers": "Kunden",
+  "certifications": "Zertifizierungen",
+  "download": "Download",
+  "contacts": "Kontakt"
 }

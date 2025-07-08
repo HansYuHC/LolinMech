@@ -109,13 +109,18 @@ function loadCustomersPage(data) {
 
             <!-- 弹窗结构 -->
             <div id="clientPopup" class="popup hidden">
-                <div class="popup-content">
-                    <span class="popup-close">&times;</span>
-                    <h3 id="popup-title"></h3>
-                    <img id="popup-image" src="" alt="" />
-                    <p id="popup-description"></p>
+              <div class="popup-content">
+                <span class="popup-close">&times;</span>
+                <button class="popup-prev">&larr;</button>
+                <div class="popup-info">
+                  <h3 id="popup-title"></h3>
+                  <img id="popup-image" src="" alt="" />
+                  <p id="popup-description"></p>
                 </div>
+                <button class="popup-next">&rarr;</button>
+              </div>
             </div>
+
         </section>
     `;
 }
@@ -125,29 +130,66 @@ function showClientPopup(element) {
     const description = document.getElementById("popup-description");
     const image = document.getElementById("popup-image");
 
-    title.textContent = element.dataset.name;
-    description.textContent = element.dataset.description;
-    image.src = element.dataset.image;
-    image.alt = element.dataset.name;
+    // 构建 gallery 列表（所有 client-logo）
+    customerGallery = Array.from(document.querySelectorAll('.client-logo'));
+    customerIndex = customerGallery.indexOf(element);
+
+    const name = element.dataset.name;
+    const desc = element.dataset.description;
+    const imgSrc = element.dataset.image;
+
+    title.textContent = name;
+    description.textContent = desc;
+    image.src = imgSrc;
+    image.alt = name;
+
+    // ✅ 动态显示/隐藏箭头
+    const prevBtn = document.querySelector(".popup-prev");
+    const nextBtn = document.querySelector(".popup-next");
+    if (customerIndex === 0) {
+        prevBtn.style.display = 'none';
+    } else {
+        prevBtn.style.display = 'block';
+    }
+
+    if (customerIndex === customerGallery.length - 1) {
+        nextBtn.style.display = 'none';
+    } else {
+        nextBtn.style.display = 'block';
+    }
 
     popup.classList.remove("hidden");
 }
 function initCustomerPopupEvents() {
     const popup = document.getElementById("clientPopup");
     const closeBtn = popup.querySelector(".popup-close");
+    const prevBtn = popup.querySelector(".popup-prev");
+    const nextBtn = popup.querySelector(".popup-next");
 
-    closeBtn.addEventListener("click", () => {
-        popup.classList.add("hidden");
+    closeBtn.addEventListener("click", () => popup.classList.add("hidden"));
+
+    prevBtn.addEventListener("click", () => {
+        if (customerIndex > 0) {
+            customerIndex--;
+            showClientPopup(customerGallery[customerIndex]);
+        }
+    });
+
+    nextBtn.addEventListener("click", () => {
+        if (customerIndex < customerGallery.length - 1) {
+            customerIndex++;
+            showClientPopup(customerGallery[customerIndex]);
+        }
     });
 
     window.addEventListener("click", (e) => {
-        // 如果点击在弹窗外部，就隐藏
         if (!popup.querySelector(".popup-content").contains(e.target) &&
             !e.target.closest('.client-logo')) {
             popup.classList.add("hidden");
         }
     });
 }
+
 
 
 function showClientDetails(clientId, event) {
