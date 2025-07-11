@@ -101,6 +101,8 @@ function loadCustomersPage(data) {
                          data-name="${client.name}"
                          data-description="${client.description}"
                          data-image="assets/images/customers/${client.gallery[0]}"
+                         data-sample-image="${client.sampleImage ? `assets/images/customers/${client.sampleImage}` : ''}"
+                         data-sample-note="${client.sampleNote || ''}"
                          onclick="showClientPopup(this)">
                         <img src="assets/images/customers/${client.logo}" alt="${client.name}">
                     </div>
@@ -142,6 +144,30 @@ function showClientPopup(element) {
     description.textContent = desc;
     image.src = imgSrc;
     image.alt = name;
+
+    // ✅ 显示样品图和说明
+    const sampleImage = element.dataset.sampleImage;
+    const sampleNote = element.dataset.sampleNote;
+
+    // 移除旧 sample 内容
+    const oldSample = document.querySelector('.sample-section');
+    if (oldSample) oldSample.remove();
+
+    // 创建新 sample 内容
+    if (sampleImage || sampleNote) {
+        const sampleDiv = document.createElement('div');
+        sampleDiv.className = 'sample-section';
+
+        if (sampleImage) {
+            sampleDiv.innerHTML += `<img class="client-sample-image" src="${sampleImage}" alt="Sample for ${name}">`;
+        }
+
+        if (sampleNote) {
+            sampleDiv.innerHTML += `<p class="sample-note"><span class="bold-arrow">➡️</span>: <strong>${sampleNote}</strong></p>`;
+        }
+
+        document.querySelector('.popup-content').appendChild(sampleDiv);
+    }
 
     // ✅ 动态显示/隐藏箭头
     const prevBtn = document.querySelector(".popup-prev");

@@ -796,3 +796,102 @@ nav .dropbtn.active {
 
 .popup-prev { left: -60px; }
 .popup-next { right: -60px; }
+
+
+/* 包裹 heading 和动画 logo 的容器 */
+.welcome-banner {
+   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* heading 样式 */
+.welcome-heading-text {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* 左右 logo 基础容器 */
+.moving-logo {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  z-index: 50;
+  overflow: visible;
+  margin-top: 40px;
+  pointer-events: none;
+}
+.moving-logo * {
+  pointer-events: none !important;
+}
+
+/* 统一动画配置 */
+.moving-logo img {
+  width: 100%;
+  height: auto;
+  animation: float-logo 3s ease-in-out infinite alternate;
+}
+
+/* 左右方向独立动画 */
+.left-logo img {
+  animation-name: float-left;
+}
+
+.right-logo img {
+  animation-name: float-right;
+}
+
+@keyframes float-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes float-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.sample-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.client-sample-image {
+  max-width: 90%;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.sample-note {
+   margin-top: 12px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  text-align: left; /* 左对齐 */
+  padding-left: 10px; /* 轻微缩进可选 */
+}
+
+.bold-arrow {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 6px;
+}
+

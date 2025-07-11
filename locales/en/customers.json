@@ -9,14 +9,18 @@
             "name": "Berco",
             "description": "Berco is an Italian company specializing in manufacturing undercarriage components and rubber tracks.",
             "logo": "berco.png",
-            "gallery": ["berco_products_1.png"]
+            "gallery": ["berco_products_1.png"],
+            "sampleImage": "berco_sample.png",
+            "sampleNote": "Qingdao lolin supplied ADI sprockets and track rollers to Berco."
         },
         {
             "id": "kito",
             "name": "Kito",
             "description": "Kito is a Japanese company that manufactures and sells various types of machinery, primarily for materials handling and lifting equipment.",
             "logo": "kito.png",
-            "gallery": ["kito_products_1.png"]
+            "gallery": ["kito_products_1.png"],
+            "sampleImage": "kito_samplel.png",
+            "sampleNote": "Qingdao lolin supplied ADI sprockets and track rollers to Berco."
         },
         {
             "id": "kverneland",
