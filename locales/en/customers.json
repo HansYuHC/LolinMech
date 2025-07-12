@@ -20,7 +20,7 @@
             "logo": "kito.png",
             "gallery": ["kito_products_1.png"],
             "sampleImage": "kito_samplel.png",
-            "sampleNote": "Qingdao lolin supplied ADI sprockets and track rollers to Berco."
+            "sampleNote": "Qingdao lolin supplied parts of lifting hoists to Kito. Until now, we have developed more than 60 different kinds of casting and forming parts for Kito in Japan."
         },
         {
             "id": "kverneland",
@@ -69,7 +69,9 @@
             "name": "Weber-Hydraulik",
             "description": "Weber-Hydraulik primarily manufactures hydraulic components and systems for mobile work machines, commercial vehicles and machine tools.",
             "logo": "weber-hydraulik.png",
-            "gallery": ["weber-hydraulik_products_1.png"]
+            "gallery": ["weber-hydraulik_products_1.png"],
+            "sampleImage": "weber_sample.png",
+            "sampleNote": "Qingdao lolin supplied castings for the hydraulic cylinder system to Weber-Hydraulik with material of GJS 400 and green sand casting."
         },
         {
             "id": "westfalia",
@@ -90,7 +92,9 @@
             "name": "CAT",
             "description": "Caterpillar Inc., also known as CAT, is an American construction, mining and other engineering equipment manufacturer.",
             "logo": "cat.png",
-            "gallery": ["cat_products_1.png"]
+            "gallery": ["cat_products_1.png"],
+            "sampleImage": "cat_sample.png",
+            "sampleNote": "Qingdao lolin supplied wheel loader foot pedals (with materials of GJS 450 and green sand casting process) to Caterpillar."
         },
         {
             "id": "komatsu",
@@ -104,7 +108,10 @@
             "name": "Kubota",
             "description": "Kubota produces many products including tractors and other agricultural machinery, construction equipment, engines, vending machines, pipe, valves, cast metal, pumps, and equipment for water purification, sewage treatment and air conditioning.",
             "logo": "kubota.png",
-            "gallery": ["kubota_products_1.png"]
+            "gallery": ["kubota_products_1.png"],
+            "sampleImage": "kubota_sample.png",
+            "sampleNote": "Qingdao lolin supplied excavator bracket link parts (also known as swing post) to Kubota, with material of GJS 500-7."
+
         },
         {
             "id": "tadano",
