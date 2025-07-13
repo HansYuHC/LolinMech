@@ -33,11 +33,11 @@
         "✅ Core-making shop:--> 16 units cold/warm box machines with maximum core weight 100 kg for each pc."
       ],
       "images": [
-        { "src": "assets/images/foundry1.png", "caption": "<strong>Melting Furnace</strong>: medium-frequency induction furnace. 1 unit with 5 tons/hr., 6 units with 3 tons/hr., 2 units with 1.5 tons/hr. and 2 units with 1 ton/hr." },
-        { "src": "assets/images/foundry2.png", "caption": "<strong>Moulding Lines</strong>: one set TOKYU (Japan made) automatic moulding line, with flask size 750x650mm, 100 flasks/hr."},
-        { "src": "assets/images/foundry3.png", "caption": "<strong>Moulding Lines</strong>: two sets TOKYU (Japan made) automatic moulding line, with flask size 650x500mm,100 flasks/hr."},
-        { "src": "assets/images/foundry3-1.png", "caption": "<strong>Moulding Lines</strong>: One set shell molding line, with flask size 1200x1000mm,30 flasks/hr."},
-        { "src": "assets/images/foundry3-2.png", "caption": "<strong>Moulding Lines</strong>: One set TYPE 148 HIGH PRESSURE MOULDING LINE, flask size 850x750mm,20 flasks/hr."},
+        { "src": "assets/images/foundry1.png", "caption": "Melting Furnace: medium-frequency induction furnace. 1 unit with 5 tons/hr., 6 units with 3 tons/hr., 2 units with 1.5 tons/hr. and 2 units with 1 ton/hr." },
+        { "src": "assets/images/foundry2.png", "caption": "Moulding Lines: one set TOKYU (Japan made) automatic moulding line, with flask size 750x650mm, 100 flasks/hr."},
+        { "src": "assets/images/foundry3.png", "caption": "Moulding Lines: two sets TOKYU (Japan made) automatic moulding line, with flask size 650x500mm,100 flasks/hr."},
+        { "src": "assets/images/foundry3-1.png", "caption": "Moulding Lines: One set shell molding line, with flask size 1200x1000mm,30 flasks/hr."},
+        { "src": "assets/images/foundry3-2.png", "caption": "Moulding Lines: One set TYPE 148 HIGH PRESSURE MOULDING LINE, flask size 850x750mm,20 flasks/hr."},
         { "src": "assets/images/foundry4.png", "caption": "automatic feeder"},
         { "src": "assets/images/foundry5.png", "caption": "automatic casting"},
         { "src": "assets/images/foundry6.png", "caption": "wireless data transmission"},

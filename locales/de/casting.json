@@ -36,23 +36,23 @@
       "images": [
         {
           "src": "assets/images/foundry1.png",
-          "caption": "<strong>Schmelzofen</strong>: Mittelfrequenz-Induktionsofen. 1x 5 t/h, 6x 3 t/h, 2x 1,5 t/h, 2x 1 t/h"
+          "caption": "Schmelzofen: Mittelfrequenz-Induktionsofen. 1x 5 t/h, 6x 3 t/h, 2x 1,5 t/h, 2x 1 t/h"
         },
         {
           "src": "assets/images/foundry2.png",
-          "caption": "<strong>Formanlagen</strong>: TOKYU (Japan), automatische Anlage, Formgröße 750x650 mm, 100 Kästen/h"
+          "caption": "Formanlagen: TOKYU (Japan), automatische Anlage, Formgröße 750x650 mm, 100 Kästen/h"
         },
         {
           "src": "assets/images/foundry3.png",
-          "caption": "<strong>Formanlagen</strong>: Zwei TOKYU-Anlagen, Formgröße 650x500 mm, 100 Kästen/h"
+          "caption": "Formanlagen: Zwei TOKYU-Anlagen, Formgröße 650x500 mm, 100 Kästen/h"
         },
         {
           "src": "assets/images/foundry3-1.png",
-          "caption": "<strong>Schalenformanlage</strong>: Formgröße 1200x1000 mm, 30 Kästen/h"
+          "caption": "Schalenformanlage: Formgröße 1200x1000 mm, 30 Kästen/h"
         },
         {
           "src": "assets/images/foundry3-2.png",
-          "caption": "<strong>Hochdruckformanlage</strong>: Typ 148, Formgröße 850x750 mm, 20 Kästen/h"
+          "caption": "Hochdruckformanlage: Typ 148, Formgröße 850x750 mm, 20 Kästen/h"
         },
         { "src": "assets/images/foundry4.png", "caption": "Automatischer Einfüller" },
         { "src": "assets/images/foundry5.png", "caption": "Automatischer Guss" },
