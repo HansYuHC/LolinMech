@@ -3,20 +3,31 @@
   "welcomeHeading": "Willkommen bei Qingdao Lolin Mech Inc.",
   "heading": "Unsere Kunden",
   "subheading": "----- QINGDAO LOLIN MECH INC. -----",
+  "home": "Startseite",
+  "about": "Über uns",
+  "products": "Produkte",
+  "customers": "Kunden",
+  "certifications": "Zertifizierungen",
+  "download": "Download",
+  "contacts": "Kontakt",
   "clients": [
     {
       "id": "berco",
       "name": "Berco",
       "description": "Berco ist ein italienisches Unternehmen, das sich auf die Herstellung von Fahrwerkskomponenten und Gummiketten spezialisiert hat.",
       "logo": "berco.png",
-      "gallery": ["berco_products_1.png"]
+      "gallery": ["berco_products_1.png"],
+      "sampleImage": "berco_sample.png",
+      "sampleNote": "Qingdao Lolin lieferte ADI-Kettenräder und Laufrollen an Berco."
     },
     {
       "id": "kito",
       "name": "Kito",
-      "description": "Kito ist ein japanisches Unternehmen, das verschiedene Arten von Maschinen herstellt und vertreibt, hauptsächlich für Materialhandhabung und Hebetechnik.",
+      "description": "Kito ist ein japanisches Unternehmen, das verschiedene Maschinen herstellt und verkauft, vor allem für Materialhandhabung und Hebezeuge.",
       "logo": "kito.png",
-      "gallery": ["kito_products_1.png"]
+      "gallery": ["kito_products_1.png"],
+      "sampleImage": "kito_samplel.png",
+      "sampleNote": "Qingdao Lolin lieferte Teile für Hebezeuge an Kito. Bis heute haben wir über 60 verschiedene Guss- und Umformteile für Kito in Japan entwickelt."
     },
     {
       "id": "kverneland",
@@ -28,7 +39,7 @@
     {
       "id": "lemken",
       "name": "Lemken",
-      "description": "Lemken entwickelt innovative Lösungen für eine produktive und effiziente Landwirtschaft.",
+      "description": "Lemken konzentriert sich auf die Entwicklung innovativer Lösungen für eine produktive und effiziente Landwirtschaft.",
       "logo": "lemken.png",
       "gallery": ["lemken_products_1.png"]
     },
@@ -42,21 +53,21 @@
     {
       "id": "saint-gobain",
       "name": "Saint-Gobain",
-      "description": "Saint-Gobain war ursprünglich ein Spiegelhersteller und produziert heute eine Vielzahl von Baustoffen mit hoher, mittlerer und niedriger Leistung sowie andere Materialien.",
+      "description": "Saint-Gobain war ursprünglich ein Spiegelhersteller und produziert heute eine Vielzahl an Bau- und Hochleistungswerkstoffen.",
       "logo": "saint-gobain.png",
       "gallery": ["saint-gobain_products_1.png"]
     },
     {
       "id": "selzer",
       "name": "Selzer",
-      "description": "SELZER ist ein Unternehmen für Feinmechanik, das sich auf die Entwicklung und Produktion komplexer Metallkomponenten und -baugruppen für die Automobil- und Maschinenbauindustrie spezialisiert hat.",
+      "description": "SELZER ist ein Unternehmen der Feinmechanik und spezialisiert auf die Entwicklung und Produktion komplexer Metallkomponenten und Baugruppen für die Automobil- und Maschinenbauindustrie.",
       "logo": "selzer.png",
       "gallery": ["selzer_products_1.png"]
     },
     {
       "id": "thyssenkrupp",
       "name": "Thyssenkrupp",
-      "description": "Thyssenkrupp ist einer der größten Stahlproduzenten der Welt und bietet Produkte von Maschinen und Industriedienstleistungen bis hin zu Hochgeschwindigkeitszügen, Aufzügen und Schiffbau.",
+      "description": "Thyssenkrupp ist einer der größten Stahlproduzenten der Welt und stellt Produkte von Maschinen und Industriedienstleistungen bis hin zu Hochgeschwindigkeitszügen, Aufzügen und Schiffbau her.",
       "logo": "thyssenkrupp.png",
       "gallery": ["thyssenkrupp_products_1.png"]
     },
@@ -65,56 +76,55 @@
       "name": "Weber-Hydraulik",
       "description": "Weber-Hydraulik stellt hauptsächlich Hydraulikkomponenten und -systeme für mobile Arbeitsmaschinen, Nutzfahrzeuge und Werkzeugmaschinen her.",
       "logo": "weber-hydraulik.png",
-      "gallery": ["weber-hydraulik_products_1.png"]
+      "gallery": ["weber-hydraulik_products_1.png"],
+      "sampleImage": "weber_sample.png",
+      "sampleNote": "Qingdao Lolin lieferte Gussteile für das Hydraulikzylindersystem an Weber-Hydraulik mit dem Werkstoff GJS 400 und dem Grünsandgussverfahren."
     },
     {
       "id": "westfalia",
       "name": "Westfalia Automotive",
-      "description": "Westfalia Automotive, der Erfinder der Kugelkopf-Anhängerkupplung, ist heute einer der weltweit führenden Hersteller von Zugvorrichtungen für Pkw und leichte Nutzfahrzeuge.",
+      "description": "Westfalia Automotive, als Erfinder der Kugelkopf-Anhängerkupplung, ist heute einer der weltweit führenden Hersteller von Anhängervorrichtungen für PKW und leichte Nutzfahrzeuge.",
       "logo": "westfalia.png",
       "gallery": ["westfalia_products_1.png"]
     },
     {
       "id": "yanmar",
       "name": "Yanmar",
-      "description": "Yanmar ist ein japanischer Hersteller von Dieselmotoren, Baumaschinen und Landmaschinen.",
+      "description": "Yanmar ist ein japanischer Hersteller von Dieselmotoren, schweren Maschinen und landwirtschaftlichen Geräten.",
       "logo": "yanmar.png",
       "gallery": ["yanmar_products_1.png"]
     },
     {
       "id": "cat",
       "name": "CAT",
-      "description": "Caterpillar Inc., auch bekannt als CAT, ist ein amerikanischer Hersteller von Bau-, Bergbau- und anderen technischen Geräten.",
+      "description": "Caterpillar Inc., auch bekannt als CAT, ist ein amerikanischer Hersteller von Bau-, Bergbau- und anderen Ingenieurgeräten.",
       "logo": "cat.png",
-      "gallery": ["cat_products_1.png"]
+      "gallery": ["cat_products_1.png"],
+      "sampleImage": "cat_sample.png",
+      "sampleNote": "Qingdao Lolin lieferte Fußpedale für Radlader (mit Werkstoff GJS 450 und Grünsandgussverfahren) an Caterpillar."
     },
     {
       "id": "komatsu",
       "name": "Komatsu",
-      "description": "Komatsu ist ein japanischer multinationaler Konzern, der Bau-, Bergbau-, Forst- und Militärausrüstung sowie Dieselmotoren und Industrieanlagen wie Pressen, Laser und Thermogeneratoren herstellt.",
+      "description": "Komatsu ist ein japanischer multinationaler Konzern, der Bau-, Bergbau-, Forst- und Militärmaschinen sowie Dieselmotoren und industrielle Geräte wie Pressen, Laser und thermoelektrische Generatoren herstellt.",
       "logo": "komatsu.png",
       "gallery": ["komatsu_products_1.png"]
     },
     {
       "id": "kubota",
       "name": "Kubota",
-      "description": "Kubota produziert viele Produkte, darunter Traktoren und andere Landmaschinen, Baumaschinen, Motoren, Verkaufsautomaten, Rohre, Ventile, Gussmetalle, Pumpen sowie Geräte zur Wasseraufbereitung, Abwasserbehandlung und Klimatisierung.",
+      "description": "Kubota stellt viele Produkte her, darunter Traktoren und andere landwirtschaftliche Maschinen, Baumaschinen, Motoren, Verkaufsautomaten, Rohrleitungen, Ventile, Gussteile, Pumpen sowie Anlagen zur Wasseraufbereitung, Abwasserbehandlung und Klimatisierung.",
       "logo": "kubota.png",
-      "gallery": ["kubota_products_1.png"]
+      "gallery": ["kubota_products_1.png"],
+      "sampleImage": "kubota_sample.png",
+      "sampleNote": "Qingdao Lolin lieferte Baggergelenkverbindungsstücke (auch bekannt als Schwenkpfosten) an Kubota, aus dem Werkstoff GJS 500-7."
     },
     {
       "id": "tadano",
       "name": "Tadano",
-      "description": "Tadano ist der größte japanische Hersteller von Kranen und Arbeitsbühnen und zählt zu den größten Kranherstellern der Welt.",
+      "description": "Tadano ist der größte japanische Hersteller von Kränen und Arbeitsbühnen und gilt als einer der weltweit führenden Kranhersteller.",
       "logo": "tadano.png",
       "gallery": ["tadano_products_1.png"]
     }
-  ],
-  "home": "Startseite",
-  "about": "Über Uns",
-  "products": "Produkte",
-  "customers": "Kunden",
-  "certifications": "Zertifizierungen",
-  "download": "Download",
-  "contacts": "Kontakt"
+  ]
 }
