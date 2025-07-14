@@ -17,6 +17,20 @@ function changeLanguage(lang) {
     console.log('💬 Changing language to:', lang, '| currentPage:', currentPage, '| hashPage:', hashPage, '| safePage:', safePage);
 
     loadPage(safePage, true);  // 强制刷新
+    updateGlobalLangKeys();
+}
+
+function updateGlobalLangKeys() {
+    fetch(`${BASE_PATH}locales/${currentLanguage}/global.json?t=${Date.now()}`)
+        .then(response => response.json())
+        .then(data => {
+            document.querySelectorAll('[data-lang-key]').forEach(el => {
+                const key = el.getAttribute('data-lang-key');
+                if (data[key]) {
+                    el.innerHTML = data[key];
+                }
+            });
+        });
 }
 
 
@@ -63,6 +77,22 @@ function loadPage(page, forceReload = false) {
             } else if (page === 'forging') {
                 document.getElementById('content').innerHTML = loadStructuredPage(data);
             }
+            else if (page === 'datenschutz') {
+                const sectionsHtml = (data.sections || []).map(section => `
+                    <div class="privacy-section">
+                        <h3>${section.title}</h3>
+                        <p>${section.content.replace(/\n/g, "<br>")}</p>
+                    </div>
+                `).join('');
+
+                document.getElementById('content').innerHTML = `
+                    <div class="privacy-page">
+                        <h2>${data.heading}</h2>
+                        <p>${data.welcomeText}</p>
+                        ${sectionsHtml}
+                    </div>
+                `;
+            }
             else {
                 const paragraphs = data.welcomeText
                     .split("\n\n")
@@ -88,7 +118,27 @@ function loadPage(page, forceReload = false) {
 
     highlightActiveMenu(currentPage);
 
+    updateFooterLanguage();
 }
+
+function updateFooterLanguage() {
+    const footerKeys = document.querySelectorAll("footer [data-lang-key]");
+    fetch(`${BASE_PATH}locales/${currentLanguage}/global.json?t=${Date.now()}`)
+        .then(res => res.json())
+        .then(global => {
+            footerKeys.forEach(el => {
+                const key = el.getAttribute("data-lang-key");
+                if (global[key]) {
+                    if (global[key].includes('<a') || global[key].includes('</')) {
+                        el.innerHTML = global[key];
+                    } else {
+                        el.textContent = global[key];
+                    }
+                }
+            });
+        });
+}
+
 
 function loadCustomersPage(data) {
     return `

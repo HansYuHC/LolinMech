@@ -908,3 +908,30 @@ nav .dropbtn.active {
   margin-right: 6px;
 }
 
+.privacy-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.privacy-page h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.privacy-section {
+    margin-bottom: 2em;
+}
+
+.privacy-section h3 {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 0.5em;
+}
+
+.privacy-section p {
+    margin-left: 1em;
+    color: #222;
+}
+

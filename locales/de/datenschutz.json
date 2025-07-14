@@ -1,0 +1,37 @@
+{
+  "pageTitle": "Datenschutzerklärung | Qingdao Lolin Mech Inc.",
+  "welcomeHeading": "Willkommen bei Qingdao Lolin Mech Inc.",
+  "heading": "Datenschutzerklärung",
+  "welcomeText": "Wir freuen uns über Ihr Interesse an unserem Unternehmen. Der Schutz Ihrer personenbezogenen Daten ist uns ein wichtiges Anliegen. Nachfolgend informieren wir Sie über die Verarbeitung Ihrer Daten im Rahmen der Nutzung unserer Website.",
+  "privacy": "Datenschutzerklärung",
+  "sections": [
+    {
+      "title": "1. Verantwortlicher",
+      "content": "Qingdao Lolin Mech Inc.\nAdresse: 34-3-202, Luxin Spring Garden, No. 1 East Yinchuan Road, Qingdao, China\nE-Mail: yulin@lolinmetals.com\nTelefon: +86-532-81928971"
+    },
+    {
+      "title": "2. Erhebung und Verarbeitung personenbezogener Daten",
+      "content": "Wir erheben personenbezogene Daten nur, wenn Sie uns diese freiwillig mitteilen, z. B. durch das Ausfüllen eines Kontaktformulars oder durch eine E-Mail-Anfrage."
+    },
+    {
+      "title": "3. Cookies",
+      "content": "Diese Website verwendet technisch notwendige Cookies. Diese dienen der Benutzerfreundlichkeit und werden nicht für Tracking-Zwecke verwendet. Es werden keine personenbezogenen Daten über Cookies gespeichert."
+    },
+    {
+      "title": "4. Server-Logfiles",
+      "content": "Beim Besuch dieser Website werden automatisch Informationen durch den Provider in sogenannten Server-Logfiles gespeichert. Dazu gehören z. B. Browsertyp, Betriebssystem, IP-Adresse und Uhrzeit des Zugriffs. Diese Daten dienen ausschließlich statistischen Auswertungen und zur Gewährleistung des sicheren Betriebs."
+    },
+    {
+      "title": "5. Weitergabe an Dritte",
+      "content": "Eine Weitergabe Ihrer Daten an Dritte erfolgt nicht, es sei denn, dies ist gesetzlich vorgeschrieben oder zur Durchführung eines Vertrags erforderlich."
+    },
+    {
+      "title": "6. Ihre Rechte",
+      "content": "Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung. Ebenso haben Sie das Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Kontaktieren Sie uns hierzu bitte unter yulin@lolinmetals.com."
+    },
+    {
+      "title": "7. Änderungen dieser Datenschutzerklärung",
+      "content": "Wir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht."
+    }
+  ]
+}
