@@ -935,3 +935,31 @@ nav .dropbtn.active {
     color: #222;
 }
 
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  z-index: 9999;
+  display: none;
+}
+
+.cookie-banner p {
+  white-space: pre-line;
+}
+
+
+.cookie-banner button {
+  margin-left: 20px;
+  padding: 6px 14px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}

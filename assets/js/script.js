@@ -18,6 +18,12 @@ function changeLanguage(lang) {
 
     loadPage(safePage, true);  // 强制刷新
     updateGlobalLangKeys();
+
+    // ✅ 切换语言后更新 cookie 弹窗语言
+    if (typeof window.cookieconsent !== 'undefined') {
+        initCookieConsent();
+    }
+
 }
 
 function updateGlobalLangKeys() {
@@ -489,6 +495,20 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPage = hashPage;  // 👈 更新全局变量！
         console.log('📌 DOMContentLoaded | currentPage =', currentPage, '| currentLanguage =', currentLanguage);
         loadPage(currentPage);
+
+        // Cookie banner logic (session-based)
+        const cookieBanner = document.getElementById("cookie-banner");
+        const acceptBtn = document.getElementById("acceptCookies");
+
+        if (!sessionStorage.getItem("cookiesAccepted")) {
+            cookieBanner.style.display = "block";
+        }
+
+        acceptBtn.addEventListener("click", () => {
+            cookieBanner.style.display = "none";
+            sessionStorage.setItem("cookiesAccepted", "true");
+        });
+
     });
 
 // ✅ 当 hash 变化时（如浏览器前进/后退），自动加载对应页面

@@ -125,5 +125,7 @@
       "customers": "Customers",
       "certifications": "Certifications",
       "download": "Download",
-      "contacts": "Contacts"
+      "contacts": "Contacts",
+  "cookieMessage": "This website does not use cookies for tracking or analytics purposes. \nNo personal data is collected, stored, or shared. By continuing to use the site, you acknowledge this.",
+      "acceptCookies": "Got it"
 }

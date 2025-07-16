@@ -64,5 +64,7 @@
       "customers": "Kunden",
       "certifications": "Zertifizierungen",
       "download": "Download",
-      "contacts": "Kontakt"
+      "contacts": "Kontakt",
+  "cookieMessage": "Diese Website verwendet keine Cookies für Tracking- oder Analysezwecke. Es werden keine personenbezogenen Daten erfasst, gespeichert oder weitergegeben. Mit der weiteren Nutzung der Seite erkennen Sie dies an.",
+      "acceptCookies": "Verstanden"
 }
