@@ -2,36 +2,48 @@
   "pageTitle": "Privacy Policy | Qingdao Lolin Mech Inc.",
   "welcomeHeading": "Welcome to Qingdao Lolin Mech Inc.",
   "heading": "Privacy Policy",
-  "welcomeText": "We take the protection of your personal data seriously. This Privacy Policy explains what data we collect, how we use it, and what rights you have regarding your data when using our website.",
+  "welcomeText": "We take the protection of your personal data seriously. This Privacy Policy outlines the types of data we may collect, the purpose for which it is used, and your rights regarding your data when using our website.",
   "privacy": "Privacy Policy",
   "sections": [
     {
-      "title": "1. Controller",
-      "content": "Qingdao Lolin Mech Inc.\nAddress: 34-3-202, Luxin Spring Garden, No. 1 East Yinchuan Road, Qingdao, China\nEmail: haichuanyu@lolinmetals.com\nPhone: +86-532-81928971"
+      "title": "1. Controller Information",
+      "content": "Company: Qingdao Lolin Mech Inc.\nAddress: 34-3-202, Luxin Spring Garden, No. 1 East Yinchuan Road, Qingdao, China\nEmail: haichuanyu@lolinmetals.com\nPhone: +86-532-81928971"
     },
     {
-      "title": "2. Collection and Processing of Personal Data",
-      "content": "We only collect personal data if you voluntarily provide it to us, for example via a contact form or by sending us an email."
+      "title": "2. Scope of Application",
+      "content": "This Privacy Policy applies to the use of our website and the services provided through it. It does not apply to any third-party websites that may be linked to from our site."
     },
     {
-      "title": "3. Cookies",
-      "content": "This website uses only essential cookies that are necessary for the basic functionality of the site. No tracking cookies are used, and no personal data is stored via cookies."
+      "title": "3. Data We Do Not Collect",
+      "content": "Our website is purely informational. We do not collect any personal data such as names, email addresses, or IP addresses for marketing or analytics purposes. There are no contact forms, newsletter subscriptions, or user accounts."
     },
     {
-      "title": "4. Server Log Files",
-      "content": "When visiting this website, information such as browser type, operating system, IP address, and access time is automatically stored in server log files. This data is used only for statistical purposes and to ensure system security."
+      "title": "4. Cookies",
+      "content": "This website uses only technically essential cookies. These are required to ensure proper display and functionality of the website. We do not use cookies for tracking, analytics, or advertising. No personal data is stored or shared via cookies."
     },
     {
-      "title": "5. Sharing with Third Parties",
-      "content": "We do not share your data with third parties unless required by law or necessary to fulfill a contract."
+      "title": "5. Server Log Files",
+      "content": "When visiting the website, the hosting provider may automatically collect certain technical information (e.g., browser type, operating system, referring URL, access time) and store it in server log files. This data is anonymized and is used solely for technical monitoring and security purposes."
     },
     {
-      "title": "6. Your Rights",
-      "content": "You have the right to request information about the data we store about you, its origin and recipients, and the purpose of data processing. You may also request correction, blocking, or deletion of your data at any time. Please contact us at haichuanyu@lolinmetals.com."
+      "title": "6. No Sharing with Third Parties",
+      "content": "We do not sell, rent, or share your personal data with any third parties unless required by law or legal proceedings."
     },
     {
-      "title": "7. Changes to this Privacy Policy",
-      "content": "We reserve the right to update this Privacy Policy occasionally to comply with current legal requirements."
+      "title": "7. Data Security",
+      "content": "We take reasonable technical and organizational measures to ensure your data is protected from unauthorized access, modification, or disclosure. However, since our website does not store or process personal data, there is minimal risk to your data privacy."
+    },
+    {
+      "title": "8. International Data Transfers",
+      "content": "As our servers may be located outside of your home country, technical data may be transferred internationally. However, since we do not collect personal data, no personally identifiable information is involved in such transfers."
+    },
+    {
+      "title": "9. Your Rights",
+      "content": "Even though we do not store personal data, you have the right to request information about any data that may be associated with you, and to request correction or deletion where applicable. You can contact us at haichuanyu@lolinmetals.com."
+    },
+    {
+      "title": "10. Updates to this Policy",
+      "content": "We may update this Privacy Policy occasionally to reflect legal changes or improve clarity. Please review this page periodically for the latest information."
     }
   ]
 }

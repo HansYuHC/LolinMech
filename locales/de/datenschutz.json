@@ -2,36 +2,48 @@
   "pageTitle": "Datenschutzerklärung | Qingdao Lolin Mech Inc.",
   "welcomeHeading": "Willkommen bei Qingdao Lolin Mech Inc.",
   "heading": "Datenschutzerklärung",
-  "welcomeText": "Wir freuen uns über Ihr Interesse an unserem Unternehmen. Der Schutz Ihrer personenbezogenen Daten ist uns ein wichtiges Anliegen. Nachfolgend informieren wir Sie über die Verarbeitung Ihrer Daten im Rahmen der Nutzung unserer Website.",
+  "welcomeText": "Wir nehmen den Schutz Ihrer personenbezogenen Daten sehr ernst. Diese Datenschutzerklärung erläutert, welche Daten wir möglicherweise erheben, zu welchem Zweck sie verwendet werden und welche Rechte Sie in Bezug auf Ihre Daten beim Besuch unserer Website haben.",
   "privacy": "Datenschutzerklärung",
   "sections": [
     {
-      "title": "1. Verantwortlicher",
-      "content": "Qingdao Lolin Mech Inc.\nAdresse: 34-3-202, Luxin Spring Garden, No. 1 East Yinchuan Road, Qingdao, China\nE-Mail: haichuanyu@lolinmetals.com\nTelefon: +86-532-81928971"
+      "title": "1. Verantwortliche Stelle",
+      "content": "Unternehmen: Qingdao Lolin Mech Inc.\nAdresse: 34-3-202, Luxin Spring Garden, Nr. 1 East Yinchuan Road, Qingdao, China\nE-Mail: haichuanyu@lolinmetals.com\nTelefon: +86-532-81928971"
     },
     {
-      "title": "2. Erhebung und Verarbeitung personenbezogener Daten",
-      "content": "Wir erheben personenbezogene Daten nur, wenn Sie uns diese freiwillig mitteilen, z. B. durch das Ausfüllen eines Kontaktformulars oder durch eine E-Mail-Anfrage."
+      "title": "2. Geltungsbereich",
+      "content": "Diese Datenschutzerklärung gilt für die Nutzung unserer Website und die darüber bereitgestellten Dienste. Sie gilt nicht für Webseiten Dritter, auf die von unserer Website aus verlinkt werden kann."
     },
     {
-      "title": "3. Cookies",
-      "content": "Diese Website verwendet technisch notwendige Cookies. Diese dienen der Benutzerfreundlichkeit und werden nicht für Tracking-Zwecke verwendet. Es werden keine personenbezogenen Daten über Cookies gespeichert."
+      "title": "3. Keine Datenerhebung",
+      "content": "Unsere Website dient ausschließlich Informationszwecken. Es werden keine personenbezogenen Daten wie Namen, E-Mail-Adressen oder IP-Adressen zu Marketing- oder Analysezwecken erhoben. Es gibt keine Kontaktformulare, Newsletter-Anmeldungen oder Benutzerkonten."
     },
     {
-      "title": "4. Server-Logfiles",
-      "content": "Beim Besuch dieser Website werden automatisch Informationen durch den Provider in sogenannten Server-Logfiles gespeichert. Dazu gehören z. B. Browsertyp, Betriebssystem, IP-Adresse und Uhrzeit des Zugriffs. Diese Daten dienen ausschließlich statistischen Auswertungen und zur Gewährleistung des sicheren Betriebs."
+      "title": "4. Cookies",
+      "content": "Diese Website verwendet ausschließlich technisch notwendige Cookies. Diese sind erforderlich, um die ordnungsgemäße Darstellung und Funktionalität der Website zu gewährleisten. Es werden keine Cookies für Tracking, Analyse oder Werbung eingesetzt. Es werden keine personenbezogenen Daten über Cookies gespeichert oder weitergegeben."
     },
     {
-      "title": "5. Weitergabe an Dritte",
-      "content": "Eine Weitergabe Ihrer Daten an Dritte erfolgt nicht, es sei denn, dies ist gesetzlich vorgeschrieben oder zur Durchführung eines Vertrags erforderlich."
+      "title": "5. Server-Logfiles",
+      "content": "Beim Besuch der Website kann der Hosting-Provider automatisch bestimmte technische Informationen erfassen (z. B. Browsertyp, Betriebssystem, verweisende URL, Zugriffszeit) und in Server-Logfiles speichern. Diese Daten werden anonymisiert und ausschließlich zur technischen Überwachung sowie zur Gewährleistung der Sicherheit verwendet."
     },
     {
-      "title": "6. Ihre Rechte",
-      "content": "Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung. Ebenso haben Sie das Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Kontaktieren Sie uns hierzu bitte unter haichuanyu@lolinmetals.com."
+      "title": "6. Keine Weitergabe an Dritte",
+      "content": "Wir verkaufen, vermieten oder teilen Ihre personenbezogenen Daten nicht mit Dritten, es sei denn, dies ist gesetzlich vorgeschrieben oder im Rahmen eines rechtlichen Verfahrens erforderlich."
     },
     {
-      "title": "7. Änderungen dieser Datenschutzerklärung",
-      "content": "Wir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht."
+      "title": "7. Datensicherheit",
+      "content": "Wir treffen angemessene technische und organisatorische Maßnahmen, um Ihre Daten vor unbefugtem Zugriff, Veränderung oder Offenlegung zu schützen. Da auf unserer Website jedoch keine personenbezogenen Daten gespeichert oder verarbeitet werden, besteht nur ein minimales Risiko für Ihre Privatsphäre."
+    },
+    {
+      "title": "8. Internationale Datenübertragungen",
+      "content": "Da sich unsere Server möglicherweise außerhalb Ihres Heimatlandes befinden, können technische Daten international übertragen werden. Da jedoch keine personenbezogenen Daten erhoben werden, sind keine identifizierbaren Informationen von solchen Übertragungen betroffen."
+    },
+    {
+      "title": "9. Ihre Rechte",
+      "content": "Auch wenn wir keine personenbezogenen Daten speichern, haben Sie das Recht, Auskunft über möglicherweise mit Ihnen verknüpfte Daten zu verlangen sowie deren Berichtigung oder Löschung zu beantragen, soweit zutreffend. Bitte kontaktieren Sie uns unter haichuanyu@lolinmetals.com."
+    },
+    {
+      "title": "10. Änderungen dieser Erklärung",
+      "content": "Wir behalten uns das Recht vor, diese Datenschutzerklärung gelegentlich zu aktualisieren, um gesetzlichen Änderungen Rechnung zu tragen oder die Klarheit zu verbessern. Bitte überprüfen Sie diese Seite regelmäßig auf aktuelle Informationen."
     }
   ]
 }

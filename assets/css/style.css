@@ -963,3 +963,16 @@ nav .dropbtn.active {
   font-weight: bold;
   border-radius: 5px;
 }
+
+.cookie-actions {
+  margin-top: 10px;
+  display: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.cookie-privacy-link {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 0.9em;
+}
