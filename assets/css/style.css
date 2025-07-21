@@ -647,7 +647,6 @@ nav .dropbtn.active {
   display: none;
   position: fixed;
   z-index: 9999;
-  padding-top: 60px;
   left: 0;
   top: 0;
   width: 100%;
@@ -655,17 +654,20 @@ nav .dropbtn.active {
   overflow: auto;
   background-color: rgba(0,0,0,0.85);
   text-align: center;
+  justify-content: center;
 }
 
 .modal-content {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 90%;
   max-height: 80vh;
-  margin: 5vh auto;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0,0,0,0.6);
-  display: block;
 }
+
 
 .modal-caption {
   margin-top: 10px;
