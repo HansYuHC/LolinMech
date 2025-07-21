@@ -1,4 +1,4 @@
-let currentPage = window.location.hash.replace(/^#/, '') || 'home';
+let currentPage = window.location.hash.replace(/^#/, '') || 'aboutus';
 let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
 let currentGallery = [];
 let currentIndex = 0;
@@ -12,7 +12,7 @@ function changeLanguage(lang) {
 
     // 使用当前 global 变量 currentPage 作为真正可靠的 fallback
     const hashPage = window.location.hash.replace(/^#/, '').trim();
-    const safePage = hashPage || currentPage || 'home';
+    const safePage = hashPage || currentPage || 'aboutus';
 
     console.log('💬 Changing language to:', lang, '| currentPage:', currentPage, '| hashPage:', hashPage, '| safePage:', safePage);
 
@@ -76,6 +76,8 @@ function loadPage(page, forceReload = false) {
                 document.getElementById('content').innerHTML = loadHomePage(data);
             } else if (page === 'about') {
                 document.getElementById('content').innerHTML = loadAboutPage(data);
+            } else if (page === 'aboutus') {
+                document.getElementById('content').innerHTML = loadAboutUsPage(data);
             } else if (page === 'products') {
                 document.getElementById('content').innerHTML = loadProductsPage(data);
             } else if (page === 'casting') {
@@ -307,17 +309,79 @@ function hideClientDetails() {
     detailsDiv.style.display = 'none';
 }
 
-function loadHomePage(data) {
-    const paragraphs = data.welcomeText
+//function loadHomePage(data) {
+//    const paragraphs = data.welcomeText
+//        .split('\n\n')
+//        .map(p => `<p>${p.trim()}</p>`)
+//        .join('');
+//    return `
+//        <section class="home-content">
+//            <h2 class="section-title">${data.sectionTitle}</h2>
+//            <div class="welcome-section">
+//                <div class="welcome-text">
+//                    ${paragraphs}
+//                </div>
+//            </div>
+//            <div class="company-stats">
+//                <p>${data.stats.employees}</p>
+//                <p>${data.stats.locations}</p>
+//                <img src="assets/images/Lolin-company.png" alt="Company Image" class="company-image">
+//            </div>
+//        </section>
+//    `;
+//}
+//function loadAboutPage(data) {
+//    let html = `
+//        <section class="about-content">
+//            <h2 class="section-title">${data.heading}</h2>
+//    `;
+//
+//    data.sections.forEach(section => {
+//        if (section.heading) {
+//            html += `<h2 class="section-title">${section.heading}</h2>`;
+//        }
+//
+//        html += `<div class="about-section">`;
+//
+//        section.paragraphs.forEach(p => {
+//            html += `<p>${p}</p>`;
+//        });
+//
+//        if (section.images) {
+//            const isGridLayout = section.images.length >= 4;  // 判断是否使用矩阵样式
+//    html += `<div class="${isGridLayout ? 'image-grid-3x2' : 'image-row'}">`;
+//
+//            section.images.forEach(img => {
+//                html += `
+//                    <div class="image-block">
+//                        <img src="${img.src}" alt="${img.caption}">
+//                        <p class="caption">${img.caption}</p>
+//                    </div>
+//                `;
+//            });
+//            html += `</div>`;
+//        }
+//
+//        html += `</div>`;
+//    });
+//
+//    html += `</section>`;
+//    return html;
+//}
+
+function loadAboutUsPage(data) {
+    // 渲染 home 部分内容
+    const homeParagraphs = data.welcomeText
         .split('\n\n')
         .map(p => `<p>${p.trim()}</p>`)
         .join('');
-    return `
+
+    let html = `
         <section class="home-content">
             <h2 class="section-title">${data.sectionTitle}</h2>
             <div class="welcome-section">
                 <div class="welcome-text">
-                    ${paragraphs}
+                    ${homeParagraphs}
                 </div>
             </div>
             <div class="company-stats">
@@ -327,10 +391,9 @@ function loadHomePage(data) {
             </div>
         </section>
     `;
-}
 
-function loadAboutPage(data) {
-    let html = `
+    // 渲染 about 部分内容
+    html += `
         <section class="about-content">
             <h2 class="section-title">${data.heading}</h2>
     `;
@@ -347,8 +410,8 @@ function loadAboutPage(data) {
         });
 
         if (section.images) {
-            const isGridLayout = section.images.length >= 4;  // 判断是否使用矩阵样式
-    html += `<div class="${isGridLayout ? 'image-grid-3x2' : 'image-row'}">`;
+            const isGridLayout = section.images.length >= 4;
+            html += `<div class="${isGridLayout ? 'image-grid-3x2' : 'image-row'}">`;
 
             section.images.forEach(img => {
                 html += `
@@ -358,6 +421,7 @@ function loadAboutPage(data) {
                     </div>
                 `;
             });
+
             html += `</div>`;
         }
 
@@ -367,6 +431,7 @@ function loadAboutPage(data) {
     html += `</section>`;
     return html;
 }
+
 
 function loadProductsPage(data) {
     const descriptionHTML = Array.isArray(data.description)
@@ -491,7 +556,7 @@ function loadStructuredPage(data) {
 // ✅ 页面加载时，根据 URL hash 判断加载哪个页面
 document.addEventListener('DOMContentLoaded', () => {
         currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
-        const hashPage = window.location.hash.replace(/^#/, '').trim() || 'home';
+        const hashPage = window.location.hash.replace(/^#/, '').trim() || 'aboutus';
         currentPage = hashPage;  // 👈 更新全局变量！
         console.log('📌 DOMContentLoaded | currentPage =', currentPage, '| currentLanguage =', currentLanguage);
         loadPage(currentPage);

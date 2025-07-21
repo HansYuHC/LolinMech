@@ -350,11 +350,14 @@ footer .contact-info {
 }
 
 .image-grid-3x2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 每行最多3张，自动换行 */
+    gap: 24px; /* 图片之间的间隔 */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
+
 
 .image-grid-3x2 .image-block {
   text-align: center;
@@ -362,8 +365,8 @@ footer .contact-info {
 
 .image-grid-3x2 .image-block img {
   width: 100%;
-  height: 200px; /* 你可以根据需要设置成 150px、200px 等 */
-  object-fit: cover; /* 保证图片按比例裁剪填满容器 */
+  height: 250px; /* 你可以根据需要设置成 150px、200px 等 */
+  object-fit: contain; /* 保证图片按比例裁剪填满容器 */
   border-radius: 8px; /* 可选，美观圆角 */
 }
 
@@ -380,6 +383,7 @@ footer .contact-info {
     height: auto; /* 固定高度 */
     object-fit: cover;
     border-radius: 10px;
+    background-color: #f9f9f9;
 }
 
 .image-wrapper {
@@ -569,17 +573,20 @@ nav .dropbtn.active {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 自动换行，每张最小300px */
+    gap: 24px; /* 图片之间的间距更宽松 */
+    max-width: 1000px; /* 根据页面宽度调整可视范围 */
     margin: 0 auto;
+    padding: 0 16px; /* 左右加点内边距更舒服 */
 }
+
 
 .gallery-item img {
     width: 100%;
-    height: 125px;
+    height: 235px;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #f9f9f9;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
 }
@@ -597,13 +604,6 @@ nav .dropbtn.active {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 10px;
-}
-
-.image-grid-3x2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 1rem;
 }
 
 .image-block {

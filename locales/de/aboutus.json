@@ -1,0 +1,76 @@
+{
+  "pageTitle": "Lolin Mech | Industrielle Metalllösungen",
+  "sectionTitle": "Unternehmensinformationen",
+  "heading": "Über das Unternehmen",
+  "welcomeHeading": "Willkommen bei Qingdao Lolin Mech Inc.",
+  "welcomeText": "Qingdao Lolin Mech Inc. ist seit 1990 ein OEM-Lieferant für Schmiede- und Gussprodukte. Unsere Produkte finden Anwendung in der Bau- und Landmaschinenindustrie, im Eisenbahnbereich sowie in der Schwerlastfahrzeugtechnik.\n\nJährlich werden über 400 Container mit verschiedenen Schmiede- und Gussteilen nach Deutschland, in die USA und nach Japan verschifft. Alle diese Teile unterliegen der strengen Kontrolle unseres erfahrenen Qualitätssicherungsteams.\n\nUnsere Konstruktionsabteilung kann mit Zeichnungen arbeiten, die mit gängigen Softwarelösungen erstellt wurden.\n\nMit unserem unstillbaren Hunger nach neuen Herausforderungen und dem Engagement für kontinuierlichen Fortschritt können Sie Großes von der Zukunft der Lolin Mechanical Company erwarten.",
+  "stats": {
+    "employees": "<b><i><u>Unsere Vorteile:</u></i></b> Über 30 Jahre Erfahrung in Schmiede- und Gussverfahren ● Zusammenarbeit mit namhaften OEMs und Zulieferern ● Jahresumsatz von über 20 Millionen US-Dollar",
+    "locations": "<b><i><u>Unsere Standorte:</u></i></b> Qingdao, China (Hauptsitz) ● New York, USA ● Zevenaar, Niederlande"
+  },
+  "sections": [
+    {
+      "paragraphs": [
+        "Gegründet im Jahr 1990 hat sich die Lolin Mechanical Company zu einem globalen OEM-Lieferanten für Schmiede- und Gussteile entwickelt. Jährlich werden über 400 Container mit verschiedenen Produkten nach Deutschland, Amerika und Japan verschifft.",
+        "Seit über 30 Jahren sind wir auf Schmiede- und Gussprodukte spezialisiert. Wir bieten eine Vielzahl technischer Dienstleistungen an, darunter Produktanalysen und Prüfungen. Durch unsere flexible Herangehensweise und unseren umfassenden Erfahrungsschatz sind wir in der Lage, Probleme zu lösen und neue Lösungen zu unterbreiten, die Ihre Anforderungen schnell und präzise umsetzen.",
+        "✅Wir produzieren eine vollständige Palette an Grauguss, Sphäroguss sowie austemperiertem Sphäroguss.",
+        "✅Jährliche Kapazität: Maximale Gesamtkapazität von 70.000 Tonnen, davon 35.000 Tonnen freie Kapazität; Losgrößen: 50–50.000 Stück pro Auftrag.",
+        "✅Einzelgewicht für Rohguss: 0,1 – 300 kg/Stück",
+        "✅Maximale Abmessungen für Rohguss: 1100 x 900 x 900 mm; bei Bedarf an größeren Gussteilen prüfen wir die Anschaffung größerer Formkästen. Für diese großformatigen Rohgussteile planen wir die Nutzung unserer neuen Schalenformgießlinie.",
+        "✅Wir bevorzugen die Kombination von Guss und Bearbeitung in unserer Gießerei, um unseren Kunden einen One-Stop-Service zu bieten. Unsere mechanische Werkstatt ist in der Lage, die meisten vollständig bearbeiteten Gussteile zu fertigen. Dafür verfügen wir über ausreichend Maschinenkapazitäten."
+      ],
+      "images": [
+        {
+          "src": "assets/images/about_1.png",
+          "caption": "Einige der Standards, die wir erfüllen"
+        },
+        {
+          "src": "assets/images/about_2.png",
+          "caption": "Produkte, die wir anbieten"
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        "Wir sind stolz auf unser Produktwissen, unser vielfältiges Produktsortiment und unser kompromissloses Engagement für Kundenservice und -zufriedenheit."
+      ],
+      "images": [
+        {
+          "src": "assets/images/about_3.png",
+          "caption": "Wir liefern weltweit"
+        }
+      ]
+    },
+    {
+      "heading": "Geschäftsfelder",
+      "paragraphs": [
+        "Seit unserer Gründung haben wir unser Tätigkeitsfeld stetig erweitert."
+      ],
+      "images": [
+        { "src": "assets/images/about_4_1.png", "caption": "Baumaschinen" },
+        { "src": "assets/images/about_4_2.png", "caption": "Landmaschinen" },
+        { "src": "assets/images/about_4_3.png", "caption": "Eisenbahnsysteme" },
+        { "src": "assets/images/about_4_4.png", "caption": "LKW" },
+        { "src": "assets/images/about_4_5.png", "caption": "Automobilindustrie" },
+        { "src": "assets/images/about_4_6.png", "caption": "Windkraftindustrie" }
+      ]
+    },
+    {
+      "paragraphs": [
+        "Unsere hochwertigen Produkte finden Anwendung in den Bereichen Bau- und Landmaschinen, Eisenbahntechnik, Schwerlastfahrzeuge usw. Auf der Suche nach neuen Einsatzgebieten strebt Lolin Mech stets nach neuen Möglichkeiten."
+      ]
+    }
+  ],
+  "home": "Startseite",
+  "about": "Über uns",
+  "aboutus": "Über uns",
+  "products": "Produkte",
+  "casting": "Guss",
+  "forging": "Schmieden",
+  "customers": "Kunden",
+  "certifications": "Zertifikate",
+  "download": "Download",
+  "contacts": "Kontakt",
+  "cookieMessage": "Diese Website verwendet keine Cookies zur Nachverfolgung oder Analyse. \nEs werden keine personenbezogenen Daten erfasst, gespeichert oder weitergegeben. Durch die weitere Nutzung der Seite erkennen Sie dies an.",
+  "acceptCookies": "Verstanden"
+}
