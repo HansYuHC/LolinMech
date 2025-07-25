@@ -85,6 +85,9 @@ function loadPage(page, forceReload = false) {
             } else if (page === 'forging') {
                 document.getElementById('content').innerHTML = loadStructuredPage(data);
             }
+            else if (page === 'certificates') {
+                document.getElementById('content').innerHTML = loadCertificatesPage(data);
+            }
             else if (page === 'datenschutz') {
                 const sectionsHtml = (data.sections || []).map(section => `
                     <div class="privacy-section">
@@ -274,6 +277,23 @@ function initCustomerPopupEvents() {
     });
 }
 
+function loadCertificatesPage(data) {
+    const certificateHtml = data.certificates.map(cert => `
+        <div class="certificate-card">
+            <img src="${cert.image}" alt="${cert.title}">
+            <h3>${cert.title}</h3>
+            <p>${cert.description}</p>
+        </div>
+    `).join('');
+
+    return `
+        <div class="certificates-page">
+            <h2>${data.heading}</h2>
+            <p>${data.intro}</p>
+            <div class="certificate-grid">${certificateHtml}</div>
+        </div>
+    `;
+}
 
 
 function showClientDetails(clientId, event) {
@@ -309,65 +329,6 @@ function hideClientDetails() {
     detailsDiv.style.display = 'none';
 }
 
-//function loadHomePage(data) {
-//    const paragraphs = data.welcomeText
-//        .split('\n\n')
-//        .map(p => `<p>${p.trim()}</p>`)
-//        .join('');
-//    return `
-//        <section class="home-content">
-//            <h2 class="section-title">${data.sectionTitle}</h2>
-//            <div class="welcome-section">
-//                <div class="welcome-text">
-//                    ${paragraphs}
-//                </div>
-//            </div>
-//            <div class="company-stats">
-//                <p>${data.stats.employees}</p>
-//                <p>${data.stats.locations}</p>
-//                <img src="assets/images/Lolin-company.png" alt="Company Image" class="company-image">
-//            </div>
-//        </section>
-//    `;
-//}
-//function loadAboutPage(data) {
-//    let html = `
-//        <section class="about-content">
-//            <h2 class="section-title">${data.heading}</h2>
-//    `;
-//
-//    data.sections.forEach(section => {
-//        if (section.heading) {
-//            html += `<h2 class="section-title">${section.heading}</h2>`;
-//        }
-//
-//        html += `<div class="about-section">`;
-//
-//        section.paragraphs.forEach(p => {
-//            html += `<p>${p}</p>`;
-//        });
-//
-//        if (section.images) {
-//            const isGridLayout = section.images.length >= 4;  // 判断是否使用矩阵样式
-//    html += `<div class="${isGridLayout ? 'image-grid-3x2' : 'image-row'}">`;
-//
-//            section.images.forEach(img => {
-//                html += `
-//                    <div class="image-block">
-//                        <img src="${img.src}" alt="${img.caption}">
-//                        <p class="caption">${img.caption}</p>
-//                    </div>
-//                `;
-//            });
-//            html += `</div>`;
-//        }
-//
-//        html += `</div>`;
-//    });
-//
-//    html += `</section>`;
-//    return html;
-//}
 
 function loadAboutUsPage(data) {
     // 渲染 home 部分内容

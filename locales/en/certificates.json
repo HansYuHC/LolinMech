@@ -1,0 +1,23 @@
+{
+  "pageTitle": "Certificates",
+  "intro": "Our company is committed to quality and sustainability. Below you will find a selection of our certifications that prove our manufacturing excellence, environmental responsibility, and compliance with international standards.",
+  "heading": "Certificates",
+  "welcomeHeading": "Welcome to Qingdao Lolin Mech Inc.",
+  "certificates": [
+    {
+      "name": "ISO 9001:2015",
+      "description": "Quality Management System - demonstrating our capability to consistently provide high-quality products and services.",
+      "image": "images/certificates/iso9001.png"
+    },
+    {
+      "name": "ISO 14001:2015",
+      "description": "Environmental Management System - our commitment to sustainable and environmentally friendly production processes.",
+      "image": "images/certificates/iso14001.jpg"
+    },
+    {
+      "name": "IATF 16949",
+      "description": "Automotive Quality Standard - for ensuring consistent quality in the automotive supply chain.",
+      "image": "images/certificates/iatf16949.jpg"
+    }
+  ]
+}
