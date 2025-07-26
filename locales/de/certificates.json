@@ -1,0 +1,28 @@
+{
+  "pageTitle": "Zertifikate",
+  "intro": "Unser Unternehmen verpflichtet sich zu Qualität und Nachhaltigkeit. Unten finden Sie eine Auswahl an Zertifizierungen von uns und unseren Lieferanten, die unsere Fertigungskompetenz, Umweltverantwortung und die Einhaltung internationaler Standards belegen.",
+  "heading": "Unsere Zertifikate",
+  "welcomeHeading": "Willkommen bei Qingdao Lolin Mech Inc.",
+  "certificates": [
+    {
+      "title": "ISO 9001:2015",
+      "description": "Qualitätsmanagementsystem – zeigt unsere Fähigkeit, durchgängig hochwertige Produkte und Dienstleistungen bereitzustellen.",
+      "image": "assets/images/certificates/iso9001.png"
+    },
+    {
+      "title": "ISO 14001:2015",
+      "description": "Umweltmanagementsystem – unser Engagement für nachhaltige und umweltfreundliche Produktionsprozesse.",
+      "image": "assets/images/certificates/ISO14001.png"
+    },
+    {
+      "title": "IATF 16949:2016 Laizhou Hongyuan",
+      "description": "Automobil-Qualitätsstandard – zur Sicherstellung gleichbleibender Qualität in der Automobilzulieferkette.",
+      "image": "assets/images/certificates/IATF16949_LaiZhou.png"
+    },
+    {
+      "title": "IATF 16949:2016 Rizhao Ruixin",
+      "description": "Automobil-Qualitätsstandard – zur Sicherstellung gleichbleibender Qualität in der Automobilzulieferkette.",
+      "image": "assets/images/certificates/IATF16949_RiZhao.png"
+    }
+  ]
+}

@@ -30,11 +30,16 @@ function updateGlobalLangKeys() {
     fetch(`${BASE_PATH}locales/${currentLanguage}/global.json?t=${Date.now()}`)
         .then(response => response.json())
         .then(data => {
-            document.querySelectorAll('[data-lang-key]').forEach(el => {
+            // 强制更新导航栏（优先级最高）
+            document.querySelectorAll('nav [data-lang-key]').forEach(el => {
                 const key = el.getAttribute('data-lang-key');
-                if (data[key]) {
-                    el.innerHTML = data[key];
-                }
+                if (data[key]) el.textContent = data[key];
+            });
+
+            // 更新其他全局元素
+            document.querySelectorAll('[data-lang-key]:not(nav *)').forEach(el => {
+                const key = el.getAttribute('data-lang-key');
+                if (data[key]) el.innerHTML = data[key];
             });
         });
 }
