@@ -1,23 +1,28 @@
 {
   "pageTitle": "Certificates",
-  "intro": "Our company is committed to quality and sustainability. Below you will find a selection of our certifications that prove our manufacturing excellence, environmental responsibility, and compliance with international standards.",
-  "heading": "Certificates",
+  "intro": "Our company is committed to quality and sustainability. Below you will find a selection of certifications of us and our suppliers that prove our manufacturing excellence, environmental responsibility, and compliance with international standards.",
+  "heading": "Our Certificates",
   "welcomeHeading": "Welcome to Qingdao Lolin Mech Inc.",
   "certificates": [
     {
-      "name": "ISO 9001:2015",
+      "title": "ISO 9001:2015",
       "description": "Quality Management System - demonstrating our capability to consistently provide high-quality products and services.",
-      "image": "images/certificates/iso9001.png"
+      "image": "assets/images/certificates/iso9001.png"
     },
     {
-      "name": "ISO 14001:2015",
+      "title": "ISO 14001:2015",
       "description": "Environmental Management System - our commitment to sustainable and environmentally friendly production processes.",
-      "image": "images/certificates/iso14001.jpg"
+      "image": "assets/images/certificates/ISO14001.png"
     },
     {
-      "name": "IATF 16949",
+      "title": "IATF 16949:2016 Laizhou Hongyuan",
       "description": "Automotive Quality Standard - for ensuring consistent quality in the automotive supply chain.",
-      "image": "images/certificates/iatf16949.jpg"
+      "image": "assets/images/certificates/IATF16949_LaiZhou.png"
+    },
+    {
+      "title": "IATF 16949:2016 Rizhao Ruixin",
+      "description": "Automotive Quality Standard - for ensuring consistent quality in the automotive supply chain.",
+      "image": "assets/images/certificates/IATF16949_RiZhao.png"
     }
   ]
 }

@@ -280,7 +280,7 @@ function initCustomerPopupEvents() {
 function loadCertificatesPage(data) {
     const certificateHtml = data.certificates.map(cert => `
         <div class="certificate-card">
-            <img src="${cert.image}" alt="${cert.title}">
+            <img src="${cert.image}" alt="${cert.title}" class="certificate-image">
             <h3>${cert.title}</h3>
             <p>${cert.description}</p>
         </div>
@@ -288,7 +288,7 @@ function loadCertificatesPage(data) {
 
     return `
         <div class="certificates-page">
-            <h2>${data.heading}</h2>
+            <h2 class="page-heading">${data.heading}</h2>
             <p>${data.intro}</p>
             <div class="certificate-grid">${certificateHtml}</div>
         </div>
