@@ -510,7 +510,7 @@ nav .dropbtn.active {
   font-weight: bold;
   color: black;          /* 如果导航栏是深色背景，这个颜色适配白字 */
   margin: 20px 0;
-  margin-top: 2rem;
+  margin-top: 0.2rem;
   margin-bottom: 1rem;
 }
 
@@ -983,6 +983,7 @@ nav .dropbtn.active {
   text-align: center;
   font-size: 2em;
   margin-bottom: 1em;
+  margin-top: 0.2rem;
 }
 
 .certificate-grid {
