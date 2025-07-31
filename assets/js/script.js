@@ -65,6 +65,14 @@ function loadPage(page, forceReload = false) {
         history.replaceState(null, '', `#${currentPage}`);
     }
 
+    if (currentPage === 'download') {
+        // 专门处理 download 页面
+        loadDownloadPage();
+        highlightActiveMenu(currentPage);
+        updateFooterLanguage();
+        return;  // 直接返回，不继续下面fetch了
+    }
+
     fetch(`${BASE_PATH}locales/${currentLanguage}/${currentPage}.json?t=${Date.now()}`)
         .then(response => response.json())
         .then(data => {
@@ -515,6 +523,42 @@ function loadStructuredPage(data) {
             </section>
         `;
     }).join('');
+}
+
+function loadDownloadPage() {
+    fetch('download.json?t=' + Date.now())
+        .then(response => response.json())
+        .then(data => {
+            document.title = data.pageTitle || 'Download';
+
+            const content = document.getElementById('content');
+            content.innerHTML = `
+                <h2 class="section-title">${data.sectionTitle || 'Download'}</h2>
+                <div class="download-container"></div>
+            `;
+
+            const container = content.querySelector('.download-container');
+
+            data.downloads.forEach(item => {
+                // 取当前语言文本，假设downloads.json中有类似 { title: { en: ..., de: ... }, description: { ... } }
+                const title = item.title[currentLanguage] || item.title['en'];
+                const description = item.description[currentLanguage] || item.description['en'];
+                const file = item.file;
+
+                const html = `
+                    <div class="download-item">
+                        <h3>${title}</h3>
+                        <p>${description}</p>
+                        <a href="${file}" download class="download-btn">⬇️ Download PDF</a>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', html);
+            });
+        })
+        .catch(error => {
+            console.error('Failed to load download.json:', error);
+            document.getElementById('content').innerHTML = '<p>Download content not available.</p>';
+        });
 }
 
 

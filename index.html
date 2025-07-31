@@ -34,8 +34,14 @@
         <a href="#" onclick="loadPage('download')" data-lang-key="download">Download</a>
         <a href="#" onclick="loadPage('contacts')" data-lang-key="contacts">Contacts</a>
         <div class="language-switcher">
-            <button onclick="changeLanguage('en')">EN</button>
-            <button onclick="changeLanguage('de')">DE</button>
+            <button class="lang-btn active" onclick="changeLanguage('en')">
+                <img src="assets/images/flags/gb.png" alt="EN" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;">
+                EN
+            </button>
+            <button class="lang-btn active" onclick="changeLanguage('de')">
+                <img src="assets/images/flags/de.png" alt="DE" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;">
+                DE
+            </button>
         </div>
     </nav>
 

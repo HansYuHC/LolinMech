@@ -1046,5 +1046,38 @@ nav .dropbtn.active {
   font-size: 1.1rem;
 }
 
+.language-switcher {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;  /* 如果你希望它靠右 */
+}
 
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
 
+.lang-btn img {
+    height: 16px !important;
+    width: 22px !important; /* 稍微比正常略胖 */
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.lang-btn:hover {
+    background-color: #f0f0f1;
+    border-radius: 4px;
+}
+
+.lang-btn.active {
+    color: grey;
+    border-radius: 4px;
+}
