@@ -526,12 +526,18 @@ function loadStructuredPage(data) {
 }
 
 function loadDownloadPage() {
-    fetch('download.json?t=' + Date.now())
-        .then(response => response.json())
+    const content = document.getElementById('content');
+    content.innerHTML = '<p>Loading download items...</p>'; // 👈 加个加载提示
+
+    fetch('download.json?t=' + Date.now()) // 防止缓存
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
         .then(data => {
             document.title = data.pageTitle || 'Download';
 
-            const content = document.getElementById('content');
+            // 重建页面内容
             content.innerHTML = `
                 <h2 class="section-title">${data.sectionTitle || 'Download'}</h2>
                 <div class="download-container"></div>
@@ -539,17 +545,21 @@ function loadDownloadPage() {
 
             const container = content.querySelector('.download-container');
 
+            if (!Array.isArray(data.downloads) || data.downloads.length === 0) {
+                container.innerHTML = '<p>No downloadable items available.</p>';
+                return;
+            }
+
             data.downloads.forEach(item => {
-                // 取当前语言文本，假设downloads.json中有类似 { title: { en: ..., de: ... }, description: { ... } }
-                const title = item.title[currentLanguage] || item.title['en'];
-                const description = item.description[currentLanguage] || item.description['en'];
-                const file = item.file;
+                const title = (item.title && item.title[currentLanguage]) || item.title?.en || 'Untitled';
+                const description = (item.description && item.description[currentLanguage]) || item.description?.en || '';
+                const file = item.file || '#';
 
                 const html = `
                     <div class="download-item">
                         <h3>${title}</h3>
                         <p>${description}</p>
-                        <a href="${file}" download class="download-btn">⬇️ Download PDF</a>
+                        <a href="${file}" download class="download-btn" target="_blank">⬇️ Download PDF</a>
                     </div>
                 `;
                 container.insertAdjacentHTML('beforeend', html);
@@ -557,9 +567,10 @@ function loadDownloadPage() {
         })
         .catch(error => {
             console.error('Failed to load download.json:', error);
-            document.getElementById('content').innerHTML = '<p>Download content not available.</p>';
+            content.innerHTML = '<p>Download content not available.</p>';
         });
 }
+
 
 
 

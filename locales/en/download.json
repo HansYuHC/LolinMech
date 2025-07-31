@@ -23,7 +23,7 @@
         "en": "Our latest product catalog in PDF format.",
         "de": "Unser aktueller Produktkatalog im PDF-Format."
       },
-      "file": "assets/downloads/product_catalog.pdf"
+      "file": "https://raw.githubusercontent.com/HansYuHC/LolinMech/main/assets/downloads/product_catalog.pdf"
     }
   ],
   "home": "Home",
