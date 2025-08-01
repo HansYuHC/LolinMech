@@ -527,9 +527,12 @@ function loadStructuredPage(data) {
 
 function loadDownloadPage() {
     const content = document.getElementById('content');
-    content.innerHTML = '<p>Loading download items...</p>'; // 👈 加个加载提示
+    content.innerHTML = '<p>Loading download items...</p>';
 
-    fetch('download.json?t=' + Date.now()) // 防止缓存
+    const lang = currentLanguage || 'en';  // 用当前语言变量，或者默认 en
+    const downloadJsonPath = `${BASE_PATH}locales/${lang}/download.json?t=${Date.now()}`;
+
+    fetch(downloadJsonPath)
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
             return response.json();
@@ -537,7 +540,6 @@ function loadDownloadPage() {
         .then(data => {
             document.title = data.pageTitle || 'Download';
 
-            // 重建页面内容
             content.innerHTML = `
                 <h2 class="section-title">${data.sectionTitle || 'Download'}</h2>
                 <div class="download-container"></div>
@@ -570,6 +572,7 @@ function loadDownloadPage() {
             content.innerHTML = '<p>Download content not available.</p>';
         });
 }
+
 
 
 
