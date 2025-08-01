@@ -5,25 +5,39 @@
   "downloads": [
     {
       "title": {
-        "en": "Company Brochure",
-        "de": "Firmenbroschüre"
+        "en": "Trade Audit Report"
       },
       "description": {
-        "en": "Detailed company profile and product overview.",
-        "de": "Ausführliches Firmenprofil und Produktübersicht."
+        "en": "A Trade Audit Report is an onsite Audit Report about a company's ability to conduct international trade, including details such as company authentication, human resources, export capacity, supplier management, customer service, certification and more."
       },
       "file": "assets/downloads/Trade_Audit_Report-QLM.pdf"
     },
     {
       "title": {
-        "en": "Product Catalog",
-        "de": "Produktkatalog"
+        "en": "Corporate Profile"
       },
       "description": {
-        "en": "Our latest product catalog in PDF format.",
-        "de": "Unser aktueller Produktkatalog im PDF-Format."
+        "en": "An overview of our company's history, core competencies, manufacturing capabilities, and global market presence."
       },
-      "file": "https://raw.githubusercontent.com/HansYuHC/LolinMech/main/assets/downloads/product_catalog.pdf"
+      "file": "assets/downloads/Lolin_Mech_Intro.pdf"
+    },
+    {
+      "title": {
+        "en": "Casting Capabilities"
+      },
+      "description": {
+        "en": "A comprehensive profile highlighting our company’s history, technical expertise, advanced casting facilities, quality assurance systems, and our presence in global markets."
+      },
+      "file": "assets/downloads/Lolin_Casting.pdf"
+    },
+    {
+      "title": {
+        "en": "Forging Expertise"
+      },
+      "description": {
+        "en": "An in-depth look at our forging operations, including company milestones, core competencies, production strengths, quality control processes, and global customer reach."
+      },
+      "file": "assets/downloads/Lolin_Forging.pdf"
     }
   ],
   "home": "Home",

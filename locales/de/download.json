@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Lolin Mech | Downloads",
+  "welcomeHeading": "Willkommen bei Qingdao Lolin Mech Inc.",
+  "sectionTitle": "Unsere Dokumente",
+  "downloads": [
+    {
+      "title": {
+        "de": "Handelsprüfungsbericht"
+      },
+      "description": {
+        "de": "Ein Handelsprüfungsbericht ist ein Vor-Ort-Audit über die Fähigkeit eines Unternehmens zum internationalen Handel, einschließlich Informationen zur Unternehmensverifizierung, Personalstruktur, Exportkapazität, Lieferantenmanagement, Kundenservice, Zertifizierungen und mehr."
+      },
+      "file": "assets/downloads/Trade_Audit_Report-QLM.pdf"
+    },
+    {
+      "title": {
+        "de": "Unternehmensprofil"
+      },
+      "description": {
+        "de": "Ein Überblick über die Geschichte unseres Unternehmens, unsere Kernkompetenzen, Fertigungskapazitäten und unsere globale Marktpräsenz."
+      },
+      "file": "assets/downloads/Lolin_Mech_Intro_de.pdf"
+    },
+    {
+      "title": {
+        "de": "Gießereikompetenzen"
+      },
+      "description": {
+        "de": "Ein umfassendes Profil mit der Geschichte unseres Unternehmens, technischer Expertise, moderner Gießereitechnologie, Qualitätssicherungssystemen und unserer Präsenz auf internationalen Märkten."
+      },
+      "file": "assets/downloads/Lolin_Casting.pdf"
+    },
+    {
+      "title": {
+        "de": "Schmiedekompetenz"
+      },
+      "description": {
+        "de": "Ein detaillierter Einblick in unsere Schmiedeanlagen, einschließlich wichtiger Meilensteine, Kernkompetenzen, Produktionsstärken, Qualitätskontrollen und internationaler Kundenreichweite."
+      },
+      "file": "assets/downloads/Lolin_Forging.pdf"
+    }
+  ],
+  "home": "Startseite",
+  "about": "Über uns",
+  "products": "Produkte",
+  "customers": "Kunden",
+  "certifications": "Zertifikate",
+  "download": "Download",
+  "contacts": "Kontakt",
+  "cookieMessage": "Diese Website verwendet keine Cookies zu Tracking- oder Analysezwecken.\nEs werden keine personenbezogenen Daten erfasst, gespeichert oder weitergegeben. Durch die weitere Nutzung der Seite stimmen Sie dem zu.",
+  "acceptCookies": "Verstanden"
+}

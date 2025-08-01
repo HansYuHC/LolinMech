@@ -529,7 +529,7 @@ function loadDownloadPage() {
     const content = document.getElementById('content');
     content.innerHTML = '<p>Loading download items...</p>';
 
-    const lang = currentLanguage || 'en';  // 用当前语言变量，或者默认 en
+    const lang = currentLanguage || 'en';
     const downloadJsonPath = `${BASE_PATH}locales/${lang}/download.json?t=${Date.now()}`;
 
     fetch(downloadJsonPath)
@@ -553,15 +553,17 @@ function loadDownloadPage() {
             }
 
             data.downloads.forEach(item => {
-                const title = (item.title && item.title[currentLanguage]) || item.title?.en || 'Untitled';
-                const description = (item.description && item.description[currentLanguage]) || item.description?.en || '';
+                const title = (item.title && item.title[lang]) || item.title?.en || 'Untitled';
+                const description = (item.description && item.description[lang]) || item.description?.en || '';
                 const file = item.file || '#';
+
+                const downloadLabel = lang === 'de' ? `⬇️ ${title} herunterladen` : `⬇️ Download ${title}`;
 
                 const html = `
                     <div class="download-item">
                         <h3>${title}</h3>
                         <p>${description}</p>
-                        <a href="${file}" download class="download-btn" target="_blank">⬇️ Download PDF</a>
+                        <a href="${file}" download class="download-btn" target="_blank">${downloadLabel}</a>
                     </div>
                 `;
                 container.insertAdjacentHTML('beforeend', html);
@@ -572,6 +574,7 @@ function loadDownloadPage() {
             content.innerHTML = '<p>Download content not available.</p>';
         });
 }
+
 
 
 
