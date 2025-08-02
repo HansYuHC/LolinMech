@@ -1,0 +1,45 @@
+{
+  "pageTitle": "Lolin Mech | Contact Us",
+  "welcomeHeading": "Welcome to Qingdao Lolin Mech Inc.",
+  "heading": "Contact Information",
+  "sections": [
+    {
+      "title": "Head Office",
+      "lines": [
+        "Qingdao Lolin Mech Inc.",
+        "Email: yulin@lolinmetals.com",
+        "Website: http://www.lolinmetals.com",
+        "Address: 34-3-202, Luxin Spring Garden, No. 1 East Yinchuan Road, Qingdao, China",
+        "P.C. 266061",
+        "Contact: Mr. Yu Lin",
+        "Tel: 0086-532-81928971"
+      ]
+    },
+    {
+      "title": "North America Sales Office",
+      "lines": [
+        "Solarrific, Inc.",
+        "Address: 150-123 Powells Cove Blvd, Whitestone, NY 11357",
+        "Tel: 001-917-749-7768",
+        "Fax: 001-718-767-5166",
+        "Email: gk@madeinchina.net"
+      ]
+    },
+    {
+      "title": "Western Europe Branch",
+      "lines": [
+        "Indigo International BV",
+        "Address: Voltastraat 11, 6902PT Zevenaar, The Netherlands",
+        "Tel: 0031 (0)6 3834 4404",
+        "Email: weiying.gong@lolinmetals.com"
+      ]
+    },
+    {
+      "title": "Special Representative in Germany",
+      "lines": [
+        "Haichuan Yu",
+        "Email: haichuanyu@lolinmetals.com"
+      ]
+    }
+  ]
+}

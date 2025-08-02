@@ -101,6 +101,9 @@ function loadPage(page, forceReload = false) {
             else if (page === 'certificates') {
                 document.getElementById('content').innerHTML = loadCertificatesPage(data);
             }
+            else if (page === 'contacts') {
+                document.getElementById('content').innerHTML = loadContactsPage(data);
+            }
             else if (page === 'datenschutz') {
                 const sectionsHtml = (data.sections || []).map(section => `
                     <div class="privacy-section">
@@ -572,6 +575,49 @@ function loadDownloadPage() {
         .catch(error => {
             console.error('Failed to load download.json:', error);
             content.innerHTML = '<p>Download content not available.</p>';
+        });
+}
+
+function loadContactsPage() {
+    const content = document.getElementById('content');
+    content.innerHTML = '<p>Loading contact information...</p>';
+
+    const lang = currentLanguage || 'en';
+    const contactsJsonPath = `${BASE_PATH}locales/${lang}/contacts.json?t=${Date.now()}`;
+
+    fetch(contactsJsonPath)
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
+        .then(data => {
+            document.title = data.pageTitle || 'Contacts';
+
+            content.innerHTML = `
+                <h2 class="section-title">${data.heading || 'Contact Information'}</h2>
+                <div class="contacts-container"></div>
+            `;
+
+            const container = content.querySelector('.contacts-container');
+
+            if (!Array.isArray(data.sections) || data.sections.length === 0) {
+                container.innerHTML = '<p>No contact information available.</p>';
+                return;
+            }
+
+            data.sections.forEach(section => {
+                const sectionHtml = `
+                    <div class="contact-item">
+                        <h3>${section.title}</h3>
+                        <p>${section.lines.map(line => line).join("<br>")}</p>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', sectionHtml);
+            });
+        })
+        .catch(error => {
+            console.error('Failed to load contacts.json:', error);
+            content.innerHTML = '<p>Contact content not available.</p>';
         });
 }
 
