@@ -117,6 +117,10 @@ nav .dropbtn {
 main#content {
   margin-top: 140px; /* header + nav 的总高度 */
   padding: 1rem;
+  width: 100%;
+  padding-left: 254px;
+  padding-right: 254px;
+  box-sizing: border-box;
 }
 /*-------------------------------*/
 
@@ -132,13 +136,7 @@ button {
     cursor: pointer;
 }
 
-/* 内容主区域样式（统一留白） */
-main#content {
-    width: 100%;
-    padding-left: 24px;
-    padding-right: 24px;
-    box-sizing: border-box;
-}
+
 
 /* 可选：专门针对 welcomeText 样式优化 */
 .welcome-text {
@@ -296,8 +294,7 @@ main#content {
 .section-title {
     text-align: center;
     font-size: 2em;
-    margin: 30px 0 20px;
-    margin-top: 0.2rem
+    margin: 0.2rem 0 1.25rem;
 }
 
 .company-image {
@@ -1080,4 +1077,28 @@ nav .dropbtn.active {
 .lang-btn.active {
     color: grey;
     border-radius: 4px;
+}
+
+.contact-page {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0.2rem;
+}
+
+.contact-section {
+  margin-bottom: 3rem; /* 段落之间距离 */
+}
+
+.contact-section h3 {
+  margin-bottom: 0.5rem; /* 标题和正文间距小 */
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.contact-section p {
+  margin: 0.3rem 0; /* 每行之间更紧凑 */
+  line-height: 1.5;
 }

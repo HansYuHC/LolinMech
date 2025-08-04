@@ -594,8 +594,10 @@ function loadContactsPage() {
             document.title = data.pageTitle || 'Contacts';
 
             content.innerHTML = `
-                <h2 class="section-title">${data.heading || 'Contact Information'}</h2>
-                <div class="contacts-container"></div>
+                <div class="contact-page">
+                    <h2 class="section-title">${data.heading || 'Contact Information'}</h2>
+                    <div class="contacts-container"></div>
+                </div>
             `;
 
             const container = content.querySelector('.contacts-container');
@@ -607,9 +609,9 @@ function loadContactsPage() {
 
             data.sections.forEach(section => {
                 const sectionHtml = `
-                    <div class="contact-item">
+                    <div class="contact-section">
                         <h3>${section.title}</h3>
-                        <p>${section.lines.map(line => line).join("<br>")}</p>
+                        ${section.lines.map(line => `<p>${line}</p>`).join("")}
                     </div>
                 `;
                 container.insertAdjacentHTML('beforeend', sectionHtml);
@@ -620,6 +622,7 @@ function loadContactsPage() {
             content.innerHTML = '<p>Contact content not available.</p>';
         });
 }
+
 
 
 
