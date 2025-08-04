@@ -118,8 +118,8 @@ main#content {
   margin-top: 140px; /* header + nav 的总高度 */
   padding: 1rem;
   width: 100%;
-  padding-left: 254px;
-  padding-right: 254px;
+  padding-left: 100px;
+  padding-right: 100px;
   box-sizing: border-box;
 }
 /*-------------------------------*/

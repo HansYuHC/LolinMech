@@ -57,9 +57,20 @@
       "heading": "Prüfausrüstung",
       "paragraphs": ["Entsprechend den Kundenanforderungen stehen verschiedene Testlösungen zur Verfügung."],
       "images": [
-        { "src": "assets/images/forging_machining1.png", "caption": "CNC-Bearbeitungszentrum" },
-        { "src": "assets/images/forging_machining2.png", "caption": "Ultraschallprüfung" }
+        { "src": "assets/images/forging_testing1.png", "caption": "Magnetpulverprüfgerät" },
+        { "src": "assets/images/forging_testing2.png", "caption": "Zugprüfmaschine" },
+        { "src": "assets/images/forging_testing3.png", "caption": "Brinell- und Rockwell-Härteprüfer" },
+        { "src": "assets/images/forging_testing4.png", "caption": "Kerbschlagbiegeprüfer" },
+        { "src": "assets/images/forging_testing5.png", "caption": "Computergestützter Analysator für Kohlenstoff und Schwefel" },
+        { "src": "assets/images/forging_testing6.png", "caption": "Automatischer Analysator für Mn, P & Si" },
+        { "src": "assets/images/forging_testing7.png", "caption": "Konturenmessgerät" },
+        { "src": "assets/images/forging_testing8.png", "caption": "Werkzeugkalibrierung" },
+        { "src": "assets/images/forging_testing9.png", "caption": "Salzsprühnebelkammer" },
+        { "src": "assets/images/forging_testing10.png", "caption": "Metallographisches Analysegerät" },
+        { "src": "assets/images/forging_testing11.png", "caption": "KMG (Koordinatenmessgerät)" },
+        { "src": "assets/images/forging_testing12.png", "caption": "Ermüdungsprüfmaschine" }
       ]
+
     },
     {
       "heading": "Typische Produkte",

@@ -57,8 +57,18 @@
       "heading": "Testing Equipment",
       "paragraphs": ["According to customer quality requirements, a variety of testing solutions are available."],
       "images": [
-        { "src": "assets/images/forging_machining1.png", "caption": "CNC machining center" },
-        { "src": "assets/images/forging_machining2.png", "caption": "Ultrasonic inspection" }
+        { "src": "assets/images/forging_testing1.png", "caption": "Magnetic Particle Inspection Machine"},
+        { "src": "assets/images/forging_testing2.png", "caption": "Pull-test Machine"},
+        { "src": "assets/images/forging_testing3.png", "caption": "Brinell & Rockwell Hardness Tester" },
+        { "src": "assets/images/forging_testing4.png", "caption": "Impact Tester" },
+        { "src": "assets/images/forging_testing5.png", "caption": "Computerized Analyzer for Carbon and Sulfur" },
+        { "src": "assets/images/forging_testing6.png", "caption": "Automatic Analyzer for Mn, P & Si" },
+        { "src": "assets/images/forging_testing7.png", "caption": "Contonur Measuring Machine" },
+        { "src": "assets/images/forging_testing8.png", "caption": "Tool Calibration" },
+        { "src": "assets/images/forging_testing9.png", "caption": "Salt Spray Chamber" },
+        { "src": "assets/images/forging_testing10.png", "caption": "Metallographic Analysis Instrument" },
+        { "src": "assets/images/forging_testing11.png", "caption": "CMM (Coordinate Measuring Machine)" },
+        { "src": "assets/images/forging_testing12.png", "caption": "Fatigue test machine" }
       ]
     },
     {
