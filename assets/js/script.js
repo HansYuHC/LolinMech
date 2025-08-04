@@ -24,6 +24,10 @@ function changeLanguage(lang) {
         initCookieConsent();
     }
 
+    updateQuickContactLanguage();
+
+    updateQuickContactTexts();
+
 }
 
 function updateGlobalLangKeys() {
@@ -706,6 +710,57 @@ function showImageAt(index) {
     document.querySelector('.modal-next').disabled = index === currentGallery.length - 1;
 }
 
+function toggleQuickContact() {
+  const card = document.getElementById('quickContactCard');
+  const isVisible = card.style.display === 'block';
+  card.style.display = isVisible ? 'none' : 'block';
+}
+
+function setQuickContactLabel() {
+  const label = document.getElementById('quickContactLabel');
+  const title = document.getElementById('quickContactTitle');
+
+  const isGerman = currentLanguage === 'de';
+
+  if (label) {
+    label.textContent = isGerman ? 'Kontakt' : 'Contact';
+  }
+
+  if (title) {
+    title.textContent = isGerman ? 'Schnellkontakt' : 'Quick Contact';
+  }
+}
+function updateQuickContactTexts() {
+    const title = document.getElementById('quickContactTitle'); // 卡片内标题
+    const buttonLabel = document.getElementById('quickContactLabel'); // 悬浮按钮文字
+
+    if (currentLanguage === 'de') {
+        if (title) title.textContent = 'Bitte zögern Sie nicht, uns zu kontaktieren!';
+        if (buttonLabel) buttonLabel.textContent = 'Schnellkontakt';
+    } else {
+        if (title) title.textContent = 'Please do not hesitate to contact us!';
+        if (buttonLabel) buttonLabel.textContent = 'Quick Contact';
+    }
+}
+
+
+
+// 在页面加载或语言切换时调用
+function updateQuickContactLanguage() {
+  setQuickContactLabel();
+}
+
+// 自动隐藏卡片（点击页面其它区域）
+document.addEventListener('click', function (event) {
+  const wrapper = document.querySelector('.quick-contact-wrapper');
+  const card = document.getElementById('quickContactCard');
+  if (!wrapper.contains(event.target)) {
+    card.style.display = 'none';
+  }
+});
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const popup = document.getElementById("clientPopup");
     const title = document.getElementById("popup-title");
@@ -732,4 +787,6 @@ document.addEventListener("DOMContentLoaded", () => {
             popup.classList.add("hidden");
         }
     });
+    updateQuickContactLanguage();
+    updateQuickContactTexts();
 });

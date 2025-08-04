@@ -1102,3 +1102,90 @@ nav .dropbtn.active {
   margin: 0.3rem 0; /* 每行之间更紧凑 */
   line-height: 1.5;
 }
+
+/* 外层容器：固定在右中位置 */
+.quick-contact-wrapper {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* 折叠按钮 */
+.quick-contact-toggle {
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+.quick-contact-toggle:hover {
+  background-color: #0056b3;
+}
+
+/* 展开卡片 */
+.quick-contact-card {
+  display: none;
+  width: 260px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-size: 14px;
+  margin-top: 10px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.quick-contact-card h4 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.quick-contact-card p {
+  margin: 6px 0;
+  text-align: center;
+}
+
+.quick-contact-card a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.qr-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.qr-section div {
+  text-align: center;
+  width: 48%;
+}
+
+.qr-section img {
+  width: 100%;
+  max-width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 可选：响应式（小屏幕隐藏） */
+@media (max-width: 768px) {
+  .quick-contact-wrapper {
+    display: none;
+  }
+}
