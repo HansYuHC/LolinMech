@@ -10,8 +10,7 @@
             "description": "Berco is an Italian company specializing in manufacturing undercarriage components and rubber tracks.",
             "logo": "berco.png",
             "gallery": ["berco_products_1.png"],
-            "sampleImage": "berco_sample.png",
-            "sampleNote": "Qingdao lolin supplied ADI sprockets and track rollers to Berco."
+            "sampleNote": "Qingdao Lolin supplied ADI sprockets and track rollers to Berco."
         },
         {
             "id": "kito",
@@ -20,49 +19,55 @@
             "logo": "kito.png",
             "gallery": ["kito_products_1.png"],
             "sampleImage": "kito_samplel.png",
-            "sampleNote": "Qingdao lolin supplied parts of lifting hoists to Kito. Until now, we have developed more than 60 different kinds of casting and forming parts for Kito in Japan."
+            "sampleNote": "Qingdao Lolin supplied parts of lifting hoists to Kito. Until now, we have developed more than 60 different kinds of casting and forming parts for Kito in Japan."
         },
         {
             "id": "kverneland",
             "name": "Kverneland",
             "description": "Kverneland Group is an international company developing, producing and distributing agricultural implements, electronics and digital services to the farming community.",
             "logo": "kverneland.png",
-            "gallery": ["kverneland_products_1.png"]
+            "gallery": ["kverneland_products_1.png"],
+            "sampleNote": "Qingdao Lolin supplied casting and forgings for tiller and ploughing machine to Kverneland."
         },
         {
             "id": "lemken",
             "name": "Lemken",
             "description": "Lemken focuses on developing innovative solutions for productive and efficient agriculture.",
             "logo": "lemken.png",
-            "gallery": ["lemken_products_1.png"]
+            "gallery": ["lemken_products_1.png"],
+            "sampleNote": "Qingdao Lolin supplied casting and forgings for agricultural machinery to Lemken."
         },
         {
             "id": "nord",
             "name": "Nord",
             "description": "Nord Drivesystems is a system provider of innovative drive solutions with competence in more than 100 industries.",
             "logo": "nord.png",
-            "gallery": ["nord_products_1.png"]
+            "gallery": ["nord_products_1.png"],
+            "sampleNote": "Qingdao Lolin supplied housing and covers for transmission/ gear box to Nord."
         },
         {
             "id": "saint-gobain",
             "name": "Saint-Gobain",
             "description": "Saint-Gobain is originally a mirror manufacturer, it also produces a variety of construction, high-performance, moderate-performance, lower-performance and other materials",
             "logo": "saint-gobain.png",
-            "gallery": ["saint-gobain_products_1.png"]
+            "gallery": ["saint-gobain_products_1.png"],
+            "sampleNote": "Qingdao Lolin supplied machined forgings for door-window opening system to Saint-Gobain."
         },
         {
             "id": "selzer",
             "name": "Selzer",
             "description": "SELZER is a precision engineering company specializing in the development and production of complex metal components and assemblies for the automotive and mechanical industries.",
             "logo": "selzer.png",
-            "gallery": ["selzer_products_1.png"]
+            "gallery": ["selzer_products_1.png"],
+            "sampleNote": "Qingdao Lolin supplied castings for engine system to Selzer."
         },
         {
             "id": "thyssenkrupp",
             "name": "Thyssenkrupp",
             "description": "Thyssenkrupp is one of the largest steel producers in the world and its products range from machines and industrial services to high-speed trains, elevators, and shipbuilding.",
             "logo": "thyssenkrupp.png",
-            "gallery": ["thyssenkrupp_products_1.png"]
+            "gallery": ["thyssenkrupp_products_1.png"],
+            "sampleNote": "Qingdao Lolin supplied forgings for construction machinery to Thyssenkrupp."
         },
         {
             "id": "weber-hydraulik",
@@ -71,21 +76,23 @@
             "logo": "weber-hydraulik.png",
             "gallery": ["weber-hydraulik_products_1.png"],
             "sampleImage": "weber_sample.png",
-            "sampleNote": "Qingdao lolin supplied castings for the hydraulic cylinder system to Weber-Hydraulik with material of GJS 400 and green sand casting."
+            "sampleNote": "Qingdao lolin supplied castings with material of GJS 400 and green sand casting as well as forgings for the hydraulic cylinder system to Weber-Hydraulik."
         },
         {
             "id": "westfalia",
             "name": "Westfalia Automotive",
             "description": "Westfalia Automotive, as the inventor of the ball-head trailer coupling, is now one of the world's leading manufacturers of towing devices for cars and light commercial vehicles.",
             "logo": "westfalia.png",
-            "gallery": ["westfalia_products_1.png"]
+            "gallery": ["westfalia_products_1.png"],
+            "sampleNote": "Qingdao Lolin supplied castings and forgings for towing system of passenger cars to Westfalia Automotive."
         },
         {
             "id": "yanmar",
             "name": "Yanmar",
             "description": "Yanmar is a japanese diesel engine, heavy machinery and agricultural machinery manufacturer",
             "logo": "yanmar.png",
-            "gallery": ["yanmar_products_1.png"]
+            "gallery": ["yanmar_products_1.png"],
+            "sampleNote": "Qingdao Lolin supplied castings and forgings for excavators to Yanmar."
         },
         {
             "id": "cat",
@@ -94,14 +101,15 @@
             "logo": "cat.png",
             "gallery": ["cat_products_1.png"],
             "sampleImage": "cat_sample.png",
-            "sampleNote": "Qingdao lolin supplied wheel loader foot pedals (with materials of GJS 450 and green sand casting process) to Caterpillar."
+            "sampleNote": "Qingdao lolin supplied wheel loader foot pedals (with materials of GJS 450 and green sand casting process) for excavators and wheelloaders to Caterpillar."
         },
         {
             "id": "komatsu",
             "name": "Komatsu",
             "description": "Komatsu is a Japanese multinational corporation that manufactures construction, mining, forestry and military heavy equipment, as well as diesel engines and industrial equipment like press machines, lasers and thermoelectric generators.",
             "logo": "komatsu.png",
-            "gallery": ["komatsu_products_1.png"]
+            "gallery": ["komatsu_products_1.png"],
+            "sampleNote": "Qingdao Lolin supplied castings for excavators to Komatsu."
         },
         {
             "id": "kubota",
@@ -118,7 +126,8 @@
             "name": "Tadano",
             "description": "Tadano is the main and largest Japan-based manufacturer of cranes and aerial work platforms, considered one of largest crane manufacturers in the world.",
             "logo": "tadano.png",
-            "gallery": ["tadano_products_1.png"]
+            "gallery": ["tadano_products_1.png"],
+            "sampleNote": "Qingdao Lolin supplied castings and forgins for mobile cranes to Tadano."
         }
 
     ],

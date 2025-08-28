@@ -1106,7 +1106,7 @@ nav .dropbtn.active {
 /* 外层容器：固定在右中位置 */
 .quick-contact-wrapper {
   position: fixed;
-  top: 50%;
+  top: 35%;
   right: 0;
   transform: translateY(-50%);
   z-index: 9999;

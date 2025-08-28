@@ -19,7 +19,6 @@
       "description": "Berco ist ein italienisches Unternehmen, das sich auf die Herstellung von Fahrwerkskomponenten und Gummiketten spezialisiert hat.",
       "logo": "berco.png",
       "gallery": ["berco_products_1.png"],
-      "sampleImage": "berco_sample.png",
       "sampleNote": "Qingdao Lolin lieferte ADI-Kettenräder und Laufrollen an Berco."
     },
     {
@@ -36,42 +35,49 @@
       "name": "Kverneland",
       "description": "Die Kverneland Group ist ein internationales Unternehmen, das landwirtschaftliche Geräte, Elektronik und digitale Dienstleistungen für die Landwirtschaft entwickelt, produziert und vertreibt.",
       "logo": "kverneland.png",
-      "gallery": ["kverneland_products_1.png"]
+      "gallery": ["kverneland_products_1.png"],
+      "sampleNote": "Qingdao Lolin lieferte Guss und Schmiede für Bodenbearbeitungswerkzeuge und Pflügenmaschine nach Kverneland."
     },
     {
       "id": "lemken",
       "name": "Lemken",
       "description": "Lemken konzentriert sich auf die Entwicklung innovativer Lösungen für eine produktive und effiziente Landwirtschaft.",
       "logo": "lemken.png",
-      "gallery": ["lemken_products_1.png"]
+      "gallery": ["lemken_products_1.png"],
+      "sampleNote": "Qingdao Lolin lieferte Lemken Casting und Schmiedete für landwirtschaftliche Maschinen."
     },
     {
       "id": "nord",
       "name": "Nord",
       "description": "Nord Drivesystems ist ein Systemanbieter für innovative Antriebslösungen mit Kompetenz in über 100 Branchen.",
       "logo": "nord.png",
-      "gallery": ["nord_products_1.png"]
+      "gallery": ["nord_products_1.png"],
+      "sampleNote": "Qingdao Lolin bietet Nord mit Gehäuse und Deckung für Getriebe."
     },
     {
       "id": "saint-gobain",
       "name": "Saint-Gobain",
       "description": "Saint-Gobain war ursprünglich ein Spiegelhersteller und produziert heute eine Vielzahl an Bau- und Hochleistungswerkstoffen.",
       "logo": "saint-gobain.png",
-      "gallery": ["saint-gobain_products_1.png"]
+      "gallery": ["saint-gobain_products_1.png"],
+      "sampleNote": "Qingdao Lolin lieferte die maschinellen Schmiedetüren für das Eröffnungssystem des Türfensters an Saint-Gobain."
     },
     {
       "id": "selzer",
       "name": "Selzer",
       "description": "SELZER ist ein Unternehmen der Feinmechanik und spezialisiert auf die Entwicklung und Produktion komplexer Metallkomponenten und Baugruppen für die Automobil- und Maschinenbauindustrie.",
       "logo": "selzer.png",
-      "gallery": ["selzer_products_1.png"]
+      "gallery": ["selzer_products_1.png"],
+      "sampleNote": "Qingdao Lolin lieferte Selzer Gussteile für das Motorsystem."
     },
     {
       "id": "thyssenkrupp",
       "name": "Thyssenkrupp",
       "description": "Thyssenkrupp ist einer der größten Stahlproduzenten der Welt und stellt Produkte von Maschinen und Industriedienstleistungen bis hin zu Hochgeschwindigkeitszügen, Aufzügen und Schiffbau her.",
       "logo": "thyssenkrupp.png",
-      "gallery": ["thyssenkrupp_products_1.png"]
+      "gallery": ["thyssenkrupp_products_1.png"],
+      "sampleNote": "Qingdao Lolin versorgte Thyssenkrupp für Baumaschinen."
+
     },
     {
       "id": "weber-hydraulik",
@@ -80,21 +86,23 @@
       "logo": "weber-hydraulik.png",
       "gallery": ["weber-hydraulik_products_1.png"],
       "sampleImage": "weber_sample.png",
-      "sampleNote": "Qingdao Lolin lieferte Gussteile für das Hydraulikzylindersystem an Weber-Hydraulik mit dem Werkstoff GJS 400 und dem Grünsandgussverfahren."
+      "sampleNote": "Qingdao Lolin lieferte Castings mit Material von GJS 400 und grünem Sandguss sowie Schmiedetaten für das Hydraulikzylindersystem nach Weber-Hydraulik."
     },
     {
       "id": "westfalia",
       "name": "Westfalia Automotive",
       "description": "Westfalia Automotive, als Erfinder der Kugelkopf-Anhängerkupplung, ist heute einer der weltweit führenden Hersteller von Anhängervorrichtungen für PKW und leichte Nutzfahrzeuge.",
       "logo": "westfalia.png",
-      "gallery": ["westfalia_products_1.png"]
+      "gallery": ["westfalia_products_1.png"],
+      "sampleNote": "Qingdao Lolin lieferte Guss- und Schmiedeteile für Anhängerkupplungen von Personenkraftwagen an Westfalia Automotive."
     },
     {
       "id": "yanmar",
       "name": "Yanmar",
       "description": "Yanmar ist ein japanischer Hersteller von Dieselmotoren, schweren Maschinen und landwirtschaftlichen Geräten.",
       "logo": "yanmar.png",
-      "gallery": ["yanmar_products_1.png"]
+      "gallery": ["yanmar_products_1.png"],
+      "sampleNote": "Qingdao Lolin lieferte Guss- und Schmiedeteile für Bagger an Yanmar"
     },
     {
       "id": "cat",
@@ -103,14 +111,15 @@
       "logo": "cat.png",
       "gallery": ["cat_products_1.png"],
       "sampleImage": "cat_sample.png",
-      "sampleNote": "Qingdao Lolin lieferte Fußpedale für Radlader (mit Werkstoff GJS 450 und Grünsandgussverfahren) an Caterpillar."
+      "sampleNote": "Qingdao Lolin lieferte Radlader-Fußpedale (aus GJS 450-Material und im Grünsandgussverfahren) für Bagger und Radlader an Caterpillar."
     },
     {
       "id": "komatsu",
       "name": "Komatsu",
       "description": "Komatsu ist ein japanischer multinationaler Konzern, der Bau-, Bergbau-, Forst- und Militärmaschinen sowie Dieselmotoren und industrielle Geräte wie Pressen, Laser und thermoelektrische Generatoren herstellt.",
       "logo": "komatsu.png",
-      "gallery": ["komatsu_products_1.png"]
+      "gallery": ["komatsu_products_1.png"],
+      "sampleNote": "Qingdao Lolin lieferte Gussteile für Bagger an Komatsu."
     },
     {
       "id": "kubota",
@@ -119,14 +128,15 @@
       "logo": "kubota.png",
       "gallery": ["kubota_products_1.png"],
       "sampleImage": "kubota_sample.png",
-      "sampleNote": "Qingdao Lolin lieferte Baggergelenkverbindungsstücke (auch bekannt als Schwenkpfosten) an Kubota, aus dem Werkstoff GJS 500-7."
+      "sampleNote": "Qingdao Lolin lieferte Baggerhalterungs-verbindungsteile (auch als Schwenkpfosten bekannt) an Kubota aus dem Material GJS 500-7."
     },
     {
       "id": "tadano",
       "name": "Tadano",
       "description": "Tadano ist der größte japanische Hersteller von Kränen und Arbeitsbühnen und gilt als einer der weltweit führenden Kranhersteller.",
       "logo": "tadano.png",
-      "gallery": ["tadano_products_1.png"]
+      "gallery": ["tadano_products_1.png"],
+      "sampleNote": "Qingdao Lolin lieferte Guss- und Schmiedeteile für Mobilkrane nach Tadano."
     }
   ]
 }
