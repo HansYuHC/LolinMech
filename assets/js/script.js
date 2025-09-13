@@ -3,8 +3,22 @@ let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
 let currentGallery = [];
 let currentIndex = 0;
 
-const BASE_PATH = window.location.pathname.replace(/\/[^\/]*$/, '/');
+//const BASE_PATH = window.location.pathname.replace(/\/[^\/]*$/, '/');
 
+const BASE_PATH = window.location.protocol === 'file:'
+    ? ''
+    : window.location.pathname.replace(/\/[^\/]*$/, '/');
+
+console.log('📍 环境信息:');
+console.log('📍 协议:', window.location.protocol);
+console.log('📍 路径名:', window.location.pathname);
+console.log('📍 计算的BASE_PATH:', BASE_PATH);
+console.log('📍 测试JSON路径:', `${BASE_PATH}locales/en/aboutus.json`);
+
+// 辅助函数：为资源路径添加 BASE_PATH
+function getAssetPath(path) {
+    return `${BASE_PATH}${path}`;
+}
 
 function changeLanguage(lang) {
     currentLanguage = lang;
@@ -182,10 +196,13 @@ function loadCustomersPage(data) {
                          data-name="${client.name}"
                          data-description="${client.description}"
                          data-image="assets/images/customers/${client.gallery[0]}"
-                         data-sample-image="${client.sampleImage ? `assets/images/customers/${client.sampleImage}` : ''}"
+
+                         <data-sample-image="${client.sampleImage ? `assets/images/customers/${client.sampleImage}` : ''}"
+
                          data-sample-note="${client.sampleNote || ''}"
                          onclick="showClientPopup(this)">
-                        <img src="assets/images/customers/${client.logo}" alt="${client.name}">
+                         <img src="assets/images/customers/${client.logo}" alt="${client.name}">
+
                     </div>
                 `).join('')}
             </div>
